@@ -39,10 +39,10 @@ struct WaveLegend: View {
             ForEach(stops, id: \.0) { label, ft in
                 HStack(spacing: 3) {
                     Circle().fill(Theme.waveColor(ft: ft)).frame(width: 7, height: 7)
-                    Text(label).font(.system(size: 9, weight: .medium))
+                    Text(label).font(.caption2.weight(.medium))
                 }
             }
-            Text("ft").font(.system(size: 9, weight: .medium)).foregroundStyle(.secondary)
+            Text("ft").font(.caption2.weight(.medium)).foregroundStyle(.secondary)
         }
         .padding(.horizontal, 10)
         .padding(.vertical, 5)

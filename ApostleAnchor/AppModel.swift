@@ -12,6 +12,7 @@ struct ForecastSnapshot: Codable {
     let gridSamples: [[WindSample]]
     var waveSamplesByPlace: [String: [WaveSample]]?
     var gridWaves: [[WaveSample]]?
+    var wavesUpdatedAt: Date?
 }
 
 enum SnapshotStore {
@@ -46,6 +47,7 @@ final class AppModel {
     var gridSamples: [[WindSample]] = []
     var waveSamplesByPlace: [String: [WaveSample]] = [:]
     var gridWaves: [[WaveSample]] = []
+    var wavesUpdatedAt: Date?
     var outlooks: [String: PlaceOutlook] = [:]
     var alerts: [MarineAlert] = []
 
@@ -105,12 +107,14 @@ final class AppModel {
                 }
                 waveSamplesByPlace = byPlace
                 gridWaves = Array(waves.dropFirst(placePoints.count))
+                wavesUpdatedAt = Date()
             }
 
             SnapshotStore.save(ForecastSnapshot(
                 fetchedAt: Date(), hours: hours, samplesByPlace: samplesByPlace,
                 gridPoints: gridPoints, gridSamples: gridSamples,
-                waveSamplesByPlace: waveSamplesByPlace, gridWaves: gridWaves
+                waveSamplesByPlace: waveSamplesByPlace, gridWaves: gridWaves,
+                wavesUpdatedAt: wavesUpdatedAt
             ))
         } catch {
             loadError = "Couldn't fetch the forecast. \(error.localizedDescription)"
@@ -133,6 +137,7 @@ final class AppModel {
               gridSamples: snapshot.gridSamples, fetchedAt: snapshot.fetchedAt)
         waveSamplesByPlace = snapshot.waveSamplesByPlace ?? [:]
         gridWaves = snapshot.gridWaves ?? []
+        wavesUpdatedAt = snapshot.wavesUpdatedAt
     }
 
     private func apply(hours newHours: [Date], samplesByPlace newSamples: [String: [WindSample]],

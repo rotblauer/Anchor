@@ -117,24 +117,35 @@ struct ParkCard: View {
     @State private var expanded = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Label(title, systemImage: icon)
-                .font(.headline)
-                .foregroundStyle(.white)
-            Text(text)
-                .font(.callout)
-                .foregroundStyle(.white.opacity(0.92))
-                .lineLimit(expanded ? nil : 3)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(14)
-        .background(
-            LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing),
-            in: RoundedRectangle(cornerRadius: 14)
-        )
-        .onTapGesture {
+        Button {
             withAnimation(.snappy) { expanded.toggle() }
+        } label: {
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Label(title, systemImage: icon)
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                    Spacer()
+                    Image(systemName: "chevron.down")
+                        .font(.caption.bold())
+                        .foregroundStyle(.white.opacity(0.7))
+                        .rotationEffect(.degrees(expanded ? 180 : 0))
+                }
+                Text(text)
+                    .font(.callout)
+                    .foregroundStyle(.white.opacity(0.92))
+                    .lineLimit(expanded ? nil : 3)
+                    .multilineTextAlignment(.leading)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(14)
+            .background(
+                LinearGradient(colors: gradient, startPoint: .topLeading, endPoint: .bottomTrailing),
+                in: RoundedRectangle(cornerRadius: 14)
+            )
         }
+        .buttonStyle(.plain)
+        .accessibilityHint(expanded ? "Collapses the text" : "Expands the full text")
     }
 }
 

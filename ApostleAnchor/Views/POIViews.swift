@@ -43,6 +43,9 @@ struct POIMarkerView: View {
         .frame(width: selected ? 28 : 22, height: selected ? 28 : 22)
         .shadow(color: .black.opacity(0.45), radius: 2.5, y: 1)
         .animation(.spring(duration: 0.25), value: selected)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(poi.name), \(poi.kind.label)")
+        .accessibilityAddTraits(.isButton)
     }
 }
 

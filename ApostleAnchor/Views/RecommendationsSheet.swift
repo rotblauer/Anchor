@@ -7,6 +7,7 @@ import AnchorCore
 /// livable on all three — not great tonight and grim on Sunday.
 struct RecommendationsSheet: View {
     @Environment(AppModel.self) private var model
+    @Environment(\.dismiss) private var dismiss
     @AppStorage("stay.length") private var stayLength = 1
     @AppStorage("stay.includeAnchorages") private var includeAnchorages = true
     @AppStorage("stay.includeDocks") private var includeDocks = true
@@ -65,6 +66,11 @@ struct RecommendationsSheet: View {
             }
             .navigationTitle("Where to stay")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Done") { dismiss() }
+                }
+            }
         }
     }
 
@@ -81,8 +87,11 @@ struct RecommendationsSheet: View {
                             .padding(.vertical, 6)
                             .background(selected == nights ? Theme.teal : Color.secondary.opacity(0.15), in: Capsule())
                             .foregroundStyle(selected == nights ? .white : .primary)
+                            .frame(minHeight: 36)
+                            .contentShape(Capsule())
                     }
                     .buttonStyle(.plain)
+                    .accessibilityAddTraits(selected == nights ? .isSelected : [])
                 }
             }
             .padding(.horizontal, 16)
@@ -117,9 +126,12 @@ struct RecommendationsSheet: View {
             .padding(.vertical, 5)
             .background(isOn.wrappedValue ? Theme.teal.opacity(0.15) : Color.secondary.opacity(0.10), in: Capsule())
             .foregroundStyle(isOn.wrappedValue ? Theme.teal : .secondary)
+            .frame(minHeight: 36)
+            .contentShape(Capsule())
         }
         .buttonStyle(.plain)
         .accessibilityLabel("\(label) \(isOn.wrappedValue ? "included" : "excluded")")
+        .accessibilityAddTraits(isOn.wrappedValue ? .isSelected : [])
     }
 
     private var emptyState: some View {

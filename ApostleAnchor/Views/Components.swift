@@ -76,6 +76,20 @@ struct PlaceMarkerView: View {
         .frame(width: selected ? 34 : 27, height: selected ? 34 : 27)
         .shadow(color: .black.opacity(0.45), radius: 3, y: 1)
         .animation(.spring(duration: 0.25), value: selected)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(accessibilityText)
+        .accessibilityAddTraits(.isButton)
+    }
+
+    private var accessibilityText: String {
+        if place.advisory {
+            return "\(place.name), advisory area"
+        }
+        var text = "\(place.name), \(place.type.label)"
+        if let band {
+            text += ", \(band.label)"
+        }
+        return text
     }
 }
 
@@ -110,6 +124,8 @@ struct WindArrowView: View {
                 .shadow(color: .black.opacity(0.8), radius: 1.5)
         }
         .allowsHitTesting(false)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Wind \(Int(sample.speedKt.rounded())) knots from \(Compass.name(forDegrees: sample.directionDeg))")
     }
 }
 
@@ -184,6 +200,12 @@ struct OutlookStrip: View {
                 }
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Night-by-night outlook")
+        .accessibilityValue(
+            nights.map { "\(Fmt.nightLabel.string(from: $0.nightOf)) \($0.band.label)" }
+                .joined(separator: ", ")
+        )
     }
 }
 

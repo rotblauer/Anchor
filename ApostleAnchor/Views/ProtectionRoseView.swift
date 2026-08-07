@@ -8,6 +8,23 @@ struct ProtectionRoseView: View {
     let shelter: [Double]
     var windSample: WindSample?
 
+    /// Spoken summary so the rose isn't a color-only, VoiceOver-invisible graphic.
+    private var accessibilitySummary: String {
+        var parts: [String] = []
+        let protected = Compass.sectorNames.enumerated()
+            .filter { shelter.indices.contains($0.offset) && shelter[$0.offset] >= 0.6 }
+            .map(\.element)
+        let exposed = Compass.sectorNames.enumerated()
+            .filter { shelter.indices.contains($0.offset) && shelter[$0.offset] <= 0.4 }
+            .map(\.element)
+        if !protected.isEmpty { parts.append("Protected from \(protected.joined(separator: ", "))") }
+        if !exposed.isEmpty { parts.append("Exposed to \(exposed.joined(separator: ", "))") }
+        if let sample = windSample {
+            parts.append("Forecast wind \(Fmt.windSummary(sample))")
+        }
+        return parts.isEmpty ? "Shelter varies by direction" : parts.joined(separator: ". ")
+    }
+
     var body: some View {
         Canvas { context, size in
             let center = CGPoint(x: size.width / 2, y: size.height / 2)
@@ -79,5 +96,8 @@ struct ProtectionRoseView: View {
                 context.stroke(head, with: .color(.primary), style: StrokeStyle(lineWidth: 3, lineCap: .round))
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Shelter by wind direction")
+        .accessibilityValue(accessibilitySummary)
     }
 }

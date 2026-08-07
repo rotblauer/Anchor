@@ -96,6 +96,11 @@ struct PlanMapView: View {
         .sheet(item: $selectedPlace) { place in
             NavigationStack {
                 PlaceDetailView(place: place)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") { selectedPlace = nil }
+                        }
+                    }
             }
             .presentationDetents([.medium, .large])
             .presentationBackgroundInteraction(.enabled(upThrough: .medium))
@@ -103,6 +108,11 @@ struct PlanMapView: View {
         .sheet(item: $selectedPOI) { poi in
             NavigationStack {
                 POIDetailView(poi: poi)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") { selectedPOI = nil }
+                        }
+                    }
             }
             .presentationDetents([.medium, .large])
             .presentationBackgroundInteraction(.enabled(upThrough: .medium))
@@ -136,7 +146,16 @@ struct PlanMapView: View {
             }
             switch layer {
             case .wind: WindLegend()
-            case .waves: WaveLegend()
+            case .waves:
+                WaveLegend()
+                if model.gridWaves.isEmpty {
+                    Text(model.isLoading ? "Fetching wave data…" : "No wave data yet — tap refresh")
+                        .font(.caption2.weight(.medium))
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(.regularMaterial, in: Capsule())
+                        .foregroundStyle(.secondary)
+                }
             case .lore: EmptyView()
             }
             attributionChip
@@ -152,37 +171,46 @@ struct PlanMapView: View {
                 Image(systemName: "info.circle")
                 Text(attributionText)
             }
-            .font(.system(size: 10, weight: .medium))
+            .font(.caption2.weight(.medium))
             .padding(.horizontal, 9)
             .padding(.vertical, 4)
             .background(.regularMaterial, in: Capsule())
             .foregroundStyle(.secondary)
+            .frame(minHeight: 36)
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .accessibilityLabel("Data sources")
     }
 
     private var attributionText: String {
-        let source = layer == .waves ? "Waves: Open-Meteo Marine" : "Wind: Open-Meteo"
-        if let updated = model.lastUpdated {
-            return "\(source) · \(Fmt.timestamp.string(from: updated))"
+        if layer == .waves {
+            if let updated = model.wavesUpdatedAt {
+                return "Waves: Open-Meteo Marine · \(Fmt.timestamp.string(from: updated))"
+            }
+            return "Waves: Open-Meteo Marine"
         }
-        return source
+        if let updated = model.lastUpdated {
+            return "Wind: Open-Meteo · \(Fmt.timestamp.string(from: updated))"
+        }
+        return "Wind: Open-Meteo"
     }
 
     private var mapButtons: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 2) {
             ForEach(PlanMapLayer.allCases, id: \.self) { candidate in
                 Button {
                     layer = candidate
                 } label: {
                     Image(systemName: candidate.symbol)
                         .foregroundStyle(layer == candidate ? Color.white : Theme.teal)
-                        .frame(width: 30, height: 26)
+                        .frame(width: 32, height: 28)
                         .background(
                             layer == candidate ? Theme.teal : Color.clear,
                             in: RoundedRectangle(cornerRadius: 8)
                         )
+                        .frame(width: 44, height: 40)
+                        .contentShape(Rectangle())
                 }
                 .accessibilityLabel(candidate.label)
                 .accessibilityAddTraits(layer == candidate ? .isSelected : [])
@@ -192,16 +220,22 @@ struct PlanMapView: View {
                 useImagery.toggle()
             } label: {
                 Image(systemName: useImagery ? "globe.americas.fill" : "map")
+                    .frame(width: 44, height: 40)
+                    .contentShape(Rectangle())
             }
             .accessibilityLabel(useImagery ? "Switch to standard map" : "Switch to satellite map")
             Button {
                 Task { await model.refresh() }
             } label: {
-                if model.isLoading {
-                    ProgressView().controlSize(.small)
-                } else {
-                    Image(systemName: "arrow.clockwise")
+                Group {
+                    if model.isLoading {
+                        ProgressView().controlSize(.small)
+                    } else {
+                        Image(systemName: "arrow.clockwise")
+                    }
                 }
+                .frame(width: 44, height: 40)
+                .contentShape(Rectangle())
             }
             .accessibilityLabel("Refresh forecast")
         }
@@ -209,7 +243,7 @@ struct PlanMapView: View {
         .font(.system(size: 16, weight: .semibold))
         .foregroundStyle(Theme.teal)
         .frame(width: 44)
-        .padding(.vertical, 10)
+        .padding(.vertical, 6)
         .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 12))
         .padding(.trailing, 8)
         .padding(.top, 60)
@@ -257,10 +291,10 @@ struct WindLegend: View {
             ForEach(stops, id: \.0) { label, kt in
                 HStack(spacing: 3) {
                     Circle().fill(Theme.windColor(kt: kt)).frame(width: 7, height: 7)
-                    Text(label).font(.system(size: 9, weight: .medium))
+                    Text(label).font(.caption2.weight(.medium))
                 }
             }
-            Text("kt").font(.system(size: 9, weight: .medium)).foregroundStyle(.secondary)
+            Text("kt").font(.caption2.weight(.medium)).foregroundStyle(.secondary)
         }
         .padding(.horizontal, 10)
         .padding(.vertical, 5)

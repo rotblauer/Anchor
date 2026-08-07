@@ -35,8 +35,11 @@ struct TimeScrubber: View {
                         Image(systemName: playing ? "pause.circle.fill" : "play.circle.fill")
                             .font(.system(size: 26))
                             .foregroundStyle(Theme.teal)
+                            .frame(width: 44, height: 40)
+                            .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .accessibilityLabel(playing ? "Pause forecast animation" : "Play forecast animation")
 
                     Slider(
                         value: Binding(
@@ -47,10 +50,13 @@ struct TimeScrubber: View {
                         step: 1
                     )
                     .tint(Theme.teal)
+                    .accessibilityLabel("Forecast hour")
+                    .accessibilityValue(timeLabel)
 
                     Text(timeLabel)
                         .font(.caption.weight(.semibold).monospacedDigit())
-                        .frame(width: 72, alignment: .trailing)
+                        .frame(minWidth: 72, alignment: .trailing)
+                        .accessibilityHidden(true)
                 }
             }
         }
@@ -68,8 +74,11 @@ struct TimeScrubber: View {
                 .padding(.vertical, 5)
                 .background(isSelected ? Theme.teal : Color.secondary.opacity(0.15), in: Capsule())
                 .foregroundStyle(isSelected ? .white : .primary)
+                .frame(minHeight: 34)
+                .contentShape(Capsule())
         }
         .buttonStyle(.plain)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     private var timeLabel: String {
