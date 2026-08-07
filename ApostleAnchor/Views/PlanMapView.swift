@@ -86,12 +86,16 @@ struct PlanMapView: View {
                 }
                 .annotationTitles(.hidden)
             }
-            ForEach(model.buoyObservations) { observation in
-                Annotation("", coordinate: CLLocationCoordinate2D(latitude: observation.lat, longitude: observation.lon), anchor: .center) {
-                    BuoyMarkerView(observation: observation, selected: selectedBuoy?.id == observation.id)
-                        .onTapGesture { selectedBuoy = observation }
+            // Hidden on the lore layer: 54 POIs + 44 places + buoys would cross
+            // the ~100-annotation budget where Map silently renders nothing.
+            if layer != .lore {
+                ForEach(model.buoyObservations) { observation in
+                    Annotation("", coordinate: CLLocationCoordinate2D(latitude: observation.lat, longitude: observation.lon), anchor: .center) {
+                        BuoyMarkerView(observation: observation, selected: selectedBuoy?.id == observation.id)
+                            .onTapGesture { selectedBuoy = observation }
+                    }
+                    .annotationTitles(.hidden)
                 }
-                .annotationTitles(.hidden)
             }
         }
         .mapStyle(useImagery ? .imagery(elevation: .realistic) : .standard(elevation: .realistic))
