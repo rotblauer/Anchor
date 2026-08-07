@@ -10,6 +10,8 @@ struct ForecastSnapshot: Codable {
     let samplesByPlace: [String: [WindSample]]
     let gridPoints: [GeoPoint]
     let gridSamples: [[WindSample]]
+    var waveSamplesByPlace: [String: [WaveSample]]?
+    var gridWaves: [[WaveSample]]?
 }
 
 enum SnapshotStore {
@@ -42,6 +44,8 @@ final class AppModel {
     var samplesByPlace: [String: [WindSample]] = [:]
     var gridPoints: [GeoPoint] = []
     var gridSamples: [[WindSample]] = []
+    var waveSamplesByPlace: [String: [WaveSample]] = [:]
+    var gridWaves: [[WaveSample]] = []
     var outlooks: [String: PlaceOutlook] = [:]
     var alerts: [MarineAlert] = []
 
@@ -91,9 +95,22 @@ final class AppModel {
                 gridSamples: gridForecasts.map(\.hours),
                 fetchedAt: Date()
             )
+
+            // Waves are a bonus layer — a marine-API failure never blocks wind.
+            if let waves = try? await OpenMeteoMarineClient()
+                .hourlyWaves(for: placePoints + gridPoints, days: 8) {
+                var byPlace: [String: [WaveSample]] = [:]
+                for (place, wave) in zip(places, waves.prefix(placePoints.count)) {
+                    byPlace[place.id] = wave
+                }
+                waveSamplesByPlace = byPlace
+                gridWaves = Array(waves.dropFirst(placePoints.count))
+            }
+
             SnapshotStore.save(ForecastSnapshot(
                 fetchedAt: Date(), hours: hours, samplesByPlace: samplesByPlace,
-                gridPoints: gridPoints, gridSamples: gridSamples
+                gridPoints: gridPoints, gridSamples: gridSamples,
+                waveSamplesByPlace: waveSamplesByPlace, gridWaves: gridWaves
             ))
         } catch {
             loadError = "Couldn't fetch the forecast. \(error.localizedDescription)"
@@ -114,6 +131,8 @@ final class AppModel {
               Set(snapshot.samplesByPlace.keys) == Set(places.map(\.id)) else { return }
         apply(hours: snapshot.hours, samplesByPlace: snapshot.samplesByPlace,
               gridSamples: snapshot.gridSamples, fetchedAt: snapshot.fetchedAt)
+        waveSamplesByPlace = snapshot.waveSamplesByPlace ?? [:]
+        gridWaves = snapshot.gridWaves ?? []
     }
 
     private func apply(hours newHours: [Date], samplesByPlace newSamples: [String: [WindSample]],
@@ -252,13 +271,42 @@ final class AppModel {
         }
     }
 
+    // MARK: - Waves
+
+    private func nearestWave(in samples: [WaveSample], to time: Date) -> WaveSample? {
+        guard let nearest = samples.min(by: {
+            abs($0.time.timeIntervalSince(time)) < abs($1.time.timeIntervalSince(time))
+        }) else { return nil }
+        return abs(nearest.time.timeIntervalSince(time)) <= 2 * 3600 ? nearest : nil
+    }
+
+    func waveSample(for placeId: String) -> WaveSample? {
+        guard let time = selectedTime, let samples = waveSamplesByPlace[placeId] else { return nil }
+        return nearestWave(in: samples, to: time)
+    }
+
+    func gridWaveSample(at index: Int) -> WaveSample? {
+        guard let time = selectedTime, gridWaves.indices.contains(index) else { return nil }
+        return nearestWave(in: gridWaves[index], to: time)
+    }
+
+    /// Peak open-water wave height over the currently selected night's window.
+    func overnightWaveMax(for placeId: String) -> Double? {
+        guard let night = selectedNightDate,
+              let samples = waveSamplesByPlace[placeId],
+              let start = calendar.date(bySettingHour: engine.constants.overnightStartHour,
+                                        minute: 0, second: 0, of: night),
+              let end = calendar.date(byAdding: .hour, value: 15, to: start) else { return nil }
+        return samples.filter { $0.time >= start && $0.time < end }.map(\.heightFt).max()
+    }
+
     // MARK: - Multi-night stays
 
     /// Ranked options for a stay of `nightCount` nights starting on the
-    /// currently selected night.
-    func rankedForStay(nightCount: Int) -> [StayOption] {
+    /// currently selected night, restricted to the user's place-type filter.
+    func rankedForStay(nightCount: Int, filter: PlaceTypeFilter = .all) -> [StayOption] {
         guard let start = selectedNightDate else { return [] }
-        return ScoreEngine.rankForStay(places: places, outlooks: outlooks,
+        return ScoreEngine.rankForStay(places: places.filter(filter.matches), outlooks: outlooks,
                                        startNight: start, nightCount: nightCount,
                                        calendar: calendar)
     }

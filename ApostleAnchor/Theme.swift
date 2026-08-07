@@ -18,6 +18,16 @@ enum Theme {
         }
     }
 
+    static func waveColor(ft: Double) -> Color {
+        switch ft {
+        case ..<1: return Color(red: 0.45, green: 0.71, blue: 0.85)
+        case ..<2: return Color(red: 0.30, green: 0.69, blue: 0.42)
+        case ..<4: return Color(red: 0.93, green: 0.79, blue: 0.20)
+        case ..<6: return Color(red: 0.95, green: 0.56, blue: 0.15)
+        default: return Color(red: 0.89, green: 0.26, blue: 0.16)
+        }
+    }
+
     static func windColor(kt: Double) -> Color {
         switch kt {
         case ..<7: return Color(red: 0.45, green: 0.71, blue: 0.85)

@@ -137,6 +137,32 @@ public struct Place: Codable, Identifiable, Hashable, Sendable {
     }
 }
 
+/// Which kinds of overnight stops to include when ranking stays. Marinas
+/// behind breakwalls rate well in almost any wind, so cruisers who want a
+/// wild anchorage night can exclude them from the plan.
+public struct PlaceTypeFilter: Equatable, Sendable {
+    public var includeAnchorages: Bool
+    public var includeDocks: Bool
+    public var includeMarinas: Bool
+
+    public init(includeAnchorages: Bool = true, includeDocks: Bool = true, includeMarinas: Bool = true) {
+        self.includeAnchorages = includeAnchorages
+        self.includeDocks = includeDocks
+        self.includeMarinas = includeMarinas
+    }
+
+    public static let all = PlaceTypeFilter()
+
+    public func matches(_ place: Place) -> Bool {
+        switch place.type {
+        case .anchorage: return includeAnchorages
+        case .anchorageDock: return includeAnchorages || includeDocks
+        case .dock: return includeDocks
+        case .marina: return includeMarinas
+        }
+    }
+}
+
 public struct PlacesDatabase: Codable, Sendable {
     public let places: [Place]
 

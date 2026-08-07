@@ -17,6 +17,7 @@ struct PlaceDetailView: View {
                     whySection(night)
                 }
                 windChartSection
+                waveSection
                 roseSection
                 factsSection
                 if let dock = place.dock {
@@ -129,6 +130,42 @@ struct PlaceDetailView: View {
                     .foregroundStyle(.secondary)
             }
         }
+    }
+
+    @ViewBuilder
+    private var waveSection: some View {
+        if let samples = model.waveSamplesByPlace[place.id], !samples.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+                SectionHeader(title: "Waves nearby", icon: "water.waves")
+                HStack(spacing: 10) {
+                    if let now = model.waveSample(for: place.id) {
+                        waveStat("At selected hour", String(format: "%.1f ft", now.heightFt),
+                                 Theme.waveColor(ft: now.heightFt))
+                    }
+                    if let overnightMax = model.overnightWaveMax(for: place.id) {
+                        waveStat("Overnight max", String(format: "%.1f ft", overnightMax),
+                                 Theme.waveColor(ft: overnightMax))
+                    }
+                    if let period = model.waveSample(for: place.id)?.periodS {
+                        waveStat("Period", String(format: "%.0f s", period), .secondary)
+                    }
+                }
+                WaveChartView(samples: samples)
+                Text("Open-water model waves — sheltered bays see much less.")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private func waveStat(_ label: String, _ value: String, _ tint: Color) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(label).font(.caption2).foregroundStyle(.secondary)
+            Text(value).font(.callout.bold()).foregroundStyle(tint)
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .background(tint.opacity(0.08), in: RoundedRectangle(cornerRadius: 8))
     }
 
     private var roseSection: some View {

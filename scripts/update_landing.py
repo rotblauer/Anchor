@@ -237,6 +237,7 @@ $DIRECTORY
     <div class="honesty">
       <ul>
         <li><strong>Forecasts:</strong> Open-Meteo hourly 10&nbsp;m wind, gusts, and direction, in knots, 8 days out.</li>
+        <li><strong>Waves:</strong> Open-Meteo Marine wave height, direction, and period — a wave-field map layer plus per-place charts, labeled honestly as open-water values.</li>
         <li><strong>Marine alerts:</strong> Live Small Craft Advisories and Gale Warnings from NOAA/NWS for the five nearshore zones around the islands.</li>
         <li><strong>Places:</strong> Every entry cites its sources in-app. $ADVISORY_COUNT advisory entries flag wildlife closures and day-use-only areas.</li>
         <li><strong>Lore:</strong> $LORE_BREAKDOWN — every story fact-checked and sourced, browsable on the map and in Explore.</li>

@@ -7,22 +7,34 @@ import AnchorCore
 /// livable on all three — not great tonight and grim on Sunday.
 struct RecommendationsSheet: View {
     @Environment(AppModel.self) private var model
-    @State private var stayLength = 1
+    @AppStorage("stay.length") private var stayLength = 1
+    @AppStorage("stay.includeAnchorages") private var includeAnchorages = true
+    @AppStorage("stay.includeDocks") private var includeDocks = true
+    @AppStorage("stay.includeMarinas") private var includeMarinas = true
+
+    private var filter: PlaceTypeFilter {
+        PlaceTypeFilter(includeAnchorages: includeAnchorages,
+                        includeDocks: includeDocks,
+                        includeMarinas: includeMarinas)
+    }
 
     var body: some View {
         NavigationStack {
             Group {
                 let maxNights = min(7, model.maxPlannableNights)
-                let effectiveLength = min(stayLength, maxNights)
-                let options = model.rankedForStay(nightCount: effectiveLength)
+                let effectiveLength = min(max(1, stayLength), maxNights)
+                let options = model.rankedForStay(nightCount: effectiveLength, filter: filter)
                 if options.isEmpty {
                     emptyState
                 } else {
                     List {
                         Section {
-                            stayPicker(maxNights: maxNights, selected: effectiveLength)
-                                .listRowBackground(Color.clear)
-                                .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
+                            VStack(alignment: .leading, spacing: 8) {
+                                stayPicker(maxNights: maxNights, selected: effectiveLength)
+                                filterChips
+                            }
+                            .listRowBackground(Color.clear)
+                            .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
                         }
                         Section {
                             ForEach(Array(options.prefix(20).enumerated()), id: \.element.place.id) { index, option in
@@ -77,9 +89,56 @@ struct RecommendationsSheet: View {
         }
     }
 
+    private var filterChips: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 6) {
+                Text("Include:")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                typeChip("Anchorages", isOn: $includeAnchorages)
+                typeChip("Docks", isOn: $includeDocks)
+                typeChip("Marinas", isOn: $includeMarinas)
+            }
+            .padding(.horizontal, 16)
+        }
+    }
+
+    private func typeChip(_ label: String, isOn: Binding<Bool>) -> some View {
+        Button {
+            isOn.wrappedValue.toggle()
+        } label: {
+            HStack(spacing: 4) {
+                Image(systemName: isOn.wrappedValue ? "checkmark.circle.fill" : "circle")
+                    .font(.caption2)
+                Text(label)
+            }
+            .font(.caption.weight(isOn.wrappedValue ? .semibold : .regular))
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(isOn.wrappedValue ? Theme.teal.opacity(0.15) : Color.secondary.opacity(0.10), in: Capsule())
+            .foregroundStyle(isOn.wrappedValue ? Theme.teal : .secondary)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("\(label) \(isOn.wrappedValue ? "included" : "excluded")")
+    }
+
     private var emptyState: some View {
         Group {
-            if model.hours.isEmpty {
+            if !includeAnchorages && !includeDocks && !includeMarinas {
+                ContentUnavailableView {
+                    Label("Nothing to rank", systemImage: "line.3.horizontal.decrease.circle")
+                } description: {
+                    Text("Every place type is filtered out.")
+                } actions: {
+                    Button("Include everything") {
+                        includeAnchorages = true
+                        includeDocks = true
+                        includeMarinas = true
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(Theme.teal)
+                }
+            } else if model.hours.isEmpty {
                 ContentUnavailableView(
                     "No forecast yet",
                     systemImage: "wind",
