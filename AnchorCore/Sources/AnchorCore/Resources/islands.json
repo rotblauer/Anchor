@@ -1,0 +1,611 @@
+{
+ "islands": [
+  {
+   "name": "Stockton Island",
+   "tagline": "Singing sands, black bears, and the biggest island in the park",
+   "story": "Stockton is the giant of the national lakeshore \u2014 roughly 10,000 acres of pine, bog, dune, and beach, and the park's most visited island. It has the most infrastructure of any Apostle: docks at Presque Isle Bay and Quarry Bay, a summer ranger presence, about 14 miles of hiking trails, and campgrounds at Presque Isle, Quarry Bay, and Trout Point. For many boaters and kayakers, Stockton is the first overnight in the islands, and it rewards them with two of the archipelago's signature natural wonders.\n\nThe first is Julian Bay, whose famous 'singing sands' actually squeak underfoot \u2014 the quartz grains are so uniform and clean that they chirp when you scuff through them. The second is the tombolo, a rare sand bridge that stitches Presque Isle Point to the main island; the National Park Service calls it an outstanding example of the landform, and the walk across it passes dunes, lagoon, and pine barrens that feel nothing like the rocky rest of the Apostles.\n\nStockton is also bear country. A 2002 DNA study confirmed at least 26 black bears living on the island that summer, and for years Stockton was cited as having one of the densest black bear populations in North America (numbers have since declined, and NPS research now gives the density crown to Oak Island). Add a brownstone quarry at Quarry Bay that shipped stone in the late 1800s, and Stockton packs geology, wildlife, and history into one very big island.",
+   "funFacts": [
+    "Julian Bay's beach sand audibly squeaks \u2014 'sings' \u2014 when you walk on it, thanks to uniform, well-sorted quartz grains.",
+    "A 2002 DNA study found at least 26 different black bears on the island in a single summer.",
+    "The tombolo connecting Presque Isle Point to the island is called an outstanding example of this rare sand-bridge landform by the NPS.",
+    "A commercial brownstone quarry operated at Quarry Bay in the late 1800s \u2014 you can still see the cut stone."
+   ],
+   "wildlife": [
+    "Black bears (historically among North America's densest island populations)",
+    "Bald eagles",
+    "White-tailed deer"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Hiking (about 14 miles of trails, including the Tombolo Trail)",
+    "Camping at Presque Isle, Quarry Bay, and Trout Point",
+    "Beachcombing and swimming at Julian Bay",
+    "Docking at Presque Isle Bay and Quarry Bay"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/stockton-island-apis.htm",
+    "https://www.nps.gov/articles/000/black-bears-at-the-apostle-islands.htm",
+    "https://friendsoftheapostleislands.org/2022/07/22/stockton-island/"
+   ]
+  },
+  {
+   "name": "Sand Island",
+   "tagline": "Norwegian farms, a sandstone lighthouse, and the wreck of the Sevona",
+   "story": "Sand Island is where the human story of the Apostles feels closest to the surface. By 1918 more than 100 people \u2014 most of them Norwegian immigrants \u2014 lived here year-round, combining farming and fishing the way they had in the old country. The East Bay community had its own school, post office, and cooperative store; Shaw Point at the south end was settled in the 1870s by Civil War veteran John Shaw. Old farmsteads, cabins, and clearings from that era still dot the island.\n\nAt the island's northern tip stands the 1881 Sand Island Lighthouse, built of brownstone quarried on the island itself and often called one of the most beautiful lights on Lake Superior. It was automated in 1921 and is still in service, with ranger-guided tours in summer. Just offshore lies grim history: in the great gale of September 2, 1905, the 372-foot steamer Sevona broke in two on Sand Island Shoal, killing seven of the 23 aboard. The wreck, dynamited in 1909 as a navigation hazard, rests in about 20 feet of water and is a popular dive and paddle-over site.\n\nSand's shoreline has a bit of everything \u2014 sea caves at Swallow Point, rock shelves, and long beaches \u2014 and because it sits close to the mainland's Little Sand Bay, it is one of the most popular kayak destinations in the park. It also hosts group and accessible campsites, and (with Basswood and Long) was kept outside the 2004 wilderness boundary because of its historic developed areas.",
+   "funFacts": [
+    "By 1918 the island's largely Norwegian community topped 100 residents and supported a school, post office, and co-op store.",
+    "The 1881 lighthouse was built from brownstone quarried on Sand Island itself.",
+    "The steamer Sevona broke apart on Sand Island Shoal in a 1905 gale; seven died, and the wreck lies in about 20 feet of water.",
+    "Swallow Point has some of the park's most accessible sea caves for kayakers."
+   ],
+   "wildlife": [
+    "Black bears (NPS research ranks Sand near the top for island bear density today)",
+    "Bald eagles"
+   ],
+   "lighthouse": "Sand Island Lighthouse (1881) \u2014 Norman Gothic-style tower and keeper's house of local sandstone; automated 1921; still in service; summer guided tours.",
+   "activities": [
+    "Kayaking to Swallow Point sea caves",
+    "Lighthouse tours",
+    "Camping (including group and accessible sites)",
+    "Diving/snorkeling the Sevona wreck site",
+    "Exploring historic farmstead sites"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/sand-island.htm",
+    "https://www.nps.gov/apis/learn/historyculture/farms.htm",
+    "https://www.wisconsinshipwrecks.org/vessel/Details/565",
+    "https://www.lighthousefriends.com/light.asp?ID=689",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm"
+   ]
+  },
+  {
+   "name": "Raspberry Island",
+   "tagline": "The Showplace of the Apostles",
+   "story": "Little Raspberry Island \u2014 under 300 acres \u2014 punches far above its weight because of one gem: the Raspberry Island Light Station, first lit in July 1863 to guide steamboats through the West Channel. Generations of keepers kept the station so trim and tidy, gardens and all, that it earned the nickname 'Showplace of the Apostles.' The light sits atop the keeper's dwelling rather than a tall separate tower, and the compound includes the fog signal building, outbuildings, and a recreated historic garden.\n\nThe station was enlarged in 1906, automated in 1947, and then given a second life by the National Park Service: after a shoreline stabilization effort begun in the early 2000s, more than a million dollars went into restoring the keeper's quarters between 2005 and 2007 to its early-1920s appearance. Today ranger-led tours (often with costumed interpretation) walk visitors through a lighthouse keeper's world, and a seasonal shuttle cruise from Bayfield makes Raspberry the easiest light station in the park to visit. A small dock, a picnic-perfect lawn, and a sand spit beach round out one of the most charming half-day stops on Lake Superior.",
+   "funFacts": [
+    "Keepers' fastidious upkeep earned the station its 'Showplace of the Apostles' nickname.",
+    "The lamp was first lit in July 1863 \u2014 the station was built in 1862.",
+    "A 2005\u20132007 restoration costing over $1 million returned the keeper's house to its early-1920s appearance.",
+    "The light was automated in 1947, ending the resident keeper era here."
+   ],
+   "wildlife": [
+    "Bald eagles",
+    "Migratory songbirds"
+   ],
+   "lighthouse": "Raspberry Island Light Station (built 1862, lit 1863) \u2014 light atop the keeper's dwelling; enlarged 1906; automated 1947; restored 2005\u20132007; summer ranger-guided tours via shuttle from Bayfield.",
+   "activities": [
+    "Ranger-guided lighthouse tours",
+    "Seasonal shuttle cruise from Bayfield",
+    "Picnicking on the station grounds",
+    "Kayak stop at the sandspit"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/raspberry-island.htm",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://www.nps.gov/articles/000/a-visit-to-raspberry-island-lighthouse.htm",
+    "https://www.superiortrails.com/apostle-island-raspberry-lighthouse.html"
+   ]
+  },
+  {
+   "name": "Devils Island",
+   "tagline": "Wisconsin's northernmost point, where the lake booms through honeycomb caves",
+   "story": "Devils Island is the outpost. Its north tip is the northernmost point of land in Wisconsin, fully exposed to everything Lake Superior can throw at it \u2014 and that exposure built the island's marvel. The red sandstone of the northern shore has been carved into the most elaborate sea caves in the Apostles: honeycombed chambers, arches, and pillars that kayakers thread through on calm days. When the surf is up, waves compress air in the caverns and the whole shoreline booms and moans \u2014 the 'ungodly' sounds that likely gave the island its name (the Ojibwe name, Maji-manidoo, references an evil spirit).\n\nBecause of its strategic and dangerous position, Devils got the last lighthouse built in the islands: a temporary wooden tower lit in 1891, replaced by the present 82-foot steel tower completed in 1898 and placed in service in 1901. Automated in 1978, it still guides ships turning toward Duluth-Superior. The historic keepers' quarters remain, and a dock on the more sheltered south end serves visitors. The surrounding waters are serious business \u2014 the Devils Island fish refuge protects one of Lake Superior's most important lake trout spawning shoals \u2014 and paddlers should only attempt the caves in settled weather, as there is no easy escape from this shore when the lake turns.",
+   "funFacts": [
+    "The island's north tip is the northernmost point in the state of Wisconsin.",
+    "Trapped air in the sea caves makes booming, moaning sounds in heavy surf \u2014 the likely origin of the island's devilish name.",
+    "The 1891 light here was the last established in the Apostles; the current steel tower dates to 1898 and was automated in 1978.",
+    "The Devils Island fish refuge protects one of Lake Superior's largest lake trout spawning shoals."
+   ],
+   "wildlife": [
+    "Lake trout (protected spawning shoals offshore)",
+    "Nesting waterbirds"
+   ],
+   "lighthouse": "Devils Island Light \u2014 temporary tower lit 1891; permanent 82-foot steel tower built 1898, in service 1901; automated 1978; still active, with historic keepers' quarters on site.",
+   "activities": [
+    "Kayaking the honeycomb sea caves (calm weather only)",
+    "Visiting the light station",
+    "Wildlife and wave watching from the tour boats"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://friendsoftheapostleislands.org/2022/07/20/devils-island/",
+    "https://www.apostleisland.com/2024/05/09/discover-the-magnificent-sea-caves-of-devils-island/",
+    "https://www.seagrant.wisc.edu/news/apostle-islands-lake-trout-refuge-found-valuable/"
+   ]
+  },
+  {
+   "name": "Outer Island",
+   "tagline": "The far, wild edge of the Apostles",
+   "story": "Outer Island is exactly what its name promises: the most remote island in the park, its sandspit lying roughly 24 miles from Bayfield at the archipelago's northeastern corner. On a clay bluff at the north end stands the 1874 Outer Island Lighthouse, a classic 90-foot brick tower that marked the outer turn for ore boats and grain carriers running the south shore. Automated in 1961, it is one of the most dramatic \u2014 and least visited \u2014 lights on Lake Superior.\n\nOuter wears its logging history openly. Cutting began around 1883, and in a wonderfully odd chapter from 1942 to 1963, lumberjacks were flown in by light aircraft to cut yellow birch and sugar maple \u2014 some of it destined for baby cribs \u2014 until the operation simply stopped paying. Yet the island's northern tip escaped the saw: a 202-acre stand of old-growth northern mesic forest, with clay-bank seeps and ephemeral ponds, is now protected within Wisconsin's Apostle Islands Maritime Forests State Natural Area.\n\nAt the opposite end, Outer's sandspit is among the largest and best developed in the islands \u2014 a gorgeous, lonely sweep of beach that in recent years has hosted nesting piping plovers, one of the Great Lakes' most endangered birds. Getting here demands real open-water skills and a weather eye, which is exactly why those who make it rarely forget it.",
+   "funFacts": [
+    "From 1942 to 1963, loggers commuted to Outer Island by light aircraft to cut hardwoods used for baby cribs.",
+    "A 202-acre old-growth forest survives on the island's north end, protected as a State Natural Area.",
+    "The 90-foot 1874 lighthouse was automated in 1961.",
+    "Endangered piping plovers have nested on Outer's big sandspit, one of only a handful of Great Lakes sites."
+   ],
+   "wildlife": [
+    "Piping plovers (endangered, nesting on the sandspit)",
+    "Black bears",
+    "Old-growth forest songbirds"
+   ],
+   "lighthouse": "Outer Island Lighthouse (1874) \u2014 90-foot brick tower on a high clay bluff; automated 1961; the park's most remote light station.",
+   "activities": [
+    "Expedition-level sea kayaking and sailing",
+    "Beach walking on the great sandspit (respect plover closures)",
+    "Primitive camping",
+    "Lighthouse viewing"
+   ],
+   "sources": [
+    "https://home.nps.gov/places/outer-island.htm",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://dnr.wisconsin.gov/topic/statenaturalareas/ApostleIslandsMaritimeForests",
+    "https://dnr.wisconsin.gov/wnrmag/2019/Fall/Apostles",
+    "https://friendsoftheapostleislands.org/2022/08/07/outer-island/"
+   ]
+  },
+  {
+   "name": "Michigan Island",
+   "tagline": "Two towers and one very productive mistake",
+   "story": "Michigan Island owns the best origin story in the park's lighthouse collection: it was never supposed to have a lighthouse at all. The 1857 light \u2014 the first in the Apostles \u2014 was meant to be built on Long Island to mark the approach to La Pointe. The contractors instead put it up on Michigan Island, miles to the northeast, and were made to build the 'correct' Long Island light in 1858. The mistake became a treasure: the whitewashed 1857 stone lighthouse still stands, one of the oldest on Lake Superior.\n\nIn 1929 it got a very tall sibling. A 112-foot cylindrical steel tower, originally erected in Pennsylvania in 1880, was dismantled, shipped west, and re-assembled on Michigan Island \u2014 instantly becoming the tallest light in the Apostles (and one of the tallest in Wisconsin). Automated in 1943, it still operates today. Visitors who climb the long stairway from the dock get a rare two-for-one: the quaint original lighthouse and the towering skeletal-supported successor standing side by side, with guided tours in summer.\n\nThe island itself, about 1,500 acres, has its own quiet history \u2014 19th-century keeper Roswell Pendergast planted a notable apple orchard here \u2014 and a lagoon and sandscape at its southwest end reward paddlers who make the long crossing.",
+   "funFacts": [
+    "The 1857 lighthouse was built on the wrong island \u2014 it was supposed to go on Long Island \u2014 and is the oldest in the Apostles.",
+    "The 'new' tower was built in Pennsylvania in 1880, then dismantled and re-erected here in 1929.",
+    "At 112 feet, the newer tower is the tallest light in the Apostle Islands.",
+    "Lighthouse keeper Roswell Pendergast planted an apple orchard on the island in the 19th century."
+   ],
+   "wildlife": [
+    "Bald eagles",
+    "Migratory waterfowl along the lagoon"
+   ],
+   "lighthouse": "Two lights: Old Michigan Island Lighthouse (built 1856, lit 1857, retired 1929) and the New Michigan Island Light Tower (built 1880 in Pennsylvania, re-erected 1929, automated 1943, still active; 112 feet, tallest in the park). Summer guided tours.",
+   "activities": [
+    "Lighthouse tours (both towers)",
+    "Climbing the historic stairway from the dock",
+    "Kayak camping",
+    "Birding around the southern lagoon"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://www.lighthousedigest.com/digest/StoryPage.cfm?StoryKey=434",
+    "https://www.lighthousefriends.com/light.asp?ID=693",
+    "https://en.wikipedia.org/wiki/Michigan_Island_Light"
+   ]
+  },
+  {
+   "name": "Oak Island",
+   "tagline": "The high point of the Apostles \u2014 and today's bear capital",
+   "story": "Oak Island is the roof of the archipelago. Its summit stands about 480 feet above Lake Superior (1,081 feet above sea level), the highest point in the Apostle Islands, and its flanks drop to some of the highest bluffs on Wisconsin's Superior shoreline. Wind, waves, and ice have sculpted showpieces along its shore, including the Hole-in-the-Wall sea arch, while deep ravines cut the island's interior into genuinely rugged hiking country \u2014 more than 11 miles of trails climb through it.\n\nOak has worked hard in its time. In the steamboat era its forests were cut for cordwood to fuel Lake Superior vessels, and logging camps came and went for decades. The forest has returned emphatically, and with it the bears: National Park Service research indicates Oak Island now hosts the highest black bear density in the islands, a title it took over from Stockton. Campers here follow strict food-storage rules, with lockers provided at designated sites.\n\nWith a dock on its southern sandspit just a few miles from Red Cliff and Bayfield, Oak is a favorite first island for backpackers \u2014 big enough to feel wild, close enough to reach on a fair afternoon.",
+   "funFacts": [
+    "Oak's summit is the highest point in the Apostles \u2014 roughly 480 feet above the lake.",
+    "NPS research now ranks Oak first among the islands for black bear density.",
+    "The Hole-in-the-Wall sea arch and the park's highest shoreline bluffs are along Oak's shore.",
+    "In the 1800s the island's trees were cut as cordwood fuel for Lake Superior steamboats."
+   ],
+   "wildlife": [
+    "Black bears (highest density in the park per NPS research)",
+    "Bald eagles"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Backpacking 11+ miles of trails",
+    "Camping (designated sites with bear lockers, plus a primitive zone)",
+    "Kayaking past Hole-in-the-Wall",
+    "Docking at the sandspit"
+   ],
+   "sources": [
+    "https://friendsoftheapostleislands.org/2022/08/07/oak-island/",
+    "https://www.nps.gov/articles/000/black-bears-at-the-apostle-islands.htm",
+    "https://www.peakbagger.com/peak.aspx?pid=20721",
+    "https://en.wikipedia.org/wiki/Oak_Island_(Wisconsin)"
+   ]
+  },
+  {
+   "name": "Basswood Island",
+   "tagline": "Brownstone that built cities, an easy paddle from Bayfield",
+   "story": "Basswood is the island most people can actually reach under their own power \u2014 it sits just off the Bayfield Peninsula near Red Cliff, making it a classic first kayak crossing. That accessibility is also why it was one of the busiest islands in the 1800s: the Bass Island Brownstone Company opened a quarry here in 1868 and worked it into the 1890s, shipping handsome reddish-brown sandstone to growing Midwestern cities. Stone from Basswood went into Milwaukee's first county courthouse, and the quarry era helped fuel the Romanesque Revival building boom before steel and concrete ended the brownstone trade.\n\nToday a hiking loop passes the moss-softened quarry site, old farm clearings recall the island's homesteading years, and a dock and campsites (including a group site) make it an easy overnight. Along with Sand and Long Islands, Basswood was left out of the 2004 Gaylord Nelson Wilderness because of its historic developed areas \u2014 which, fittingly, are much of why people visit.",
+   "funFacts": [
+    "The Bass Island Brownstone Company quarried here from 1868 into the 1890s.",
+    "Basswood brownstone was used in the first Milwaukee County Courthouse.",
+    "It's one of only three islands (with Sand and Long) excluded entirely from the 2004 wilderness designation because of its historic sites.",
+    "Its short crossing from the Red Cliff/Bayfield shore makes it a favorite first island for kayakers."
+   ],
+   "wildlife": [
+    "White-tailed deer",
+    "Black bears (transient)"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Day-trip kayaking from the mainland",
+    "Hiking the loop past the historic quarry",
+    "Camping (individual and group sites)",
+    "Docking"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Basswood_Island",
+    "https://www.nps.gov/apis/planyourvisit/camping.htm",
+    "https://www.wilderness.net/visit-wilderness/?ID=677",
+    "https://friendsoftheapostleislands.org/2022/08/07/hermit-island/"
+   ]
+  },
+  {
+   "name": "Hermit Island",
+   "tagline": "A mysterious loner, a spurned mansion, and rumors of buried treasure",
+   "story": "No Apostle carries more legend per acre than Hermit. Its namesake was William Wilson, a former American Fur Company man who \u2014 the story goes \u2014 left the Madeline Island community of La Pointe after a bare-knuckle falling-out with 'King' John Bell in the 1840s, and lived alone on this island until his death around 1861. Wilson was rumored to keep barrels of coins from his cooper's trade; after he was found dead under murky circumstances, treasure hunters ransacked his cabin site for money that has never been found. The island has worn many names \u2014 including the Ojibwe Ashuwaguindag Miniss and 'Wilson's Island' \u2014 but the hermit's stuck.\n\nThe island's second act was industrial and just as dramatic. Frederick Prentice, the eastern 'brownstone king,' opened the Excelsior Quarry here in 1891 and settled about 100 workers around it. In the mid-1890s the septuagenarian Prentice built Cedar Bark Lodge, an extravagant three-story showpiece sheathed in cedar bark, complete with balconies and an observation tower, as a gift for his young bride. She reportedly took one look at her rustic new home and returned to New York the same day. The quarry closed by 1897, the lodge is long gone, and today Hermit \u2014 with no dock and no trails \u2014 is once again the quiet, slightly spooky island its name suggests, its quarry ruins visible to passing kayakers and cruise boats.",
+   "funFacts": [
+    "Hermit William Wilson supposedly settled here after a fistfight with 'King' John Bell of La Pointe \u2014 and died mysteriously around 1861.",
+    "Treasure seekers tore apart Wilson's cabin looking for rumored barrels of coins; nothing was ever officially found.",
+    "Quarry baron Frederick Prentice built the cedar-bark-clad Cedar Bark Lodge for his young bride in the 1890s \u2014 she refused to live in it.",
+    "The Excelsior brownstone quarry employed around 100 workers from 1891 to 1897; its dock ruins are a documented maritime heritage site."
+   ],
+   "wildlife": [
+    "Black bears (transient)",
+    "Bald eagles"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Paddling past the quarry ruins (no dock; landing is for confident beach-landers)",
+    "Sightseeing via Apostle Islands cruise boats",
+    "Primitive camping"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/learn/historyculture/on-the-trail-of-the-island-hermit.htm",
+    "https://www.lakesuperior.com/the-lake/the-ghost-of-hermit-island/",
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/303",
+    "https://en.wikipedia.org/wiki/Hermit_Island_(Wisconsin)",
+    "https://friendsoftheapostleislands.org/2022/08/07/hermit-island/"
+   ]
+  },
+  {
+   "name": "Manitou Island",
+   "tagline": "Step into a 1940s fish camp, frozen in time",
+   "story": "Manitou \u2014 from the Ojibwe manidoo, 'spirit' \u2014 holds the park's most evocative time capsule. On its southwest shore sits the Manitou Fish Camp, a cluster of weathered cabins where Lake Superior commercial fishermen based their seasonal operations from the 1890s onward. Scandinavian immigrants \u2014 Swedes, Norwegians, and Swede-Finns \u2014 worked the herring and whitefish runs from camps like this one all through the islands, and Manitou's took its present form in the 1930s after brothers Hjalmer 'Governor' Olson and Ted Olson bought the site and its buildings for $600 in 1938.\n\nThe National Park Service began restoring the camp in 1983 to its 1930s appearance, and today five cabins stand stocked with the nets, floats, tools, and stoves of the trade, looking for all the world as if the fishermen just stepped out to lift their nets. In summer a ranger or volunteer is often on site to give tours, and a dock makes it an easy stop for boaters. The rest of the 1,300-acre island is quiet forest with campsites for those who want to overnight with the spirits the island is named for.",
+   "funFacts": [
+    "The Olson brothers bought the entire camp \u2014 land and buildings \u2014 for $600 in 1938.",
+    "Five restored cabins are stocked with authentic 1930s\u201350s commercial fishing gear.",
+    "NPS restoration of the camp began in 1983, aiming for its 1930s appearance.",
+    "The island's name comes from the Ojibwe word manidoo, meaning spirit."
+   ],
+   "wildlife": [
+    "Black bears (transient)",
+    "Snowshoe hares"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Touring the historic Manitou Fish Camp (summer ranger/volunteer-led)",
+    "Docking at the fish camp dock",
+    "Camping",
+    "Fishing the surrounding waters"
+   ],
+   "sources": [
+    "https://www.nps.gov/articles/000/historic-manitou-fish-camp-apis.htm",
+    "https://en.wikipedia.org/wiki/Manitou_Camp",
+    "https://www.travelwisconsin.com/outdoors/parks-wildlife-areas/national-parks-forests/manitou-island-fish-camp",
+    "https://friendsoftheapostleislands.org/2022/08/07/manitou-island/"
+   ]
+  },
+  {
+   "name": "Rocky Island",
+   "tagline": "A fishermen's summer village on the National Register",
+   "story": "Rocky Island's sheltered eastern shore was once a seasonal village. Through the first half of the 20th century, a string of family fishing operations \u2014 the Hadland, Benson, Edwards, Nelson, and Erickson camps \u2014 lined the beach here each summer, their owners setting nets for lake trout, whitefish, and herring in the productive waters of the outer islands. The community thrived until the sea lamprey invasion collapsed the fishery in the 1950s, and the camps fell quiet.\n\nWhat remains is historic treasure: the Hadland Fishing Camp and the broader Rocky Island Historic District are both listed on the National Register of Historic Places, preserving cabins, net sheds, and the memory of a vanished way of life. Today Rocky has a dock, campsites, and trails along its low eastern terrace, and it pairs naturally with South Twin Island just across a narrow channel \u2014 a classic sheltered stop for cruising boaters working the outer islands.",
+   "funFacts": [
+    "Five family fish camps once operated side by side on the east shore each summer.",
+    "Two National Register of Historic Places listings sit on this one island: the Hadland Fishing Camp and the Rocky Island Historic District.",
+    "The sea lamprey invasion of the 1950s ended the island's commercial fishing era.",
+    "Rocky and neighboring South Twin frame a favorite sheltered channel for cruising boaters."
+   ],
+   "wildlife": [
+    "Black bears (transient)",
+    "Loons and mergansers offshore"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Exploring the historic fish camp district",
+    "Camping (individual and group sites)",
+    "Docking",
+    "Hiking shoreline trails"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rocky_Island_Historic_District",
+    "https://en.wikipedia.org/wiki/Rocky_Island_(Wisconsin)",
+    "https://friendsoftheapostleislands.org/2022/08/07/rocky-island/",
+    "https://www.nps.gov/apis/planyourvisit/boating.htm"
+   ]
+  },
+  {
+   "name": "South Twin Island",
+   "tagline": "Small, sheltered, and a boater's friend in the outer islands",
+   "story": "South Twin is one of the smaller Apostles \u2014 a few hundred acres of forest across a narrow channel from Rocky Island \u2014 but it earns outsized affection from boaters. Its dock and the protected water between it and Rocky make this spot a natural harbor of refuge when weather moves across the outer islands, and the park stations seasonal ranger residences here in buildings on the site of a former fish camp on the west-central shore.\n\nLike Rocky, South Twin lived through the commercial fishing era, and its grassy clearing and modest structures recall those working summers. Today it offers docking, camping, and easy shoreline strolls \u2014 a mellow base camp for exploring bigger neighbors like Devils, Rocky, and Cat. Its twin, North Twin, sits a few miles north and could hardly be more different: no dock, no facilities, and almost no visitors.",
+   "funFacts": [
+    "Ranger residences on the island occupy the site of a former commercial fish camp.",
+    "The channel between South Twin and Rocky is a well-known sheltered stop in the outer islands.",
+    "At roughly 350 acres, it's one of the smallest islands with a park dock."
+   ],
+   "wildlife": [
+    "Waterfowl in the sheltered channel",
+    "Beavers and small mammals"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Docking (first-come, first-served)",
+    "Camping",
+    "Kayak day trips to Rocky and Devils"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Twin_Island_(Wisconsin)",
+    "https://www.nps.gov/apis/planyourvisit/boating.htm",
+    "https://en.wikipedia.org/wiki/Apostle_Islands"
+   ]
+  },
+  {
+   "name": "Cat Island",
+   "tagline": "Far-flung quiet on the archipelago's northeast rim",
+   "story": "Cat Island keeps to itself on the remote northeastern side of the archipelago, a roughly 1,300-acre spread of forest and beach between Ironwood and Outer. There's no dock and no trail system \u2014 just primitive campsites and a long, lovely sandspit reaching toward the southwest that gives kayakers and shallow-draft boaters a landing and one of the quietest beaches in the park.\n\nIts distance is its identity. Cat requires committed open-water crossings to reach, so it sees a fraction of the traffic of Stockton or Oak, and campers here often have an entire island to themselves. That solitude \u2014 plus front-row sunsets over the inner islands \u2014 is exactly the wilderness experience the 2004 Gaylord Nelson Wilderness designation was written to protect; Cat lies within it.",
+   "funFacts": [
+    "Cat is one of the least-visited camping islands in the park thanks to long open-water crossings.",
+    "A prominent sandspit at the island's southwest end is the classic landing and campsite area.",
+    "The island lies within the Gaylord Nelson Wilderness designated in 2004."
+   ],
+   "wildlife": [
+    "Black bears (transient)",
+    "Shorebirds along the sandspit"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Primitive wilderness camping",
+    "Expedition kayaking",
+    "Beachcombing on the sandspit"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Apostle_Islands",
+    "https://www.apostleislandsphotography.com/gallery/the-ultimate-apostle-islands-camping-guide/",
+    "https://www.wilderness.net/visit-wilderness/?ID=677"
+   ]
+  },
+  {
+   "name": "Otter Island",
+   "tagline": "A quiet mid-archipelago stop with a wild northwest corner",
+   "story": "Otter Island sits in the middle of the archipelago's outer tier, about 1,300 acres of unbroken forest between Oak, Manitou, and Cat. The park maintains a dock here, which makes Otter an appealingly low-key overnight for boaters who want the outer islands without the crowds \u2014 there are campsites, but no developed trail network, so exploration means shoreline walking and quiet woods.\n\nIts most important residents are birds. The island's northwest shore hosts sensitive colonial nesting habitat, and from May 15 through September 1 boaters are prohibited from approaching within 500 feet of northwest Otter (a closure it shares with Eagle and Gull islands). Time your visit for the dock side, keep your distance from the rookeries, and Otter rewards you with the Apostles at their most serene.",
+   "funFacts": [
+    "Boats must stay 500 feet off Otter's northwest shore from May 15 to September 1 to protect nesting birds.",
+    "Despite its remoteness, Otter is one of a dozen islands with a maintained park dock.",
+    "The island's Ojibwe-derived name reflects the wildlife of these shores."
+   ],
+   "wildlife": [
+    "Colonial nesting waterbirds (protected northwest shore)",
+    "River otters",
+    "Black bears (transient)"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Docking and overnighting",
+    "Camping",
+    "Shoreline paddling (outside the closure zone)"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/planyourvisit/boating.htm",
+    "https://en.wikipedia.org/wiki/Apostle_Islands"
+   ]
+  },
+  {
+   "name": "Bear Island",
+   "tagline": "Big bluffs and a cave with its roof torn off",
+   "story": "Bear Island rises steep and dark on the western edge of the outer islands, its 1,800 acres wrapped in some of the loftier shorelines in the archipelago. The north end is the show: wave-cut sea caves riddle the sandstone, including a standout chamber whose roof collapsed long ago, leaving an open-air amphitheater that kayakers can slip into on calm days \u2014 sky above, lake below, red rock all around.\n\nThe island's name (Makwa in Ojibwe) fits the neighborhood \u2014 bears do move among these islands \u2014 and in the commercial fishing era Bear was one of the islands where the big fish-collection boats called to pick up the day's catch. Today it's a wilderness island with primitive camping, no dock, and a satisfying sense of being properly out there; most visitors are kayakers rounding its cliffs en route between York, Sand, and the northern islands.",
+   "funFacts": [
+    "A collapsed sea cave at the north end forms a natural open-roofed amphitheater you can paddle into.",
+    "Fish-collection boats historically stopped at Bear Island to gather catches from island fishermen.",
+    "The island's Ojibwe name is Makwa \u2014 'bear.'"
+   ],
+   "wildlife": [
+    "Black bears (the island's namesake)",
+    "Peregrine falcons and cliff-nesting birds (reported along the bluffs)"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Kayaking the northern sea caves in calm weather",
+    "Primitive camping",
+    "Photography of the high shoreline"
+   ],
+   "sources": [
+    "https://www.apostleislandsphotography.com/gallery/best-sea-caves-in-the-apostles/",
+    "https://en.wikipedia.org/wiki/Apostle_Islands",
+    "https://www.nps.gov/apis/planyourvisit/camping.htm"
+   ]
+  },
+  {
+   "name": "Ironwood Island",
+   "tagline": "The Apostles with nothing added",
+   "story": "Ironwood is the archipelago stripped to its essentials: roughly 660 acres of forest named for the tough-wooded ironwood (hophornbeam) trees among its hardwoods, with no dock, no trails, and no buildings. It sits in the quiet northeastern quarter of the islands between Manitou, Otter, and Cat, and most park visitors only ever see it as a green silhouette from a passing boat.\n\nThat's precisely its appeal for a certain kind of traveler. Primitive camping is allowed by permit, landings are beach landings, and days here are measured in loon calls and weather. Ironwood lies within the Gaylord Nelson Wilderness, and it may be the easiest place in the park to understand what that designation is for.",
+   "funFacts": [
+    "The island is named for ironwood (hophornbeam), one of the hardest woods in the northern forest.",
+    "It has no dock, trails, or structures \u2014 access is by beach landing only.",
+    "Ironwood is part of the Gaylord Nelson Wilderness designated in 2004."
+   ],
+   "wildlife": [
+    "Loons offshore",
+    "Black bears (transient)"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Primitive wilderness camping (permit required)",
+    "Kayak touring"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ironwood_Island_(Wisconsin)",
+    "https://www.nps.gov/apis/planyourvisit/camping.htm",
+    "https://www.wilderness.net/visit-wilderness/?ID=677"
+   ]
+  },
+  {
+   "name": "York Island",
+   "tagline": "Little island, big beaches",
+   "story": "York is a pocket-sized Apostle \u2014 under 300 acres \u2014 floating between Sand Island and the mainland's Little Sand Bay, which puts it squarely on the park's most popular kayak route. What it lacks in size it makes up in shoreline: long sand beaches line its south side, and a sandspit at the southern tip offers the kind of walk-forever beach that's rare on rocky Lake Superior.\n\nThere are no hiking trails \u2014 beach walking is the trail \u2014 and a handful of campsites tucked behind the shore make York a favorite first night for paddlers heading toward Sand Island's lighthouse and sea caves. On a fair evening, with the sun dropping behind the mainland hills, it's hard to believe this calm crescent of sand fronts the largest freshwater lake on Earth.",
+   "funFacts": [
+    "York has no hiking trails \u2014 its beaches are the trail system.",
+    "A sandspit at the island's south tip is a classic rest stop on the Little Sand Bay\u2013Sand Island paddle route.",
+    "Beach hiking here can stretch a mile or more in one direction."
+   ],
+   "wildlife": [
+    "Shorebirds",
+    "Bald eagles"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Kayak camping",
+    "Beach hiking and swimming",
+    "Paddling onward to Sand Island's caves"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/planyourvisit/york-campsites.htm",
+    "https://friendsoftheapostleislands.org/2022/08/07/york-island/",
+    "https://www.nps.gov/apis/planyourvisit/where-to-paddle.htm"
+   ]
+  },
+  {
+   "name": "Madeline Island",
+   "tagline": "The heart of the Ojibwe world \u2014 and the one Apostle you can drive around",
+   "story": "Madeline is the largest Apostle at more than 15,000 acres, the only one that's inhabited year-round, and the only one outside the national lakeshore \u2014 yet no telling of these islands works without it. To the Ojibwe it is Mooningwanekaaning, 'home of the golden-breasted flicker,' the spiritual center of the Ojibwe nation and the destination of the people's great westward migration along the Great Lakes. La Pointe, its village, was an Ojibwe settlement and fur-trade hub centuries before Wisconsin existed, and the nearby Red Cliff and Bad River bands remain the island's closest cultural kin.\n\nToday Madeline is the easy Apostle: a 25-minute car ferry runs from Bayfield to La Pointe, where cafes, galleries, and the Madeline Island Museum cluster near the harbor. At the island's far end, Big Bay State Park (Wisconsin DNR) serves up a mile-and-a-half of beach, sandstone cliffs, and campsites. Boaters find a full-service harbor scene unmatched anywhere else in the islands.\n\nWinter is when Madeline gets truly memorable. When ice halts the ferry, the crossing becomes an official ice road \u2014 an extension of County Highway H, its lanes marked with old Christmas trees \u2014 and in the in-between weeks, when ice is too thick for the boat and too thin for cars, residents commute aboard a windsled, a propeller-driven craft built for exactly this lake, exactly here.",
+   "funFacts": [
+    "Madeline's Ojibwe name, Mooningwanekaaning, means the place abundant with golden-breasted flickers.",
+    "In winter, the route to Bayfield becomes a legal ice road marked with Christmas trees \u2014 officially an extension of County Highway H.",
+    "When ice is too thin for cars and too thick for the ferry, a propeller-driven windsled carries islanders across.",
+    "At 15,359 acres it's the largest Apostle, and the only one not in the national lakeshore."
+   ],
+   "wildlife": [
+    "White-tailed deer",
+    "Migratory birds along Big Bay's lagoon"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Riding the Madeline Island Ferry from Bayfield (25 minutes)",
+    "Big Bay State Park: beach, cliffs, camping",
+    "Madeline Island Museum and La Pointe village",
+    "Boating from the La Pointe marina",
+    "Winter ice road or windsled crossing (conditions permitting)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madeline_Island",
+    "https://madferry.com/",
+    "https://dnr.wisconsin.gov/topic/parks/bigbay/info",
+    "https://www.townoflapointewi.gov/community/faqs/",
+    "https://en.wikipedia.org/wiki/Red_Cliff_Band_of_Lake_Superior_Chippewa"
+   ]
+  },
+  {
+   "name": "Long Island",
+   "tagline": "A sliver of sand with two lighthouses and the rarest birds in the park",
+   "story": "Long Island barely qualifies as an island at all \u2014 ecologists classify it as a sand barrier spit, a narrow ribbon of dunes and swales running off Chequamegon Point at the archipelago's southern gate. That thin strip of sand carries an outsized load of history. The Old La Pointe Lighthouse was built here in 1858 (after contractors famously built the 1857 light on Michigan Island by mistake); its foundation ruins remain. In 1897 the government added two lights at once \u2014 the New La Pointe Light Tower, still in service, and the Chequamegon Point Light, retired and relocated in 1987 \u2014 making this low sandbar a two-lighthouse island.\n\nOffshore lies one of Lake Superior's storied wrecks: the schooner Lucerne, which went down with her crew in a violent November storm in 1886 and now rests in the sanctuary of these shallows, a documented Wisconsin shipwreck site. And on the beaches, life clings on at the edge: Long Island and Chequamegon Point form one of Wisconsin's only successful nesting areas for the endangered Great Lakes piping plover, which returned here in 1998 after a 15-year absence. Seasonal closures with fencing and signs protect the nests \u2014 give the little birds their beach, and enjoy this strange, beautiful sliver from the water. The spit also carries deep Ojibwe significance, reflected in its name Zaagawaamikong, tied to the Chequamegon region at the center of Ojibwe history.",
+   "funFacts": [
+    "Geologically it's not really an island \u2014 it's a sand barrier spit extending Chequamegon Point.",
+    "It has hosted three lighthouses: the 1858 original (ruins remain) and two 1897 towers.",
+    "Endangered piping plovers returned to nest here in 1998 after 15 years away \u2014 one of Wisconsin's only nesting sites.",
+    "The schooner Lucerne, lost in an 1886 storm, lies just offshore."
+   ],
+   "wildlife": [
+    "Piping plovers (endangered; seasonal nesting closures)",
+    "Migrating shorebirds"
+   ],
+   "lighthouse": "Three generations: Old La Pointe Lighthouse (1858, retired 1897, ruins visible); New La Pointe Light Tower (1897, automated 1964, still active); Chequamegon Point Light Tower (1897, retired and moved 1987). None open to the public.",
+   "activities": [
+    "Wildlife viewing from the water (respect plover closures)",
+    "Lighthouse spotting",
+    "Diving the Lucerne wreck site (experienced divers)"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/long-island-an-island-apart-apis.htm",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://www.duluthnewstribune.com/news/piping-plovers-reclaim-long-island-apostles-home",
+    "https://www.wisconsinshipwrecks.org/",
+    "https://en.wikipedia.org/wiki/Apostle_Islands"
+   ]
+  },
+  {
+   "name": "Eagle Island",
+   "tagline": "The park's westernmost speck \u2014 for the birds, literally",
+   "story": "Tiny Eagle Island, about 28 acres at the far western edge of the archipelago, belongs to the birds. It hosts the only great blue heron rookery in the national lakeshore, and its cliffs and trees shelter colonial nesting waterbirds that are extremely sensitive to disturbance.\n\nFor that reason, this is an island you admire through binoculars: from May 15 through September 1, boats are prohibited within 500 feet of Eagle (as at Gull and northwest Otter). There is no dock, no camping, and no landing worth attempting \u2014 just the spectacle of herons commuting between their treetop nests and the fishing grounds.",
+   "funFacts": [
+    "Eagle hosts the only great blue heron rookery in the entire national lakeshore.",
+    "Boats must stay 500 feet away from May 15 through September 1 to protect nesting colonies.",
+    "At about 28 acres, it's the park's westernmost island."
+   ],
+   "wildlife": [
+    "Great blue herons (only rookery in the park)",
+    "Colonial nesting waterbirds"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Wildlife viewing from 500+ feet offshore (binoculars essential)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Apostle_Islands",
+    "https://www.nps.gov/apis/planyourvisit/boating.htm"
+   ]
+  },
+  {
+   "name": "Gull Island",
+   "tagline": "Four acres of pure bird energy",
+   "story": "Gull is the smallest of the Apostles \u2014 a bare four acres of rock and scrub off Michigan Island's sandspit \u2014 and one of the most important. It's a significant breeding site for herring gulls and other colonial waterbirds, which is why boats must keep 500 feet away from May 15 through September 1 every year.\n\nThe island lends its name to something bigger beneath the waves: Gull Island Shoal, whose spawning grounds are protected within a lake trout refuge established in 1976 that helped bring Lake Superior's native lake trout back from near-extinction after the sea lamprey disaster of the 1950s. Small island, mighty legacy.",
+   "funFacts": [
+    "At about 4 acres, Gull is the smallest Apostle Island.",
+    "The Gull Island Shoal area is part of a lake trout refuge established in 1976 that aided the species' recovery.",
+    "A 500-foot boating closure protects its nesting colonies each summer."
+   ],
+   "wildlife": [
+    "Herring gulls (major breeding colony)",
+    "Lake trout (protected spawning shoal nearby)"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Bird watching from beyond the 500-foot closure line"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Apostle_Islands",
+    "https://www.nps.gov/apis/planyourvisit/boating.htm",
+    "https://www.seagrant.wisc.edu/news/apostle-islands-lake-trout-refuge-found-valuable/"
+   ]
+  },
+  {
+   "name": "North Twin Island",
+   "tagline": "The island almost nobody lands on",
+   "story": "North Twin may be the least-visited island in the entire park. At about 166 acres, it offers no dock, no developed campsites, and \u2014 as veteran paddlers put it \u2014 essentially no safe place to anchor or tie up; landings are dicey and weather windows short this far out.\n\nThat inaccessibility has left North Twin remarkably untouched, a near-pristine dot of boreal-flavored forest in the outer islands. For nearly everyone, it's a landmark to admire while crossing between Rocky, South Twin, and Devils \u2014 and knowing that at least one Apostle remains effectively out of reach is, in its own way, part of the park's charm.",
+   "funFacts": [
+    "There is effectively no safe anchorage or dock \u2014 making it arguably the hardest Apostle to visit.",
+    "At 166 acres, it's one of the smallest named islands in the park.",
+    "Its inaccessibility has kept its forest among the least disturbed in the archipelago."
+   ],
+   "wildlife": [
+    "Nesting and migrating birds",
+    "Undisturbed forest communities"
+   ],
+   "lighthouse": "",
+   "activities": [
+    "Viewing from passing boats",
+    "Very experienced paddlers only, in settled weather"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/North_Twin_Island_(Wisconsin)",
+    "https://www.apostleislandsphotography.com/gallery/the-ultimate-apostle-islands-camping-guide/",
+    "https://en.wikipedia.org/wiki/Apostle_Islands"
+   ]
+  }
+ ],
+ "park": {
+  "overview": "Apostle Islands National Lakeshore protects 21 wild islands and 12 miles of mainland shoreline where the Bayfield Peninsula reaches into Lake Superior near Bayfield, Wisconsin. (The 22nd Apostle, Madeline Island, is inhabited and sits outside the park.) This is a landscape layered with stories: it is the homeland of the Ojibwe, whose spiritual center is Madeline Island and whose Red Cliff Band still lives on the adjacent peninsula \u2014 where in 2012 they opened Frog Bay Tribal National Park, the first tribal national park in the United States. Lighthouse keepers, brownstone quarrymen, Scandinavian farmer-fishermen, and loggers all left their marks, from the Manitou fish camp to the quarries of Basswood, Hermit, and Stockton, to the Hokenson Brothers Fishery museum at Little Sand Bay. The park holds what historian F. Ross Holland called the largest and finest single collection of lighthouses in the country \u2014 eight historic light towers on six islands, from the 1857 Michigan Island original (famously built on the wrong island) to the 112-foot tower that is the tallest in the archipelago. Commercial fishing boomed here from the 1870s until sea lamprey collapsed the lake trout and whitefish fishery in the 1950s; refuges established in 1976 around Gull Island Shoal and Devils Island helped native lake trout recover. In 2004, Congress designated about 80 percent of the park's land \u2014 roughly 33,500\u201335,000 acres across 18 islands \u2014 as the Gaylord Nelson Wilderness, Wisconsin's largest, honoring the Wisconsin senator who founded Earth Day.",
+  "seaCaves": "The Apostles' sandstone sea caves are the park's signature spectacle, found in three main areas: the mainland caves near Meyers Beach, Sand Island's Swallow Point, and the honeycombed chambers of Devils Island (with a bonus collapsed-roof amphitheater cave at Bear Island's north end). In summer, kayakers paddle into arches, tunnels, and vaulted chambers \u2014 the NPS recommends a 16-foot sea kayak with sealed bulkheads, spray skirt, wetsuit, and PFD, and calm conditions are essential; hikers can instead view the mainland caves from the Lakeshore Trail, about 2.5 miles from Meyers Beach. In hard winters the same mainland caves become the famous ice caves, draped in frozen waterfalls and curtains of icicles reached by walking on frozen Lake Superior \u2014 but access is genuinely rare: NPS analysis shows the ice caves were open only about 2 percent of days from 2000 to 2023, with a nine-day window in 2015 and a single day in 2026. When they do open, expect an ice caves event fee ($5/person, 16 and older), off-site parking with shuttles, and fast-changing closures. Always check the park's ice line or go.nps.gov/IceCaves before planning a winter visit.",
+  "boatingSafety": "Lake Superior demands respect: the NPS bluntly warns it is notorious for cold water, rough seas, fog, and sudden squalls. Summer surface temperatures run from the 40s F in early season to barely 60 F in late summer \u2014 cold enough that immersion is a survival emergency at any time of year. Typical summer conditions of 5\u201320 knots and 1\u20134 foot waves can flip within an hour to thunderstorm gusts of 30\u201340 knots and 6\u201312 foot seas. The park maintains 16 public docks on 12 islands (including Stockton, Oak, Sand, Rocky, South Twin, Otter, Manitou, Basswood, Devils, and the Raspberry and Michigan light stations), all first-come, first-served with overnight fees; boats may not be left unattended more than 24 hours. Carry PFDs for everyone, fire extinguisher, compass, GPS, NOAA charts, and a weather radio; NOAA marine forecasts broadcast on weather radio (162.525 MHz), and boaters should monitor the marine weather channels continuously. The NPS discourages open boats under 16 feet from island crossings. Stay 100 feet off commercial fishing nets, avoid the shoal between Little Manitou Shoal Light and Manitou Island, and honor the May 15\u2013September 1 closure within 500 feet of Gull, Eagle, and northwest Otter islands. Pack extra food and water \u2014 rough weather regularly strands boats on islands, and nothing is for sale out there. Cruisers have long relied on Bonnie Dahl's 'Superior Way' cruising guide for detailed anchorage and harbor knowledge of these waters.",
+  "camping": "All camping requires a permit with reservations through Recreation.gov (bookable 30 days ahead) or by phone at 715-779-3398; there is no drive-up car or RV camping anywhere in the park. Individual and primitive-zone sites are $15/night; group sites (8\u201321 people, on Sand, Oak, Basswood, Stockton, and Rocky) are $30/night; overnight docking runs $15\u2013$30 by boat length. Camping is available on 18 of the 21 park islands plus a mainland site near Meyers Beach reachable only by kayak or a 6-mile hike. Accessible campsites with boardwalks and raised tent pads exist on Stockton and Sand. This is bear country \u2014 use provided food lockers and standard precautions \u2014 and every trip plan should build in weather days for Lake Superior's moods.",
+  "sources": [
+   "https://www.nps.gov/apis/index.htm",
+   "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+   "https://www.nps.gov/apis/planyourvisit/boating.htm",
+   "https://www.nps.gov/apis/planyourvisit/camping.htm",
+   "https://www.nps.gov/articles/000/apostle-islands-ice-caves-exploring-their-rarity-and-access-challenges.htm",
+   "https://www.nps.gov/places/meyers-beach.htm",
+   "https://www.wilderness.net/visit-wilderness/?ID=677",
+   "https://www.nps.gov/apis/learn/management/wilderness.htm",
+   "https://www.bayfieldcounty.wi.gov/1176/Frog-Bay-Tribal-National-Park",
+   "https://www.seagrant.wisc.edu/news/apostle-islands-lake-trout-refuge-found-valuable/",
+   "https://www.nps.gov/articles/000/historic-hokenson-brothers-fishery-apis.htm",
+   "https://www.nationalparkstraveler.org/2026/02/updated-apostle-islands-national-lakeshores-ice-caves-open-then-close"
+  ]
+ }
+}
