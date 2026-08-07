@@ -38,6 +38,7 @@ struct PlanMapView: View {
     )
     @State private var selectedPlace: Place?
     @State private var selectedPOI: PointOfInterest?
+    @State private var selectedBuoy: BuoyObservation?
     @State private var showRecommendations = false
     @State private var showDataSources = false
     @State private var layer: PlanMapLayer = .wind
@@ -85,6 +86,13 @@ struct PlanMapView: View {
                 }
                 .annotationTitles(.hidden)
             }
+            ForEach(model.buoyObservations) { observation in
+                Annotation("", coordinate: CLLocationCoordinate2D(latitude: observation.lat, longitude: observation.lon), anchor: .center) {
+                    BuoyMarkerView(observation: observation, selected: selectedBuoy?.id == observation.id)
+                        .onTapGesture { selectedBuoy = observation }
+                }
+                .annotationTitles(.hidden)
+            }
         }
         .mapStyle(useImagery ? .imagery(elevation: .realistic) : .standard(elevation: .realistic))
         .mapControls {
@@ -120,6 +128,17 @@ struct PlanMapView: View {
         .sheet(isPresented: $showRecommendations) {
             RecommendationsSheet()
                 .presentationDetents([.medium, .large])
+        }
+        .sheet(item: $selectedBuoy) { observation in
+            NavigationStack {
+                BuoyDetailSheet(observation: observation)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") { selectedBuoy = nil }
+                        }
+                    }
+            }
+            .presentationDetents([.medium])
         }
         .sheet(isPresented: $showDataSources) {
             DataSourcesSheet()

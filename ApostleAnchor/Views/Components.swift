@@ -209,6 +209,64 @@ struct OutlookStrip: View {
     }
 }
 
+/// A tiny 16-sector protection rose for list rows — lets a boater with only a
+/// VHF wind report scan anchorages at a glance. Green petals = protected
+/// directions, red = exposed; optional arrow shows a wind direction.
+struct MiniProtectionRose: View {
+    let shelter: [Double]
+    var arrowDeg: Double?
+    var size: CGFloat = 34
+
+    var body: some View {
+        Canvas { context, canvasSize in
+            let center = CGPoint(x: canvasSize.width / 2, y: canvasSize.height / 2)
+            let maxRadius = min(canvasSize.width, canvasSize.height) / 2 - 1
+
+            for index in 0..<min(16, shelter.count) {
+                let value = shelter[index]
+                let centerAngle = Double(index) * 22.5 - 90
+                var path = Path()
+                path.move(to: center)
+                path.addArc(center: center,
+                            radius: maxRadius * (0.30 + 0.70 * value),
+                            startAngle: .degrees(centerAngle - 10.5),
+                            endAngle: .degrees(centerAngle + 10.5),
+                            clockwise: false)
+                path.closeSubpath()
+                let color = Color(hue: 0.02 + 0.34 * value, saturation: 0.75, brightness: 0.82)
+                context.fill(path, with: .color(color.opacity(0.9)))
+            }
+
+            let ring = Path(ellipseIn: CGRect(x: center.x - maxRadius, y: center.y - maxRadius,
+                                              width: maxRadius * 2, height: maxRadius * 2))
+            context.stroke(ring, with: .color(.secondary.opacity(0.35)), lineWidth: 0.8)
+
+            if let arrowDeg {
+                let radians = (arrowDeg - 90) * .pi / 180
+                let outer = CGPoint(x: center.x + cos(radians) * maxRadius,
+                                    y: center.y + sin(radians) * maxRadius)
+                let inner = CGPoint(x: center.x + cos(radians) * maxRadius * 0.15,
+                                    y: center.y + sin(radians) * maxRadius * 0.15)
+                var arrow = Path()
+                arrow.move(to: outer)
+                arrow.addLine(to: inner)
+                context.stroke(arrow, with: .color(.primary), style: StrokeStyle(lineWidth: 1.8, lineCap: .round))
+                let headAngle = atan2(inner.y - outer.y, inner.x - outer.x)
+                var head = Path()
+                head.move(to: inner)
+                head.addLine(to: CGPoint(x: inner.x - cos(headAngle - 0.5) * 5,
+                                         y: inner.y - sin(headAngle - 0.5) * 5))
+                head.move(to: inner)
+                head.addLine(to: CGPoint(x: inner.x - cos(headAngle + 0.5) * 5,
+                                         y: inner.y - sin(headAngle + 0.5) * 5))
+                context.stroke(head, with: .color(.primary), style: StrokeStyle(lineWidth: 1.8, lineCap: .round))
+            }
+        }
+        .frame(width: size, height: size)
+        .accessibilityHidden(true)
+    }
+}
+
 struct SectionHeader: View {
     let title: String
     let icon: String

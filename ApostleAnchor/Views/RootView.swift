@@ -23,7 +23,10 @@ struct RootView: View {
             // Coming back to the foreground: drop nights that ended while the
             // app slept, and refetch if the forecast has gone stale.
             model.pruneEndedNights()
-            Task { await model.refreshIfNeeded() }
+            Task {
+                await model.refreshIfNeeded()
+                await model.refreshBuoys()
+            }
         }
     }
 }

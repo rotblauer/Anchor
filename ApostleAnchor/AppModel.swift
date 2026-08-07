@@ -50,6 +50,7 @@ final class AppModel {
     var wavesUpdatedAt: Date?
     var outlooks: [String: PlaceOutlook] = [:]
     var alerts: [MarineAlert] = []
+    var buoyObservations: [BuoyObservation] = []
 
     var selectedHourIndex = 0
     var isLoading = false
@@ -126,6 +127,41 @@ final class AppModel {
         }
         // Even when the fetch fails, never keep showing an expired alert.
         alerts = alerts.filter { ($0.expires ?? .distantFuture) > Date() }
+
+        await refreshBuoys()
+    }
+
+    /// Live station observations refresh cheaply and independently of the
+    /// forecast (stations report every 10 minutes).
+    func refreshBuoys() async {
+        let observations = await NDBCClient().latestObservations()
+        if !observations.isEmpty || buoyObservations.isEmpty {
+            buoyObservations = observations
+        }
+        // Never show observations older than 3 hours as "live".
+        buoyObservations = buoyObservations.filter { Date().timeIntervalSince($0.time) < 3 * 3600 }
+    }
+
+    /// Forecast wind at the grid point nearest a location, at the hour nearest
+    /// `time` — used to compare live buoy readings against the model.
+    func forecastNear(lat: Double, lon: Double, at time: Date) -> WindSample? {
+        guard !gridPoints.isEmpty else { return nil }
+        func distanceSquared(_ point: GeoPoint) -> Double {
+            let dLat = point.lat - lat
+            let dLon = (point.lon - lon) * 0.68  // rough cos(47°) correction
+            return dLat * dLat + dLon * dLon
+        }
+        guard let index = gridPoints.indices.min(by: { distanceSquared(gridPoints[$0]) < distanceSquared(gridPoints[$1]) }),
+              gridSamples.indices.contains(index) else { return nil }
+        return gridSamples[index].min {
+            abs($0.time.timeIntervalSince(time)) < abs($1.time.timeIntervalSince(time))
+        }
+    }
+
+    /// Wind direction at the middle of the archipelago for the selected hour —
+    /// the default direction for "organize anchorages by wind".
+    var currentWindDirectionDeg: Double? {
+        gridSample(at: gridPoints.count / 2)?.directionDeg
     }
 
     private func restoreSnapshotIfFresh() {
