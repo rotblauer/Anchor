@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apostle Anchor — wind-smart anchoring in the Apostle Islands</title>
+<meta name="description" content="An iOS app that matches multi-day wind forecasts against the real shelter of every documented anchorage, dock, and marina in Apostle Islands National Lakeshore.">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root {
+    --navy: #0b2a44; --navy-deep: #071c30; --teal: #0b6e7f; --teal-bright: #128fa3;
+    --sand: #ede0bb; --ink: #16283a; --paper: #f7f5ef; --card: #ffffff;
+    --muted: #5b6b7a; --line: #dfd9c9;
+    --good: #2e9e56; --advisory: #855aa0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8eef4; --paper: #0a1520; --card: #12222f; --muted: #9fb0bf;
+      --line: #22384a;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--ink); background: var(--paper); }
+  a { color: var(--teal-bright); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  header { background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, var(--teal) 130%);
+           color: #fff; overflow: hidden; }
+  .hero { display: flex; align-items: center; gap: 48px; padding: 72px 0 64px; flex-wrap: wrap; }
+  .hero-text { flex: 1 1 380px; }
+  .hero img.appicon { width: 88px; height: 88px; border-radius: 20px;
+                      box-shadow: 0 8px 28px rgba(0,0,0,.45); margin-bottom: 20px; }
+  h1 { font-size: 44px; line-height: 1.1; letter-spacing: -0.5px; }
+  .tagline { font-size: 21px; color: #cfe3ea; margin: 14px 0 26px; max-width: 34ch; }
+  .cta { display: inline-block; background: #fff; color: var(--navy); font-weight: 700;
+         padding: 12px 22px; border-radius: 999px; text-decoration: none; margin: 0 10px 10px 0; }
+  .cta.ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.55); }
+  .hero-shot { flex: 0 1 300px; text-align: center; }
+  .phone { width: 280px; border-radius: 36px; box-shadow: 0 24px 60px rgba(0,0,0,.5);
+           border: 6px solid #0d1117; }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 8px 40px; justify-content: center;
+           padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .stat { text-align: center; padding: 6px 0; }
+  .stat-n { display: block; font-size: 34px; font-weight: 800; color: var(--teal-bright); }
+  .stat-l { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+
+  section { padding: 56px 0 8px; }
+  h2 { font-size: 30px; margin-bottom: 8px; }
+  .lede { color: var(--muted); max-width: 62ch; margin-bottom: 32px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+  .card .emoji { font-size: 26px; }
+  .card h3 { font-size: 18px; margin: 10px 0 6px; }
+  .card p { font-size: 15px; color: var(--muted); }
+
+  .shots { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; padding: 16px 0 8px; }
+  .shots figure { text-align: center; }
+  .shots img { width: 250px; border-radius: 30px; border: 5px solid #0d1117;
+               box-shadow: 0 16px 40px rgba(10,30,50,.35); }
+  .shots figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; }
+
+  .directory { columns: 2; column-gap: 40px; }
+  @media (max-width: 720px) { .directory { columns: 1; } }
+  .island-group { break-inside: avoid; margin-bottom: 26px; }
+  .island-group h4 { font-size: 16px; color: var(--teal-bright); margin-bottom: 6px; }
+  .island-group ul { list-style: none; }
+  .island-group li { font-size: 15px; padding: 5px 0; border-bottom: 1px dashed var(--line); }
+  .place-name { font-weight: 600; }
+  .place-best { display: block; font-size: 13px; color: var(--muted); }
+  .chip { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 8px;
+          border-radius: 999px; margin-left: 6px; vertical-align: 2px;
+          background: rgba(18,143,163,.14); color: var(--teal-bright); }
+  .chip-advisory { background: rgba(133,90,160,.16); color: var(--advisory); }
+
+  .honesty { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+             padding: 26px; margin-top: 8px; }
+  .honesty ul { margin: 10px 0 0 22px; font-size: 15px; color: var(--muted); }
+
+  .disclaimer { border-left: 4px solid #d9822b; padding: 14px 18px; background: rgba(217,130,43,.09);
+                border-radius: 0 10px 10px 0; font-size: 15px; margin: 26px 0; }
+
+  footer { margin-top: 56px; padding: 30px 0 44px; border-top: 1px solid var(--line);
+           font-size: 14px; color: var(--muted); }
+  footer code { background: var(--card); border: 1px solid var(--line); padding: 1px 7px;
+                border-radius: 6px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div class="hero-text">
+      <img class="appicon" src="assets/icon.png" alt="Apostle Anchor app icon">
+      <h1>Apostle Anchor</h1>
+      <p class="tagline">Know where to drop the hook before the wind makes the call for you.</p>
+      <a class="cta" href="https://github.com/rotblauer/Anchor">View on GitHub</a>
+      <a class="cta ghost" href="#how">How it works</a>
+    </div>
+    <div class="hero-shot">
+      <img class="phone" src="assets/shot-map.jpg" alt="The planning map: wind-field arrows over the Apostle Islands with rated anchorage pins">
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+      <div class="stat"><span class="stat-n">40</span><span class="stat-l">places to stay</span></div>
+      <div class="stat"><span class="stat-n">22</span><span class="stat-l">anchorages</span></div>
+      <div class="stat"><span class="stat-n">14</span><span class="stat-l">island &amp; town docks</span></div>
+      <div class="stat"><span class="stat-n">11</span><span class="stat-l">marinas</span></div>
+      <div class="stat"><span class="stat-n">22</span><span class="stat-l">islands to explore</span></div>
+      <div class="stat"><span class="stat-n">8</span><span class="stat-l">day wind outlook</span></div>
+  </div>
+
+  <section id="how">
+    <h2>Reads the wind the way Superior sailors do</h2>
+    <p class="lede">Apostle Anchor is an iOS app for cruising Apostle Islands National Lakeshore — 21 islands on Lake Superior where the evening's big question is always the same: <em>given the forecast, where do we stay tonight?</em></p>
+    <div class="cards">
+      <div class="card"><span class="emoji">🧭</span><h3>Real shelter profiles</h3>
+        <p>Every place carries a 16-direction shelter fingerprint and wave-fetch map built from its actual geography — bluffs, sandspits, breakwalls, and the islands that block a sea from building.</p></div>
+      <div class="card"><span class="emoji">🌙</span><h3>Overnight-weighted scoring</h3>
+        <p>Hourly wind and gust forecasts are scored against each profile, weighting the hours you actually swing at anchor and grading every night from Excellent to Avoid.</p></div>
+      <div class="card"><span class="emoji">⚠️</span><h3>The lee-shore rule</h3>
+        <p>Strong wind onto an exposed shore caps the score no matter how nice the beach is. Superior forgives many things; a lee shore isn't one of them.</p></div>
+      <div class="card"><span class="emoji">🗓️</span><h3>Multi-night outlooks</h3>
+        <p>Night-by-night squares project a week out with a “good for N nights” badge — so a one-night wonder and a stay-all-week harbor are easy to tell apart.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Plan, browse, explore</h2>
+    <p class="lede">A live wind-field map with a play-through time scrubber, ranked picks for any night, rich detail pages with protection roses and gust charts, marine alerts from NOAA — plus island stories, lighthouses, shipwrecks, and singing sands for the days you're not going anywhere.</p>
+    <div class="shots">
+      <figure><img src="assets/shot-map.jpg" alt="Plan tab: wind overlay and rated pins"><figcaption>Wind-field planning map</figcaption></figure>
+      <figure><img src="assets/shot-places.jpg" alt="Places tab: searchable catalog with per-night ratings"><figcaption>Every place, rated per night</figcaption></figure>
+      <figure><img src="assets/shot-explore.jpg" alt="Explore tab: island stories and park lore"><figcaption>Island lore &amp; lighthouses</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>The catalog</h2>
+    <p class="lede">44 documented places — no invented pins on random coastline. Compiled from NPS boating guidance, marina listings, NOAA Coast Pilot, and published Lake Superior cruising references, then adversarially verified for existence, coordinates, and shelter geometry. Purple advisory entries are closures and day-stop-only areas the app will never recommend for the night.</p>
+    <div class="directory">
+      <div class="island-group">
+        <h4>Basswood Island</h4>
+        <ul>
+        <li><span class="place-name">Basswood Island West Side — Anchorage &amp; NPS Dock</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">Quick easterly-lee overnight nearest Bayfield</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Cat Island</h4>
+        <ul>
+        <li><span class="place-name">Cat Island South Sandspit</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Quiet middle-islands spit, either-side lee</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Devils Island</h4>
+        <ul>
+        <li><span class="place-name">Devils Island South Landing</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">Calm-day sea-cave expedition base (dock closed 2026)</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Eagle Island</h4>
+        <ul>
+        <li><span class="place-name">Eagle Island — Wildlife Closure (No Anchorage)</span> <span class="chip chip-anchorage">Anchorage</span> <span class="chip chip-advisory">Advisory</span><span class="place-best">Avoid — seasonal 500-ft wildlife buffer and shoals</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Gull Island</h4>
+        <ul>
+        <li><span class="place-name">Gull Island — Wildlife Closure (No Anchorage)</span> <span class="chip chip-anchorage">Anchorage</span> <span class="chip chip-advisory">Advisory</span><span class="place-best">Avoid — year-round bird sanctuary and 2-ft ledge</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Ironwood Island</h4>
+        <ul>
+        <li><span class="place-name">Ironwood Island South Sandspit</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Solitude on a picture-perfect spit</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Madeline Island</h4>
+        <ul>
+        <li><span class="place-name">Big Bay (Madeline Island)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Settled-westerly beach day off the state park</span></li>
+        <li><span class="place-name">La Pointe Special Anchorage (Madeline Island)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Town anchorage a dinghy ride from La Pointe</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Madeline Island — La Pointe</h4>
+        <ul>
+        <li><span class="place-name">Madeline Island Yacht Club</span> <span class="chip chip-marina">Marina</span><span class="place-best">Island-side full-service base by La Pointe village</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Manitou Island</h4>
+        <ul>
+        <li><span class="place-name">Manitou Island Fish Camp Dock</span> <span class="chip chip-dock">Dock</span><span class="place-best">Fair-weather history stop with real depth alongside</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Michigan Island</h4>
+        <ul>
+        <li><span class="place-name">Michigan Island Lighthouse Dock &amp; Anchorage</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">Perfect-weather double-lighthouse stop</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Oak Island</h4>
+        <ul>
+        <li><span class="place-name">Oak Island South Sandspit</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Pick-your-side spit in shifting winds</span></li>
+        <li><span class="place-name">Oak Island West Dock</span> <span class="chip chip-dock">Dock</span><span class="place-best">NE-blow dock stop with the best hiking in the park</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Otter Island</h4>
+        <ul>
+        <li><span class="place-name">Otter Island Southeast Dock &amp; Sandspit</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">NW-blow refuge with a sandspit campsite</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Outer Island</h4>
+        <ul>
+        <li><span class="place-name">Outer Island Lighthouse Dock (North End)</span> <span class="chip chip-dock">Dock</span><span class="place-best">Settled-weather lighthouse pilgrimage</span></li>
+        <li><span class="place-name">Outer Island South Sandspit</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Remote dune anchorage in settled weather</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Raspberry Island</h4>
+        <ul>
+        <li><span class="place-name">Raspberry Island Lighthouse Docks (West &amp; East)</span> <span class="chip chip-dock">Dock</span><span class="place-best">Lighthouse day stop out of NE-E winds</span></li>
+        <li><span class="place-name">Raspberry Island Southwest Sandspit</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Pick-your-side spit lee near the lighthouse</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Rocky &amp; South Twin Islands</h4>
+        <ul>
+        <li><span class="place-name">Rocky / South Twin Channel Anchorage</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Outer-islands hurricane hole in W/NW blows</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Rocky Island</h4>
+        <ul>
+        <li><span class="place-name">Rocky Island East Dock</span> <span class="chip chip-dock">Dock</span><span class="place-best">Westerly-blow dock refuge in the outer islands</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Sand Island</h4>
+        <ul>
+        <li><span class="place-name">East Bay (Sand Island) — Anchorage &amp; NPS Dock</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">First-night stop in westerlies</span></li>
+        <li><span class="place-name">Justice Bay</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Westerly-wind hook beside the Swallow Point caves</span></li>
+        <li><span class="place-name">Lighthouse Bay (Sand Island)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Settled-southerly lighthouse day stop</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>South Twin Island</h4>
+        <ul>
+        <li><span class="place-name">South Twin Island West Dock</span> <span class="chip chip-dock">Dock</span><span class="place-best">Easterly-blow dock refuge opposite Rocky</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Stockton Island</h4>
+        <ul>
+        <li><span class="place-name">Julian Bay (Stockton Island)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Southerly-or-westerly beach day on singing sands</span></li>
+        <li><span class="place-name">Presque Isle Bay (Stockton Island)</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">All-around refuge; the park&#x27;s only true harbor</span></li>
+        <li><span class="place-name">Quarry Bay (Stockton Island)</span> <span class="chip chip-anchorage_dock">Anchorage + Dock</span><span class="place-best">Northerly-blow anchorage with a quarry hike</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>York Island</h4>
+        <ul>
+        <li><span class="place-name">York Island North Beach</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Settled-southerly beach night</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Ashland, Chequamegon Bay</h4>
+        <ul>
+        <li><span class="place-name">Ashland Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Provisioning stop at the head of the bay</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Bayfield</h4>
+        <ul>
+        <li><span class="place-name">Bayfield City Dock</span> <span class="chip chip-dock">Dock</span><span class="place-best">Walk-to-dinner transient wall in downtown Bayfield</span></li>
+        <li><span class="place-name">Bayfield Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Full-service home-port base for the islands</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Cornucopia</h4>
+        <ul>
+        <li><span class="place-name">Siskiwit Bay Marina (Cornucopia)</span> <span class="chip chip-marina">Marina</span><span class="place-best">Western gateway and sea-cave staging harbor</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Little Sand Bay</h4>
+        <ul>
+        <li><span class="place-name">Little Sand Bay NPS Dock &amp; Harbor</span> <span class="chip chip-dock">Dock</span> <span class="chip chip-advisory">Advisory</span><span class="place-best">Mainland base for the western islands (slips closed 2026)</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Meyers Beach to Sand Point</h4>
+        <ul>
+        <li><span class="place-name">Mawikwe Bay Sea Caves (Mainland) — Day Stop Only</span> <span class="chip chip-anchorage">Anchorage</span> <span class="chip chip-advisory">Advisory</span><span class="place-best">Flat-calm sea-cave day visit only</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Pikes Bay, south of Bayfield</h4>
+        <ul>
+        <li><span class="place-name">Pikes Bay Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Protected floating-dock base with premium services</span></li>
+        <li><span class="place-name">Port Superior Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Resort amenities with your transient slip</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Red Cliff</h4>
+        <ul>
+        <li><span class="place-name">Buffalo Bay Marina (Legendary Waters)</span> <span class="chip chip-marina">Marina</span><span class="place-best">Budget slip with casino and beach attached</span></li>
+        <li><span class="place-name">Frog Bay (Mainland — Red Cliff)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Mainland lee in S-SW-W blows</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Saxon (Iron County)</h4>
+        <ul>
+        <li><span class="place-name">Saxon Harbor Marina &amp; Campground</span> <span class="chip chip-marina">Marina</span><span class="place-best">Harbor of refuge on the eastbound run</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — Washburn, Chequamegon Bay</h4>
+        <ul>
+        <li><span class="place-name">Washburn Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Repairs, haul-out, and provisioning on the bay</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — east of Point Detour</h4>
+        <ul>
+        <li><span class="place-name">Eagle Bay (Mainland)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Local-knowledge southerly lee near the York passage</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — north of Bayfield</h4>
+        <ul>
+        <li><span class="place-name">Roys Point Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Small quiet basin closest to the inner islands</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — north of Red Cliff</h4>
+        <ul>
+        <li><span class="place-name">Schooner Bay Marina</span> <span class="chip chip-marina">Marina</span><span class="place-best">Low-key private slips nearest the western run</span></li>
+        </ul>
+      </div>
+      <div class="island-group">
+        <h4>Mainland — southeast of Point Detour</h4>
+        <ul>
+        <li><span class="place-name">Raspberry Bay (Mainland)</span> <span class="chip chip-anchorage">Anchorage</span><span class="place-best">Go-to mainland refuge in S-through-W blows</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data &amp; honesty</h2>
+    <div class="honesty">
+      <ul>
+        <li><strong>Forecasts:</strong> Open-Meteo hourly 10&nbsp;m wind, gusts, and direction, in knots, 8 days out.</li>
+        <li><strong>Marine alerts:</strong> Live Small Craft Advisories and Gale Warnings from NOAA/NWS for the five nearshore zones around the islands.</li>
+        <li><strong>Places:</strong> Every entry cites its sources in-app. 4 advisory entries flag wildlife closures and day-use-only areas.</li>
+        <li><strong>Times:</strong> Always shown in the islands' local time, wherever your phone thinks it is.</li>
+        <li><strong>Offline:</strong> The last forecast is cached, because the outer islands don't do bars.</li>
+      </ul>
+    </div>
+    <div class="disclaimer"><strong>Not for navigation.</strong> Ratings are planning guidance, not gospel. Carry charts, check the NOAA marine forecast, and make your own seamanship calls — Lake Superior is cold, big, and changes faster than any forecast.</div>
+  </section>
+
+  <footer>
+    Built with SwiftUI, MapKit, and Swift Charts · iOS 17+ · Open source on <a href="https://github.com/rotblauer/Anchor">GitHub</a><br>
+    Page generated from the app's databases on August 6, 2026 — regenerate with <code>python3 scripts/update_landing.py</code>
+  </footer>
+</div>
+
+</body>
+</html>
