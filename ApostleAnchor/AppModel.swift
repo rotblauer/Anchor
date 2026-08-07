@@ -35,6 +35,7 @@ final class AppModel {
     // Static databases (bundled, verified against real sources)
     var places: [Place] = []
     var content: ContentDatabase?
+    var pois: [PointOfInterest] = []
 
     // Forecast state
     var hours: [Date] = []
@@ -58,6 +59,7 @@ final class AppModel {
         self.weather = weather
         places = (try? PlacesDatabase.loadBundled())?.places ?? []
         content = try? ContentDatabase.loadBundled()
+        pois = (try? POIDatabase.loadBundled())?.pois ?? []
         gridPoints = WindGrid.apostleGrid()
         restoreSnapshotIfFresh()
     }
@@ -241,5 +243,43 @@ final class AppModel {
             $0.island.localizedCaseInsensitiveContains(islandName)
                 || islandName.localizedCaseInsensitiveContains($0.island)
         }
+    }
+
+    func pois(onIsland islandName: String) -> [PointOfInterest] {
+        pois.filter {
+            $0.island.localizedCaseInsensitiveContains(islandName)
+                || islandName.localizedCaseInsensitiveContains($0.island)
+        }
+    }
+
+    // MARK: - Multi-night stays
+
+    /// Ranked options for a stay of `nightCount` nights starting on the
+    /// currently selected night.
+    func rankedForStay(nightCount: Int) -> [StayOption] {
+        guard let start = selectedNightDate else { return [] }
+        return ScoreEngine.rankForStay(places: places, outlooks: outlooks,
+                                       startNight: start, nightCount: nightCount,
+                                       calendar: calendar)
+    }
+
+    /// The longest stay any place's outlook can fully cover from the selected
+    /// night — bounds the stay-length picker.
+    var maxPlannableNights: Int {
+        guard let start = selectedNightDate else { return 1 }
+        var best = 0
+        for outlook in outlooks.values {
+            guard let startIndex = outlook.nightIndex(of: start, calendar: calendar) else { continue }
+            var count = 0
+            var expected = start
+            var index = startIndex
+            while index < outlook.nights.count, outlook.nights[index].nightOf == expected {
+                count += 1
+                expected = calendar.date(byAdding: .day, value: 1, to: expected) ?? expected
+                index += 1
+            }
+            best = max(best, count)
+        }
+        return max(1, best)
     }
 }

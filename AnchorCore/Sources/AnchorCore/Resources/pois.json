@@ -1,0 +1,859 @@
+{
+ "pois": [
+  {
+   "id": "sand-island-lighthouse",
+   "name": "Sand Island Lighthouse",
+   "kind": "lighthouse",
+   "island": "Sand Island",
+   "lat": 47.0031,
+   "lon": -90.9374,
+   "tagline": "A brownstone Gothic beauty that watched Lake Superior's cruelest wreck unfold",
+   "story": "When the Lighthouse Board finally lit Sand Island's northern tip on September 25, 1881, it broke with tradition: instead of brick, the crew built the whole station \u2014 Norman Gothic dwelling and 42-foot tower alike \u2014 from sandstone, the first Apostle light to use the island's signature brownstone. The tower does a quiet architectural magic trick, rising as a square and finishing as an octagon beneath its fourth-order Henry-Lepaute lens.\n\nIts darkest hour came on September 2, 1905, when the 373-foot ore carrier Sevona broke apart on the shoal offshore in a screaming gale. Keeper Emmanuel Luick \u2014 who tended this light for 28 years, from 1892 to 1920 \u2014 could only watch as the captain and six crewmen lashed together a makeshift raft that the seas tore to pieces. All seven drowned within sight of his lantern.\n\nSand Island became the first Apostle light automated: on April 23, 1921 an acetylene apparatus took over the night watch. The light spent 1933-1985 on a utilitarian steel tower before the Park Service returned it to the historic lantern room, where it still flashes today.",
+   "visitTips": "Land at the East Bay dock (or beach a kayak in East Bay after the 2-mile crossing from Little Sand Bay) and hike roughly 2 miles of trail to the light. NPS volunteer keepers staff the station and open it for tours in summer; Apostle Islands Cruise Service runs seasonal trips. Pair the visit with the Swallow Point sea caves on the island's northeast shore. Sand Island Shoal \u2014 the Sevona's killer \u2014 still demands respect from small craft in any north wind.",
+   "funFacts": [
+    "First Apostle Islands lighthouse to be automated (acetylene lamp, April 23, 1921)",
+    "First station in the islands built of local sandstone instead of brick",
+    "The light spent 52 years exiled to a steel skeleton tower before returning home in 1985"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=689",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://en.wikipedia.org/wiki/Sand_Island_Light_(Wisconsin)",
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/60"
+   ]
+  },
+  {
+   "id": "raspberry-island-lighthouse",
+   "name": "Raspberry Island Lighthouse",
+   "kind": "lighthouse",
+   "island": "Raspberry Island",
+   "lat": 46.9706,
+   "lon": -90.805,
+   "tagline": "The Showplace of the Apostles \u2014 a restored keeper's world frozen circa 1920",
+   "story": "Congress put up $6,000 in 1859 to mark the West Channel, and on July 20, 1863 keeper Andrew Cramer first lit the fifth-order lens atop a simple two-story dwelling on Raspberry Island's southwest bluff. A 1906 remodel turned the building into a three-family duplex housing a head keeper and two assistants \u2014 a small cliff-top village complete with gardens so tidy the station earned its nickname, the Showplace of the Apostles.\n\nThe lore here runs to survival epics. In a September 1887 gale, keeper Francis Jacker was blown across the channel to Oak Island while securing the station boat; his family kept the lamp burning for two nights until he was rescued after nearly three days without food or fire. In 1896, keepers John Eddy and John McMartin needed four days to cross the ice to the mainland, surviving on flour-and-water paste baked in a wash basin, both badly frostbitten.\n\nThe last keeper, Earl Seseman, closed the station in October 1947. After a $1.3 million restoration in 2005-06, the dwelling now recreates the early-1920s tenure of keeper Lee Benton, and costumed guides bring the whole operation back to life each summer.",
+   "visitTips": "The most tourable light in the park: ranger- and volunteer-guided tours run roughly mid-June through mid-September, reached via Apostle Islands Cruise Service or private boat to the station dock below the bluff. Kayakers often include it on the Sand Bay-to-Raspberry run. The original fifth-order Fresnel lens is on display at the Madeline Island Museum.",
+   "funFacts": [
+    "Lighthouse historian F. Ross Holland called the Apostles \"the largest and finest single collection of lighthouses in the country\" \u2014 and Raspberry is its showpiece",
+    "The 1906 remodel housed three keeper families at once",
+    "Its fifth-order Fresnel lens now lives at the Madeline Island Museum"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=690",
+    "https://www.nps.gov/articles/000/a-visit-to-raspberry-island-lighthouse.htm",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://www.nps.gov/places/raspberry-island.htm"
+   ]
+  },
+  {
+   "id": "outer-island-lighthouse",
+   "name": "Outer Island Lighthouse",
+   "kind": "lighthouse",
+   "island": "Outer Island",
+   "lat": 47.0766,
+   "lon": -90.4167,
+   "tagline": "The loneliest sentinel \u2014 130 feet above the lake at the archipelago's outermost edge",
+   "story": "Perched on a clay bluff at the northern tip of the most remote Apostle, the Outer Island light is the giant of the chain's brick era: an 86-foot Italianate tower whose focal plane rides 130 feet above Lake Superior. Designed under famed Great Lakes engineer Orlando Poe and finished under Godfrey Weitzel, it was first lit October 20, 1874 \u2014 keeper Orator K. Hall logged that it gave a splendid light \u2014 and weeks later its steam whistle became the first fog signal in the Apostles. A third-order L. Sautter lens with six bull's-eye panels threw a white flash every ninety seconds.\n\nThe station's defining night came September 2, 1905, in the same storm that destroyed the Sevona. The 338-foot schooner-barge Pretoria \u2014 one of the largest wooden ships ever built on the lakes \u2014 broke her tow line, dragged anchor, and foundered off the island. Keeper John Irvine, then in his sixties, ran the beach with a rope and helped haul five exhausted sailors out of the breaking surf; five others drowned when the ship's yawl capsized. Irvine fed and sheltered the survivors for two days.\n\nAutomated on October 5, 1961, the tower still flashes over the shipping lanes, tended each summer by Park Service volunteers.",
+   "visitTips": "The longest run in the park for private boats \u2014 plan the weather window carefully, as Outer Island bears the full brunt of open Lake Superior. A dock and boathouse sit below the bluff at the north end. Volunteer keepers open the grounds in summer, and the annual September Lighthouse Celebration cruises visit the station. The Pretoria wreck site lies off the island's northeast side.",
+   "funFacts": [
+    "Hosted the first fog signal in the Apostle Islands (November 5, 1874)",
+    "Its third-order Sautter lens is now at the Coast Guard Museum in New London, Connecticut",
+    "Keeper John Irvine's 1905 surf rescue saved five of the Pretoria's ten crewmen"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=692",
+    "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1969302/outer-island-lighthouse/",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm"
+   ]
+  },
+  {
+   "id": "michigan-island-light-station",
+   "name": "Michigan Island Light Station (1857 & 1929 Towers)",
+   "kind": "lighthouse",
+   "island": "Michigan Island",
+   "lat": 46.8713,
+   "lon": -90.4969,
+   "tagline": "The lighthouse built on the wrong island \u2014 and the 112-foot transplant that replaced it",
+   "story": "The Apostles' first lighthouse is also its best mistake. Congress funded a light in 1853 to mark the route to La Pointe, intending it for Long Island. But when the Milwaukee contractors arrived in 1856, a local Lighthouse Board representative directed them to Michigan Island instead. They built a whitewashed rubblestone tower and dwelling, lit it in spring 1857 \u2014 and then the inspector refused to accept it, forcing the contractors to build a second lighthouse on Long Island as penance. The Michigan light went dark in 1858 after barely a year, until commerce caught up with the blunder and it was relit on September 15, 1869 with an unusual third-and-a-half-order Fresnel lens.\n\nIts keepers became legends. Roswell Pendergrast planted over a thousand trees and ran a profitable island nursery. Anna Carlson ran the light alone with three small children while her keeper husband drifted four days on an ice floe. And Edward Lane served 37 years (1902-1939) \u2014 the longest tenure in Apostle Islands history \u2014 once fighting off an attacking lynx and pocketing six dollars for the pelt.\n\nIn 1928-29 the station got a startling upgrade: a 112-foot steel tower \u2014 a central cylinder braced by a hexagonal skeletal frame \u2014 that had stood on Pennsylvania's Delaware River from 1880 to 1918 was dismantled, shipped west, and re-erected beside the old stone light. On October 29, 1929, Lane hauled the Fresnel lens to the new giant \u2014 now the tallest tower in the Apostles \u2014 and the 1857 veteran went dark for good. Automated in 1943 and solar-powered today, the station offers the rare chance to climb two generations of lighthouse in one stop.",
+   "visitTips": "Land at the Michigan Island dock and climb the long stairway up the bank to the station. NPS guided tours let you climb both the 1857 tower and the 112-foot 1929 tower \u2014 the open gallery up top is not for the acrophobic. Private boats and experienced kayakers visit; check the park's volunteer-keeper schedule. The station's third-and-a-half-order lens is displayed at the park visitor center in Bayfield.",
+   "funFacts": [
+    "Built on the wrong island \u2014 the contract intended the light for Long Island",
+    "Oldest lighthouse structure in the Apostle Islands (1856-57) stands beside the archipelago's tallest (112 feet), a recycled Delaware River tower",
+    "Keeper Ed Lane's 37 years here is the longest keeper tenure in the islands"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=693",
+    "https://www.lighthousefriends.com/light.asp?ID=694",
+    "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1962434/michigan-island-lighthouse/",
+    "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "https://en.wikipedia.org/wiki/Michigan_Island_Light",
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/56"
+   ]
+  },
+  {
+   "id": "devils-island-lighthouse",
+   "name": "Devils Island Lighthouse",
+   "kind": "lighthouse",
+   "island": "Devils Island",
+   "lat": 47.0795,
+   "lon": -90.7281,
+   "tagline": "Wisconsin's northernmost point, where the third-order Fresnel lens still lives in the lantern",
+   "story": "The last light station established in the Apostles guards the state's northernmost scrap of land, above the archipelago's most famous sea caves. A temporary wooden tower went into service September 30, 1891 beside a pair of handsome Queen Anne brick dwellings. The permanent tower \u2014 a cylinder of half-inch steel plates roughly 80 feet tall \u2014 was finished October 17, 1898, then stood dark for years waiting on its optic. The third-order lens from Henry-Lepaute of Paris finally arrived in June 1901 and began flashing alternating red and white that September.\n\nThe skinny steel tube had a flaw: it shook violently in high winds, badly enough that in 1914 engineers rearranged its buttresses and ran cross-braces clear up to the watchroom. Keepers' families endured spectacular weather \u2014 keeper Alexander McLean's wife Cecelia recalled storm spray flooding through the dwelling's windows. In August 1928, President Calvin Coolidge arrived by yacht, toured the station, and signed the logbook.\n\nDevils Island was the last Apostle light to lose its keepers, automated in 1978. When the Coast Guard quietly removed the historic lens in 1989, locals sued; the Park Service restored the 600-pound optic and flew it back by helicopter on September 1, 1992. It remains the only Apostle light with its classic Fresnel lens still in the lantern room.",
+   "visitTips": "Paddlers flock here for the north-end sea caves, but landings are only safe in calm conditions \u2014 use the boat landing on the island's east side. Grounds are open and the tower is opened seasonally by volunteer keepers; the dwellings are closed. This is the most exposed station in the park; a north swell turns the caves and the landing hostile fast.",
+   "funFacts": [
+    "Only Apostle Islands light that still houses its original-style third-order Fresnel lens",
+    "President Coolidge signed the station log during his 1928 visit",
+    "The tower shook so badly in gales that it needed a 1914 cross-bracing retrofit"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=691",
+    "https://home.nps.gov/apis/learn/historyculture/devils-light.htm",
+    "https://www.nps.gov/places/devils-island.htm"
+   ]
+  },
+  {
+   "id": "la-pointe-light",
+   "name": "La Pointe Light (Long Island)",
+   "kind": "lighthouse",
+   "island": "Long Island",
+   "lat": 46.7287,
+   "lon": -90.7851,
+   "tagline": "Born of a surveying blunder, witness to the Apostles' grimmest shipwreck morning",
+   "story": "The original La Pointe Lighthouse of 1858 was the make-good: after contractors built the 1857 light on the wrong island (Michigan), they were compelled to erect a hasty wooden lighthouse here on Long Island's sand spit, where the light for the La Pointe channel had been intended all along. It served as the Apostles' second light for four decades.\n\nIts keeper made the region's most haunting discovery. On November 19, 1886, days after the ore-laden schooner Lucerne vanished in a blizzard, the La Pointe keeper spotted her masts jutting from shallow water off the island \u2014 with three sailors lashed in the rigging, frozen under as much as six inches of ice. There were no survivors \u2014 all hands, nine men by most accounts, were lost. The wreck still lies in about 20 feet of water off Long Island.\n\nIn 1897 the station was rebuilt: a roughly 67-foot cast-iron cylinder tower with fog signal, whose keepers also tended the Chequamegon Point light down the beach \u2014 first trudging a 2,700-foot plank walk through loose sand, later gliding along a concrete path, sometimes by bicycle. A 1924 radiobeacon brought the islands' only mainland electricity, fed by submarine cable from Madeline Island. Automated in 1964, its green isophase light still guides traffic into Chequamegon Bay, as it has since 1897.",
+   "visitTips": "Long Island (really a barrier sand spit) has no scheduled tour-boat service; visit by private boat, water taxi, or kayak in settled weather and expect a beach landing. Grounds are open but the tower is closed. Divers and snorkelers visit the Lucerne wreck about 200 yards off the spit's northeast side \u2014 an NRHP-listed site on the Wisconsin Maritime Trails. Distant views from Madeline Island and Highway 13.",
+   "funFacts": [
+    "Built in 1858 as contractual penance for the wrong-island lighthouse mistake",
+    "Only island station with grid power, via undersea cable from Madeline Island (1924)",
+    "Keepers bicycled a half-mile concrete walkway between their two lights"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/learn/historyculture/long-lights.htm",
+    "https://en.wikipedia.org/wiki/La_Pointe_Light",
+    "https://www.wisconsinshipwrecks.org/vessel/Details/386",
+    "https://www.nps.gov/places/long-island-an-island-apart-apis.htm",
+    "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1955747/la-pointe-lighthouse/"
+   ]
+  },
+  {
+   "id": "chequamegon-point-light",
+   "name": "Chequamegon Point Light (Long Island)",
+   "kind": "lighthouse",
+   "island": "Long Island",
+   "lat": 46.7286,
+   "lon": -90.8091,
+   "tagline": "An $862 iron midget that a helicopter once dragged across the sand",
+   "story": "When Ashland boomed into the region's dominant ore port in the late 1880s, ships needed a mark on the very tip of Long Island's sand spit. Fulton Iron and Engine Works of Detroit fabricated a roughly 40-foot white pyramidal skeletal tower for just $862, and on October 11, 1897 its fixed red light and fog bell went into service \u2014 the same day the rebuilt La Pointe tower was lit down the beach. One keeper crew tended both lights, commuting a half-mile boardwalk (later a concrete sidewalk, sometimes by bicycle) between the towers \u2014 one of the odder commutes in the Lighthouse Service. The point's 1,200-pound bronze fog bell, wound every four hours, now rests at the Madeline Island Museum.\n\nThe little tower's great adventure came in 1987, when beach erosion threatened its footings and the Coast Guard brought in a helicopter to move it about 100 feet inland. The lift went badly \u2014 the tower was dragged across the ground, bending its legs, cross-braces, and ladder. The Park Service finally straightened it out and set it on new concrete footings in work completed by 2008.\n\nThe historic tower is retired now, with a modern beacon carrying on at the point, but the 1897 veteran still stands watch over the entrance to Chequamegon Bay.",
+   "visitTips": "Best appreciated from the water off Long Island's western tip; landings are on open sand beach, weather permitting, and the tower itself is closed. No scheduled tour-boat service to Long Island. Boaters rounding Chequamegon Point should mind the shoals extending off the spit \u2014 the reason the light exists.",
+   "funFacts": [
+    "Fabricated in Detroit for only $862",
+    "Moved 100 feet inland in 1987 after a helicopter lift turned into an accidental drag",
+    "Its 1,200-pound fog bell had to be wound every four hours \u2014 it now lives at the Madeline Island Museum"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=695",
+    "https://www.nps.gov/apis/learn/historyculture/long-lights.htm",
+    "https://en.wikipedia.org/wiki/Chequamegon_Point_Light",
+    "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1955747/la-pointe-lighthouse/"
+   ]
+  },
+  {
+   "id": "ashland-breakwater-light",
+   "name": "Ashland Breakwater Light",
+   "kind": "lighthouse",
+   "island": "Mainland \u2014 Ashland breakwater, Chequamegon Bay",
+   "lat": 46.6282,
+   "lon": -90.8705,
+   "tagline": "A concrete commuter light at the end of a mile-and-a-half breakwater \u2014 the collection's newest member",
+   "story": "Ashland's ore docks needed shelter, so between 1889 and 1893 engineers built a detached breakwater a mile and a half long across Chequamegon Bay. A simple lens lantern marked its west end starting July 1, 1911; then Congress appropriated $25,000 in 1913 for a proper tower. Built in 1914-15, the result was something rare on the Great Lakes: a hexagonal, pyramidal lighthouse of reinforced concrete, its focal plane 55 feet above the pier, first lit October 15, 1915 with a fourth-order Sautter, Lemonier & Cie lens.\n\nNo keeper ever lived out here \u2014 there's no dwelling on the breakwater. Keepers commuted by boat from Ashland, from first keeper James Bergan (1915-1922) to last keeper Earl Seseman, the same man who had closed Raspberry Island in 1947 and who tended this light until automation in 1962.\n\nIn 2014, federal legislation transferred the lighthouse to the National Park Service, folding it into Apostle Islands National Lakeshore \u2014 the ninth historic tower across the park's light stations, the collection the NPS bills as the largest in the National Park System.",
+   "visitTips": "Still an active aid to navigation; the tower is closed to the public. Boaters get the best views \u2014 give the partially submerged breakwater rocks a wide berth, especially in chop. From shore, the classic vantage is Bayview Park along US-2 in Ashland. Kayakers sometimes paddle out from Ashland's waterfront in calm conditions.",
+   "funFacts": [
+    "A rare reinforced-concrete lighthouse \u2014 hexagonal and pyramidal in form",
+    "Keepers commuted by boat from town; the breakwater never had a dwelling",
+    "Joined Apostle Islands National Lakeshore by act of Congress in 2014, capping the NPS's largest lighthouse collection"
+   ],
+   "sources": [
+    "https://www.lighthousefriends.com/light.asp?ID=261",
+    "https://en.wikipedia.org/wiki/Ashland_Harbor_Breakwater_Light",
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/95",
+    "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1899606/ashland-harbor-breakwater-light/"
+   ]
+  },
+  {
+   "id": "sevona-wreck",
+   "name": "Sevona",
+   "kind": "shipwreck",
+   "island": "Sand Island (Sand Island Shoal)",
+   "lat": 47.00783,
+   "lon": -90.9028,
+   "tagline": "A 373-foot steel giant snapped in two on Sand Island Shoal in the great gale of 1905",
+   "story": "The Sevona was one of the big steel bulk freighters that made the iron ore trade hum \u2014 until the morning of September 2, 1905, when a screaming Lake Superior gale drove her onto Sand Island Shoal. Loaded with ore from Duluth and blinded by rain and spray, she struck hard and broke completely in two, her bow and stern separated by a churning gap of white water.\n\nThe split decided who lived and who died. Seventeen people in the stern section eventually got away in the ship's boats and reached shore. The seven trapped in the bow, including the captain, had no lifeboat left; they lashed together a makeshift raft from wreckage, and it came apart in the breakers off Sand Island \u2014 all seven perished within sight of the Sand Island lighthouse.\n\nSalvagers stripped her engine and boilers, and in 1909 the Army Corps of Engineers dynamited what stuck up as a hazard to navigation. What survives is the ship's steel bottom in two huge sections lying nearly perpendicular to each other in about 20 feet of water, ringed by a broad debris field \u2014 an easy, dramatic dive and a haunting snorkel on a calm day.",
+   "visitTips": "Lies in about 20 feet of water on Sand Island Shoal, outside the national lakeshore boundary, so no NPS dive permit is needed. A seasonal Wisconsin Maritime Trails mooring buoy marks the site \u2014 tie to it rather than anchoring into the wreck. Good for scuba and surface-visible snorkeling on calm, clear days; the shoal is exposed, so pick settled weather. Wisconsin's field archaeology law (Wis. Stat. 44.47) makes it illegal to remove or disturb any artifact.",
+   "funFacts": [
+    "Seven of the 23 people aboard died, all from the bow section, when their improvised raft broke up in the surf",
+    "The wreck was dynamited in 1909 because its twisted steel was a navigation hazard \u2014 the two hull sections lie almost at right angles to each other",
+    "Spilled iron ore cargo is still scattered across the shoal"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/vessel/Details/565",
+    "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/12"
+   ]
+  },
+  {
+   "id": "lucerne-wreck",
+   "name": "Lucerne",
+   "kind": "shipwreck",
+   "island": "Long Island",
+   "lat": 46.72295,
+   "lon": -90.76702,
+   "tagline": "The schooner whose crew was found frozen in the rigging after the November gale of 1886",
+   "story": "The Lucerne was a big three-masted schooner, nearly 195 feet of oak, and one of the sturdier sailing vessels on the lakes. In mid-November 1886 she left Ashland deep-laden with iron ore and sailed straight into a ferocious early-winter gale of snow and spray. She turned back for shelter but never made it, grounding off Long Island in the storm's fury.\n\nWhat searchers found days later became one of Lake Superior's most chilling images: her masts still standing above the water \u2014 and three of her sailors frozen in the rigging, sheathed in ice, having climbed above the waves only for the cold to finish what the lake had started. All hands \u2014 nine men by most accounts \u2014 were lost.\n\nToday the Lucerne rests in about 20-25 feet of water roughly 200 yards off Long Island. The hull sits upright and largely intact on the sand, with the iron ore cargo, anchor windlass, and capstan still in place on the forecastle deck \u2014 one of the best-preserved schooner wrecks in Wisconsin waters and a superb shallow dive.",
+   "visitTips": "About 200 yards off the northeast side of Long Island in 20-25 feet of water, just outside the park boundary \u2014 no NPS permit needed. A seasonal mooring buoy is typically placed on the site; use it instead of anchoring. Excellent visibility on calm days makes this a favorite for divers and confident snorkelers. All artifacts are protected under Wisconsin's field archaeology law; look, photograph, take nothing.",
+   "funFacts": [
+    "Three sailors were found frozen solid in the rigging, encased in up to six inches of ice, when the wreck was discovered",
+    "Her cargo of iron ore is still visible in the intact hull",
+    "The site is listed on the National Register of Historic Places"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/vessel/Details/386",
+    "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/14"
+   ]
+  },
+  {
+   "id": "fedora-wreck",
+   "name": "Fedora",
+   "kind": "shipwreck",
+   "island": "Mainland \u2014 Buffalo Bay / Red Cliff",
+   "lat": 46.86003,
+   "lon": -90.7787,
+   "tagline": "A burning freighter beached to save her crew \u2014 now the Apostles' favorite kayak-over wreck",
+   "story": "On the night of September 20, 1901, the 282-foot wooden bulk freighter Fedora was steaming toward Ashland to load iron ore when a kerosene lamp fell in the engine room. Fire raced through the oil-soaked machinery spaces faster than anyone could fight it, and Captain Frank Fick made the only call left: he turned the blazing ship toward shore and drove her onto the beach near Chicago Creek in Buffalo Bay, off Red Cliff.\n\nThe gamble worked. All seventeen aboard, including two passengers, got away in the lifeboats while the Fedora burned to the waterline behind them, lighting up the bay. Nobody died \u2014 the fire simply consumed the ship down to the cold water.\n\nWhat's left is the unburned lower hull, over 250 feet of it, lying in roughly 10 feet of water on a sandy bottom so close to shore that paddlers can drift right over the ribs and frames. On a calm day the whole skeleton is visible from a kayak, making the Fedora one of the most accessible shipwrecks anywhere on Lake Superior.",
+   "visitTips": "Sits in about 10 feet of water just off the Red Cliff shoreline in Buffalo Bay \u2014 a classic paddle-over wreck, easily viewed from kayak, paddleboard, or small boat on calm days, and a gentle snorkel. Approach slowly and avoid anchoring into the timbers. The site is protected: removing anything violates Wisconsin's field archaeology law (Wis. Stat. 44.47). It lies in Red Cliff Reservation waters, so be respectful of local guidance.",
+   "funFacts": [
+    "The fire started with a kerosene lamp that fell in the engine room",
+    "All 17 people aboard escaped; the captain deliberately beached the burning ship to save them",
+    "The 251-foot hull lies in water so shallow that kayakers can see the entire outline from the surface"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/vessel/Details/199",
+    "https://en.wikipedia.org/wiki/SS_Fedora_(1889)"
+   ]
+  },
+  {
+   "id": "noquebay-wreck",
+   "name": "Noquebay",
+   "kind": "shipwreck",
+   "island": "Stockton Island (Julian Bay)",
+   "lat": 46.92613,
+   "lon": -90.54528,
+   "tagline": "A lumber barge that burned in Julian Bay \u2014 now a snorkel wreck beside the singing sands",
+   "story": "The Noquebay was a workhorse: a big wooden schooner-barge built in 1872, spending her later years being towed from port to port stuffed with lumber. In October 1905, while under tow of the steamer Lizzie Madden about 20 miles northeast of Bayfield, fire broke out near her donkey boiler in the forward end. By the time anyone spotted the smoke, the blaze was beyond controlling.\n\nThe burning barge was run into Julian Bay on Stockton Island's east side, where the crew got off safely while the Noquebay burned down to the water. The lake got the rest, settling her charred bones onto the shallow sandy bottom of one of the prettiest bays in the Apostles.\n\nToday she lies in just 10-15 feet of water, and she is arguably the best snorkeling wreck in the national lakeshore: large sections of the wooden hull, scattered wreckage, her boiler, and even the ship's wheel are visible over bright sand, a short paddle off Julian Bay's famous singing-sands beach.",
+   "visitTips": "Inside Apostle Islands National Lakeshore in 10-15 feet of water in Julian Bay \u2014 scuba divers must register for a free NPS dive permit at park headquarters in Bayfield. Snorkelers and kayakers can view the wreck from the surface; a seasonal mooring buoy is typically placed. Do not anchor into the wreck, fly a dive flag with divers down, and remove nothing \u2014 the site is protected by both NPS regulations and Wisconsin law.",
+   "funFacts": [
+    "Her boiler and ship's wheel are still visible on the bottom in 10-15 feet of water",
+    "She burned within sight of Julian Bay's singing-sands beach, which squeaks underfoot",
+    "The fire started near the donkey boiler and wasn't discovered until it was already uncontrollable"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/vessel/Details/458",
+    "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "https://en.wikipedia.org/wiki/Noquebay_(shipwreck)"
+   ]
+  },
+  {
+   "id": "hd-coffinberry-wreck",
+   "name": "H.D. Coffinberry",
+   "kind": "shipwreck",
+   "island": "Mainland \u2014 Red Cliff Bay",
+   "lat": 46.88345,
+   "lon": -90.76315,
+   "tagline": "An 1874 steam barge quietly abandoned in Red Cliff Bay, resting in water barely waist-deep",
+   "story": "Not every shipwreck ends in a storm. The H.D. Coffinberry, a wooden steam-powered bulk carrier launched at East Saginaw in 1874, spent four decades hauling coal, corn, iron ore, and lumber \u2014 collecting groundings and collisions like scars along the way. Around 1912, money troubles caught up with her owners; the ship was seized and left to settle at a dock in Ashland.\n\nAfter about five years underwater she was raised in 1917, stripped of anything valuable, towed to the north side of Red Cliff Bay, and simply abandoned at the base of a clay bluff. Her enrollment papers were surrendered that New Year's Eve with a single word: abandoned.\n\nThe lake has since flattened her to her lowest timbers \u2014 keel, keelson, floors, and planking lying parallel to shore in just 3 to 6 feet of water, with her boiler remains marking her orientation. She rests only a few hundred feet from the wreck of the tug Ottawa, making Red Cliff Bay a rare two-wrecks-in-one-stop paddle.",
+   "visitTips": "In just 3-6 feet of water at the base of the clay slope on the north side of Red Cliff Bay \u2014 ideal for kayaks, paddleboards, and snorkelers; larger boats should stand off in deeper water. Pair it with the nearby Ottawa wreck. These are fragile, protected archaeological sites in Red Cliff Reservation waters: drift over, don't drag paddles or anchors across the timbers, and take nothing (Wis. Stat. 44.47).",
+   "funFacts": [
+    "Her final enrollment document was surrendered on December 31, 1917, marked simply 'abandoned'",
+    "She lies in water shallow enough to wade near, in 3-6 feet, parallel to the shoreline",
+    "The wrecking tug Ottawa lies only a short paddle away, so kayakers can visit both in minutes"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/Vessel/Details/255"
+   ]
+  },
+  {
+   "id": "ottawa-wreck",
+   "name": "Ottawa",
+   "kind": "shipwreck",
+   "island": "Mainland \u2014 Red Cliff Bay",
+   "lat": 46.8832,
+   "lon": -90.76365,
+   "tagline": "The mightiest wrecking tug on the Great Lakes, burned while saving another ship",
+   "story": "Launched in Chicago in 1881 as the Boscobel, this tug was the largest ever built in that city and grew into a legend after the Reid Wrecking Company bought her in 1903 and renamed her Ottawa. She was the muscle of Great Lakes salvage \u2014 the boat they sent when a freighter was hard aground and nothing else could pull it free.\n\nHer end came in the middle of a job. On November 29, 1909, while working to free the steamer Hoyt near Red Cliff, fire broke out aboard the Ottawa. Her crew escaped to the very ship they had just saved and watched their famous tug burn to the water's edge and sink in the shallows of Red Cliff Bay.\n\nHer machinery was salvaged soon after, but most of the hull structure remains on the sandy bottom in 12-16 feet of water, with large port and starboard sections and scattered debris. She lies near the abandoned steam barge H.D. Coffinberry, and the pair make an easy, historic double-header for divers, snorkelers, and paddlers.",
+   "visitTips": "Rests on sand in 12-16 feet of water off Red Cliff \u2014 reachable by kayak on calm days and a relaxed, shallow scuba or snorkel site; visible from the surface in good clarity. Combine with the adjacent H.D. Coffinberry. Fly a dive flag, don't anchor into the wreckage, and leave all artifacts in place \u2014 a National Register-listed archaeological site protected by Wisconsin law, in Red Cliff Reservation waters.",
+   "funFacts": [
+    "She was the largest tug ever built in Chicago and among the most powerful on the Great Lakes",
+    "Her crew escaped the fire by climbing aboard the freighter they had just finished saving",
+    "She is listed on the National Register of Historic Places and lies within sight of the H.D. Coffinberry wreck"
+   ],
+   "sources": [
+    "https://wisconsinshipwrecks.org/Vessel/Details/486",
+    "https://en.wikipedia.org/wiki/Ottawa_(tug)"
+   ]
+  },
+  {
+   "id": "rg-stewart-wreck",
+   "name": "R.G. Stewart",
+   "kind": "shipwreck",
+   "island": "Michigan Island",
+   "lat": 46.87337,
+   "lon": -90.47572,
+   "tagline": "Grounded in fog, burned at dawn \u2014 and the cattle swam ashore",
+   "story": "The R.G. Stewart was a small wooden packet steamer, the kind of do-everything boat that stitched together Lake Superior's isolated shore towns with freight, livestock, and a few passengers. On June 3, 1899, groping through heavy fog on a run from Ontonagon toward Duluth, she ran hard aground on Michigan Island.\n\nThe next morning, as the crew worked a kedge anchor and the engines to pull her off, fire was discovered in the woodwork above the boiler. It spread too fast to fight. The crew turned the cattle loose \u2014 they swam safely to the beach \u2014 and everyone scrambled for the yawl. Wheelman George McKenna jumped, struck the gunwale, capsized the little boat, and drowned: the wreck's only death out of eleven people aboard.\n\nThe Stewart burned to nothing above the waterline. Her surviving hull and a scatter of artifacts lie in very shallow water on a cobble-and-boulder bottom off Michigan Island's southeast side, about a mile east of the lighthouse, drifting in and out of the sand as the lake rearranges its bottom.",
+   "visitTips": "A very shallow site close to Michigan Island's southeast beach \u2014 best experienced by snorkelers and kayakers in calm conditions; how much you see depends on how much sand the lake has moved lately. Inside the national lakeshore, so scuba divers need the free NPS dive permit from park headquarters in Bayfield, and all artifacts are federally and state protected. Combine with a visit to the Michigan Island lighthouses.",
+   "funFacts": [
+    "The crew released the cattle on board, and they swam to shore on their own",
+    "The site was found in 1983 and lies about a mile east of the Michigan Island lighthouse",
+    "The wreckage scatter covers roughly 165 by 170 feet and is periodically buried and uncovered by shifting sand"
+   ],
+   "sources": [
+    "https://wisconsinshipwrecks.org/Vessel/Details/518",
+    "https://en.wikipedia.org/wiki/SS_R._G._Stewart"
+   ]
+  },
+  {
+   "id": "pretoria-wreck",
+   "name": "Pretoria",
+   "kind": "shipwreck",
+   "island": "Outer Island",
+   "lat": 47.08933,
+   "lon": -90.39433,
+   "tagline": "One of the biggest wooden ships ever built, lost off Outer Island in the same storm that killed the Sevona",
+   "story": "The Pretoria was a monster: a 338-foot, three-masted schooner-barge launched from the Davidson yard in 1900, among the largest wooden vessels ever built on the Great Lakes. On September 2, 1905 \u2014 the same brutal gale that broke the Sevona on Sand Island Shoal \u2014 she was under tow with a load of iron ore when the storm overwhelmed her off Outer Island.\n\nSeparated from her steamer, the Pretoria dropped anchors and fought, but the seas opened her seams faster than her pumps could work. She settled and sank about a mile and a half northeast of Outer Island. Her ten crew took to the yawl, which capsized in the breaking surf near the island; five men drowned. The aging keeper of the Outer Island lighthouse waded into the surf to help drag the exhausted survivors ashore.\n\nToday the flattened but massive wreck lies on sandstone bedrock in 52-55 feet of water, her huge timbers, hardware, and cargo spread across the bottom. For divers who make the long run out, she's the Apostles' great open-water wreck \u2014 a monument to the last gasp of wooden shipbuilding.",
+   "visitTips": "Rests in 52-55 feet about 1.5 miles northeast of Outer Island, outside the park boundary \u2014 no NPS permit required, but it's a long, exposed run to the outermost Apostle; pick a stable weather window and carry proper offshore gear. A rewarding intermediate scuba dive on a hard sandstone bottom. National Register-listed and protected by Wisconsin's field archaeology law: photograph everything, remove nothing.",
+   "funFacts": [
+    "At 338 feet she was among the largest wooden ships ever built on the Great Lakes",
+    "She sank on September 2, 1905 \u2014 the same storm that destroyed the Sevona a few hours earlier",
+    "The Outer Island lighthouse keeper helped rescue the five survivors when their yawl capsized in the surf"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/vessel/Details/509",
+    "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "https://en.wikipedia.org/wiki/Pretoria_(schooner_barge)"
+   ]
+  },
+  {
+   "id": "manitou-island-fish-camp",
+   "name": "Manitou Island Fish Camp",
+   "kind": "historic",
+   "island": "Manitou Island",
+   "lat": 46.95556,
+   "lon": -90.67639,
+   "tagline": "A $600 shack town where winter fishermen struck it steady, frozen in the 1930s",
+   "story": "The camp on Manitou's southwest shore began in the 1890s, when four Swedish cedar cutters raised a log cabin of hand-flattened timbers joined with dovetail notches and chinked with moss. When the loggers moved on, fisherman John Hanson stayed behind, working the lake year-round and keeping a garden and animals to fill in the lean months.\n\nThe camp you see today took shape after 1938, when Hjalmer \"Governor\" Olson and his brother Ted bought the land and its ramshackle buildings for $600. They wanted one thing: thick, stable ice for winter fishing. For three decades the camp drew Bayfield-area plumbers, sailors, and loggers who could earn honest money through the ice without owning a boat. Governor Olson sold in 1964 but kept using the site until 1983 \u2014 the same year it joined the National Register and the Park Service began restoring it to its 1930s appearance.\n\nEight original structures survive, including the circa-1900 Governor's Cabin, a smokehouse, a hand-built windlass, net-drying reels, and twine sheds \u2014 still stocked with the nets, sleds, gutting boards, and salt barrels of a working Great Lakes fish camp.",
+   "visitTips": "On Manitou's southwest side with a small dock; the restored cabins display 1930s-50s commercial fishing gear. Seasonal interpretive staffing varies \u2014 check with Apostle Islands National Lakeshore. Some island cruise routes narrate the camp from the water.",
+   "funFacts": [
+    "Hjalmer Olson's nickname was \"Governor\" \u2014 and the main cabin is still called the Governor's Cabin",
+    "The Olsons paid $600 for the whole camp in 1938; the draw was ice, not land \u2014 winter fishing needed no boat and almost no startup money",
+    "Restoration crews deliberately left the shacks looking rough; old fishermen confirmed they hadn't changed much since the 1930s"
+   ],
+   "sources": [
+    "https://www.nps.gov/articles/000/historic-manitou-fish-camp-apis.htm",
+    "https://en.wikipedia.org/wiki/Manitou_Camp",
+    "https://npshistory.com/publications/apis/cli-manitou-fish-camp.pdf",
+    "https://friendsoftheapostleislands.org/2022/08/07/manitou-island/"
+   ]
+  },
+  {
+   "id": "hokenson-brothers-fishery",
+   "name": "Hokenson Brothers Fishery",
+   "kind": "historic",
+   "island": "Mainland \u2014 Little Sand Bay",
+   "lat": 46.94667,
+   "lon": -90.89139,
+   "tagline": "Three Swedish brothers, one dock, thirty years of trout, whitefish, and herring",
+   "story": "When the Hokenson family's dairy farm couldn't stretch to support three households in Bayfield's cold climate and thin soil, brothers Eskel, Leo, and Roy turned to the lake. In 1927 they launched their own fishery at Little Sand Bay, entering a trade that had boomed since railroads connected this remote coast to markets in Chicago and New York.\n\nStarting essentially from scratch, the sons of Swedish immigrants built everything themselves \u2014 dock, twine shed, herring shed, even a pile-driver barge to drive their own pilings. For more than thirty years the three families worked the big lake for lake trout, whitefish, and the great autumn herring runs, prospering on ingenuity and relentless labor.\n\nWhen it was listed on the National Register in 1976, advocates called it the only intact fishing-and-packing operation within the National Lakeshore \u2014 a complete portrait of the small family fisheries that once dotted every sheltered bay in the Apostles. The historic dock itself was fully restored in 2022.",
+   "visitTips": "At Little Sand Bay next to the NPS visitor contact station \u2014 one of the few historic sites here you can reach by car as well as by boat. Grounds are open for self-guided walks among the twine shed, herring shed, dock, and pile driver; ranger-led tours run seasonally.",
+   "funFacts": [
+    "The brothers began as dairy farmers; the fishery was Plan B \u2014 and it outperformed the farm for three decades",
+    "The site preserves their homemade pile-driver, used to build and maintain their own dock",
+    "Listed on the National Register of Historic Places in 1976, among the earliest historic designations in the Lakeshore"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/little-sand-bay.htm",
+    "https://www.nps.gov/articles/000/historic-hokenson-brothers-fishery-apis.htm",
+    "https://en.wikipedia.org/wiki/Hokenson_Fishing_Dock",
+    "https://friendsoftheapostleislands.org/2022/12/13/restoration-of-historic-dock-completed-at-little-sand-bay/"
+   ]
+  },
+  {
+   "id": "basswood-island-brownstone-quarry",
+   "name": "Basswood Island Brownstone Quarry",
+   "kind": "historic",
+   "island": "Basswood Island",
+   "lat": 46.83209,
+   "lon": -90.75677,
+   "tagline": "The quarry that helped rebuild Chicago after the Great Fire",
+   "story": "In 1868, Alanson Sweet's Bass Island Brownstone Company opened the first of the Apostle Islands' quarries on Basswood's south end, cutting stone for Milwaukee's second county courthouse. Then came October 1871: Chicago burned, and Lake Superior brownstone \u2014 reputed to have held its integrity in the fire's intense heat \u2014 suddenly became the fashionable, fireproof building stone of the age. Chicago capitalists took an interest, and for years the quarry's output went largely to rebuilding that city.\n\nCook & Hyde ran the operation from 1883 to 1888, and the Superior Brownstone Company leased it in 1891, but the Panic of 1893 killed demand almost overnight as tastes shifted to lighter stone and steel frames. The pit went quiet, filled with water, and never reopened.\n\nToday the flooded quarry \u2014 roughly 200 feet long and 25 feet deep \u2014 sits above a drowned loading dock whose stone pier and wooden cribs lie in 7 to 20 feet of clear water, scattered with splitting wedges, narrow-gauge rail, and cut blocks still bearing tool marks. Apostle Islands stone survives in the old Chicago Tribune building and Milwaukee's St. Paul's Episcopal Church.",
+   "visitTips": "The quarry dock site is public and snorkelable in 7-20 feet of water, but has no mooring buoy \u2014 anchor carefully clear of the cribs. Ashore, the flooded pit and rusting equipment can be reached from Basswood's trail system. Removing artifacts is illegal.",
+   "funFacts": [
+    "Basswood brownstone built Milwaukee's second county courthouse before the Chicago fire made the stone famous",
+    "The quarry site joined the National Register in 1978, with a boundary expansion in 2016",
+    "The submerged dock's stone pier runs 158 feet \u2014 one of the few Apostle quarry docks shallow enough to snorkel"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/302",
+    "https://en.wikipedia.org/wiki/Bass_Island_Brownstone_Company_Quarry",
+    "https://www.bayfieldheritage.org/stone-quarries-of-the-apostle-islands/",
+    "https://www.nps.gov/places/basswood-island-apis.htm"
+   ]
+  },
+  {
+   "id": "hermit-island",
+   "name": "Hermit Island \u2014 Wilson's Legend, Excelsior Quarry & Cedar Bark Cottage",
+   "kind": "historic",
+   "island": "Hermit Island",
+   "lat": 46.88282,
+   "lon": -90.67623,
+   "tagline": "A murdered hermit, buried coins, and a bark-clad mansion a bride refused to enter",
+   "story": "The island takes its name from William Wilson, a barrel-maker who quit La Pointe in the 1850s after losing a bare-knuckle fight with the town strongman, \"King\" John Bell \u2014 by one account, a quarrel that began when Wilson threatened Bell's dog. Wilson lived alone, crafting barrels for the fishing trade and reputedly hoarding some $1,300 in coins in buckskin bags. He was found dead in his cabin in the winter of 1861, with appearances pointing to murder. Treasure hunters pocked the island with holes for decades; only about $60 ever turned up, hidden behind a clock.\n\nIn the 1890s Toledo-born brownstone baron Frederick Prentice bought the island and opened the Excelsior Quarry, which at its peak employed around 100 men and in 1892 was tapped to cut a monolith more than 110 feet tall for the 1893 World's Columbian Exposition. In 1895 Prentice built an elaborate three-story home sheathed in cedar bark \u2014 Cedar Bark Cottage \u2014 for his new young bride. The story goes that she took one look and returned to New York the same day.\n\nPrentice's company went bankrupt in 1893 and quarrying ceased for good in 1897. The cottage served briefly as a resort, then fell to vandals and was razed by the 1930s. Along the southeast shore, stacked sandstone blocks still wait for a ship that never came, above a drowned quarry dock strewn with rails and a derrick flywheel.",
+   "visitTips": "No dock and no maintained trails; land by kayak or dinghy on the beaches. The abandoned quarry with its stacked blocks lies midway along the southeast shore; the submerged quarry dock (1-21 feet of water) is public but unbuoyed and not recommended for diving. Primitive camping only.",
+   "funFacts": [
+    "Wilson's suspected murder in 1861 was never solved, and the treasure digs continued for generations",
+    "The Excelsior Quarry was chosen to cut a 110-plus-foot stone monolith for the 1893 Chicago World's Fair",
+    "Cedar Bark Cottage was shingled entirely in cedar bark \u2014 hence the name"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/303",
+    "https://www.lakesuperior.com/the-lake/the-ghost-of-hermit-island/",
+    "https://friendsoftheapostleislands.org/2022/08/07/hermit-island/",
+    "https://madison.com/wsj/news/local/odd-wisconsin-the-hermit-of-the-apostle-islands/article_56d9516a-25b1-5b30-aaa8-07ca25287823.html"
+   ]
+  },
+  {
+   "id": "quarry-bay-brownstone-quarry",
+   "name": "Quarry Bay Brownstone Quarry",
+   "kind": "historic",
+   "island": "Stockton Island",
+   "lat": 46.90945,
+   "lon": -90.62483,
+   "tagline": "The last Apostle Islands quarry to fall silent",
+   "story": "Quarrying at Stockton's Quarry Bay began early and briefly \u2014 a first operation opened in 1871, the year Chicago's fire ignited demand for fire-resistant brownstone, but lasted only a season. The serious work came later: from 1886 the Ashland Brownstone Company cut stone here on what was then called Presque Isle, feeding the building booms of the brownstone era.\n\nThe Panic of 1893 sent production sliding as architectural fashion swung toward lighter stone and steel skeletons. The company hung on longer than any other island quarry, finally unable to cover its costs in 1897 \u2014 the end of brownstone quarrying in the Apostles altogether.\n\nThe bay still wears the industry's fingerprints. Six timber dock cribs lie submerged in 7 to 23 feet of water, connected by spokes and cross-cribs, with narrow-gauge rail, stone-splitting wedges, derrick parts, and even quarrymen's leather boots recorded at the site. Ashore, the overgrown quarry face and discarded blocks sit a short walk from the modern campground.",
+   "visitTips": "Quarry Bay has an NPS dock and campsites; the abandoned quarry is a short walk from the dock via the Quarry Bay Trail. The submerged crib field (7-23 feet) is public but unbuoyed \u2014 mind your anchor and leave all artifacts in place.",
+   "funFacts": [
+    "When this quarry closed in 1897, the entire Apostle Islands brownstone industry ended with it",
+    "Archaeologists documented quarrymen's leather boots and soles among the dock remains",
+    "Stockton Island was called Presque Isle during the quarry era"
+   ],
+   "sources": [
+    "https://www.wisconsinshipwrecks.org/Attraction/Details/304",
+    "https://www.bayfieldheritage.org/stone-quarries-of-the-apostle-islands/",
+    "https://npshistory.com/publications/apis/brochures/stockton-nd1.pdf"
+   ]
+  },
+  {
+   "id": "shaw-point-historic-district",
+   "name": "Shaw Point Historic District (Shaw-Hill Farm & Camp Stella)",
+   "kind": "historic",
+   "island": "Sand Island",
+   "lat": 46.96306,
+   "lon": -90.93417,
+   "tagline": "Where Sand Island's pioneer farm, first resort, and first summer cottage share one point",
+   "story": "Francis Shaw, Sand Island's first Euro-American settler, planted a commercial fishing camp and farm at this southeastern point in 1870. The homestead became the anchor of island life: Shaw's daughter Anna Mae married Burt Hill, and from 1910 to 1941 the Hills farmed here while Burt served as postmaster of the island's tiny \"Shaw\" post office (1911-1916) and managed the Sand Island Co-Operative Association store that opened in 1918.\n\nNext door, Camp Stella opened in 1886 as one of the region's earliest summer resorts, and in 1909 the Campbell-Jensch property became the first purely residential summer home on the island's south shore. Together the three neighboring properties trace Sand Island's whole arc \u2014 fishing, farming, resort recreation, and cottage life \u2014 on a single point of land.\n\nThe district was added to the National Register of Historic Places on July 27, 2020, after a seven-year effort by the Apostle Islands Historic Preservation Conservancy; the Shaw Farm itself had been individually listed back in 1976. A later owner of the farm was Fred C. Andersen, president of the Andersen window company.",
+   "visitTips": "Shaw Point lies at Sand Island's southeast corner near the East Bay dock. Several cabins in this area remain privately occupied under life leases \u2014 view the historic buildings respectfully from trails and the shoreline.",
+   "funFacts": [
+    "Sand Island's post office was literally named \"Shaw\"",
+    "Camp Stella (1886) was among the earliest summer resorts in the Apostles",
+    "By 1918 Sand Island supported more than 100 year-round residents, most of them Norwegian immigrants"
+   ],
+   "sources": [
+    "https://friendsoftheapostleislands.org/2020/08/31/shaw-point-on-sand-island-designated-a-national-register-historic-district/",
+    "https://en.wikipedia.org/wiki/Shaw_Farm_(Bayfield_County,_Wisconsin)",
+    "https://www.nps.gov/places/sand-island.htm",
+    "https://npshistory.com/publications/apis/shaw-hill-farm.pdf"
+   ]
+  },
+  {
+   "id": "west-bay-club",
+   "name": "West Bay Club",
+   "kind": "historic",
+   "island": "Sand Island",
+   "lat": 46.97197,
+   "lon": -90.97641,
+   "tagline": "A 1913 lakeside refuge built by St. Paul hay-fever fugitives",
+   "story": "In 1913, a group from Saint Paul, Minnesota commissioned architects Buechner & Orth to design a rustic clubhouse on Sand Island's west bay \u2014 not primarily for sport, but for breathing. The members suffered from allergic rhinitis, and Lake Superior's cool, pollen-scarce air was the era's best available medicine. Every August, when ragweed made the Twin Cities miserable, the club offered blessed relief at the end of a long boat ride.\n\nThe West Bay Club stands as an early example of health-driven recreational architecture on the Great Lakes \u2014 a wellness retreat decades before the word existed. It was added to the Wisconsin State Register in 2014 and the National Register of Historic Places in 2015.\n\nIt also completes Sand Island's remarkable social geography: Norwegian farmer-fishermen at East Bay, a pioneer farm and resort at Shaw Point, and urban health-seekers on the west shore, all sharing one small island at the edge of the big lake.",
+   "visitTips": "On Sand Island's western shore. The building area is best appreciated from the water; portions of Sand Island's historic cabins remain privately occupied, so keep to public shoreline and trails.",
+   "funFacts": [
+    "The club was founded as a hay-fever refuge \u2014 Lake Superior air was considered a genuine allergy treatment",
+    "Its architects, Buechner & Orth, were known for grand courthouses across the Upper Midwest",
+    "It reached the National Register in 2015, a full century after its founding era"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bay_Club",
+    "https://www.nps.gov/places/sand-island.htm",
+    "https://www.nps.gov/apis/learn/historyculture/farms.htm"
+   ]
+  },
+  {
+   "id": "east-bay-norwegian-settlement",
+   "name": "East Bay Norwegian Settlement",
+   "kind": "historic",
+   "island": "Sand Island",
+   "lat": 46.98104,
+   "lon": -90.93269,
+   "tagline": "A vanished village of Norwegian farmer-fishermen on Sand Island's east shore",
+   "story": "Along East Bay's sheltered shore, Norwegian immigrant families built the closest thing the Apostle Islands ever had to a true village. Arriving from the 1890s onward \u2014 the Hansens among the first, later joined by families like the Norengs, who came from Norway in 1906 \u2014 they fished the lake and cleared farms in the forest behind the beach.\n\nBy 1918 more than 100 people lived on Sand Island, with a school, a post office, and their own cooperative store founded that July. Fred Hansen's diaries, kept from 1913 on, record the rhythm of it: nets lifted at dawn, hay cut in the old clearings, supplies hauled across from Bayfield before freeze-up. The community faded as fishing declined and families drifted to the mainland, leaving fields to grow back into forest.\n\nToday the East Bay dock and campsites sit where the settlement once hummed, and the two-mile trail to the 1881 Sand Island Lighthouse passes overgrown farm fields \u2014 including the old Hansen farm \u2014 where apple trees and clearings still betray the plow.",
+   "visitTips": "The public L-shaped steel dock and NPS campsites at East Bay (overnight dock fee applies for boaters) make this the natural base for exploring. Walk the two-mile trail to the Sand Island Lighthouse past historic farm sites; a spur leads toward the Noreng farm site.",
+   "funFacts": [
+    "Sand Island once had its own school, post office, and cooperative store \u2014 real village infrastructure on a Lake Superior island",
+    "Fred Hansen's daily diaries from 1913 onward are a key source on island farm-and-fish life",
+    "The lighthouse trail from East Bay passes directly through the old farm clearings"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/sand-island.htm",
+    "https://www.nps.gov/apis/learn/historyculture/farms.htm",
+    "https://en.wikipedia.org/wiki/Sand_Island_(Wisconsin)"
+   ]
+  },
+  {
+   "id": "rocky-island-fish-camps",
+   "name": "Rocky Island Fish Camps Historic District",
+   "kind": "historic",
+   "island": "Rocky Island",
+   "lat": 47.04583,
+   "lon": -90.66611,
+   "tagline": "Five family fish camps from the last golden summers of Lake Superior fishing",
+   "story": "In the early 1930s, Norwegian-American fishing families began stringing their summer camps along Rocky Island's protected eastern shore \u2014 close to the deep outer-island fishing grounds, sheltered from the northwest blows. The Hadland, Benson, Edwards, Nelson, and Erickson camps grew into a genuine seasonal community: simple balloon-frame cabins, net sheds, and docks built for work, not show.\n\nChristian Hadland, who emigrated from Egersund, Norway in 1905, moved his operation here from Outer Island in 1938; his wife and children joined him each summer and returned to the mainland when school began, and at times as many as eight hired hands lived at the camp. Olaf Edwards bought his parcel in the early 1930s and fished from the island until 1946.\n\nThe community's economic engine failed in the 1950s, when the invasive sea lamprey devastated Lake Superior's lake trout and commercial fishing collapsed. The camps survived as family retreats, and in 2008 the district \u2014 13.7 acres of the eastern shore \u2014 was added to the National Register as a rare intact portrait of the Scandinavian family fishery.",
+   "visitTips": "Rocky Island's NPS dock and campsites sit on the same eastern shore as the historic camps; a shoreline trail passes the old cabins and net sheds. Several structures remain in NPS or life-lease use \u2014 enjoy them from the outside.",
+   "funFacts": [
+    "Whole families migrated to the island each June and left when school started \u2014 a fishing version of summer pasture",
+    "The district's five camps were all built by first- or second-generation Norwegian immigrants",
+    "It was the sea lamprey, not storms or markets, that ended the fishery in the 1950s"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rocky_Island_Historic_District",
+    "https://npshistory.com/publications/apis/cli-rocky-island-fishing-comm.pdf",
+    "https://friendsoftheapostleislands.org/2022/08/07/rocky-island/",
+    "https://npshistory.com/publications/apis/shs-family-commercial-fishing.pdf"
+   ]
+  },
+  {
+   "id": "frog-bay-tribal-national-park",
+   "name": "Frog Bay Tribal National Park",
+   "kind": "historic",
+   "island": "Mainland \u2014 Red Cliff Reservation",
+   "lat": 46.9105,
+   "lon": -90.7791,
+   "tagline": "The first tribal national park in the United States \u2014 reservation land returned",
+   "story": "In 2012, the Red Cliff Band of Lake Superior Chippewa did something no tribe had done before: it reacquired an 89-acre parcel of former reservation land on Frog Bay and opened it to everyone as the first tribal national park in the United States. A second 86-acre purchase in 2017 grew the park to about 175 acres, and with the adjoining Frog Creek Conservation Management Area the tribe now protects roughly 300 acres here.\n\nThe \"national park\" title reflects the sovereignty of the Red Cliff Band rather than any tie to the National Park Service \u2014 and that is precisely the point. Land that had passed out of tribal hands through allotment-era sales is back under Ojibwe stewardship, permanently protecting at-risk boreal forest, nearly 120 acres of wetlands, the Frog Creek estuary, and almost 4,000 feet of wild Lake Superior shoreline.\n\nFrom the sandy beach at the creek mouth, the view sweeps across to Sand, York, Raspberry, Oak, and Basswood islands \u2014 the heart of the Red Cliff Band's ancestral waters, where treaty-reserved fishing continues today. A 1.7-mile rustic trail with interpretive signs winds through hemlock and boreal forest to the shore.",
+   "visitTips": "Day use only; walk in via the 1.7-mile trail from the Frog Bay Road trailhead (entrance near 46.908, -90.789). Paddlers cruising the Red Cliff shore pass the undeveloped bay \u2014 practice leave-no-trace and respect that this is sovereign tribal land; contact Red Cliff Treaty Natural Resources with questions.",
+   "funFacts": [
+    "\"National park\" here refers to the sovereign Red Cliff nation \u2014 not the NPS",
+    "The park protects one of the south shore's rare intact boreal forest remnants",
+    "The beach panorama takes in five Apostle Islands across open water"
+   ],
+   "sources": [
+    "https://www.redcliff-nsn.gov/frogbay/",
+    "https://wisconsinfirstnations.org/frog-bay-tribal-national-park/",
+    "https://www.bayfieldcounty.wi.gov/1176/Frog-Bay-Tribal-National-Park",
+    "https://www.travelwisconsin.com/national-parks-forests/frog-bay-tribal-national-park-196910"
+   ]
+  },
+  {
+   "id": "grants-point-madeline-island",
+   "name": "Grant's Point & Mooningwanekaaning (Madeline Island)",
+   "kind": "historic",
+   "island": "Madeline Island",
+   "lat": 46.75284,
+   "lon": -90.78808,
+   "tagline": "The sandy point at the heart of the Ojibwe homeland and three centuries of trade",
+   "story": "To the Ojibwe of the whole Lake Superior country, Madeline Island is Mooningwanekaaning \u2014 the home of the golden-breasted flicker. In the migration tradition, it is the final stopping place of a centuries-long westward journey guided by prophecy to a land where food grows on water: the wild rice of the Chequamegon country. The island became the spiritual and political capital of the Ojibwe Nation, a place of villages, councils, lacrosse, and ceremony, and the treaties of 1842 and 1854 were negotiated at La Pointe.\n\nGrant's Point, the low sandy peninsula at the island's southwestern end, concentrates that history. Known also as Mooningwane-neyaashi (Flicker Point) and \"Old Fort,\" it held an early Ojibwe settlement and the French fort of the 1690s that anchored the fur trade at La Pointe, with a second French post following in 1718. Fur trader Michel Cadotte, who married Equaysayway \u2014 daughter of Chief White Crane, for whom the island was renamed Madeline \u2014 settled here with his Warren sons-in-law.\n\nIn 1834 the American Fur Company made La Pointe the headquarters of its Northern Outfit; its 1835 building survives as the oldest structure on the island. Today the point's long accreted beach is a favorite sunset spot, and in hard winters the famous ice road to Bayfield runs just offshore.",
+   "visitTips": "Approach the point's shallow sand flats with care; the public beach access is via Casper Road on the point's east side, about 2 miles from the La Pointe ferry dock, with private land nearby. Pair a visit with the Madeline Island Museum in La Pointe. This remains a living sacred landscape for the Ojibwe \u2014 visit respectfully.",
+   "funFacts": [
+    "Mooningwanekaaning means \"place abundant with the golden-breasted flicker\" \u2014 a woodpecker",
+    "Both the 1842 and 1854 treaties, which shaped Ojibwe rights across the region, were negotiated at La Pointe",
+    "The island is named for Madeleine (Equaysayway), Ojibwe wife of fur trader Michel Cadotte"
+   ],
+   "sources": [
+    "https://www.wisconsinhistory.org/Records/Article/CS17067",
+    "https://www.lakesuperior.com/the-lake/madeline-island-anishinaabeg-home-of-the-golden-breasted-flicker/",
+    "https://www.madelineisland.com/madeline-island/island-history/",
+    "https://chequamegonhistory.com/tag/madeline-island/",
+    "https://madelineislandmuseum.wisconsinhistory.org/explore/"
+   ]
+  },
+  {
+   "id": "mawikwe-bay-sea-caves",
+   "name": "Mawikwe Bay Sea Caves (Meyers Beach)",
+   "kind": "sea_cave",
+   "island": "Mainland \u2014 Mawikwe Bay / Meyers Beach",
+   "lat": 46.8995,
+   "lon": -91.0365,
+   "tagline": "A mile of wave-carved sandstone chambers that turn to crystal palaces in winter",
+   "story": "Northeast of the kayak launch at Meyers Beach, the mainland shore rears up into red cliffs of Devils Island Formation sandstone \u2014 a billion-year-old, thin-bedded rock about 300 feet thick that Lake Superior has been chewing on for centuries. Wave action, freeze, and thaw have hollowed the cliff base into re-entrants that link up into true sea caves: vaulted rooms, honeycombed passages, and slot-like crevasses that a sea kayak can slide deep inside on a calm day.\n\nThese are the caves that made the Apostles famous twice over. In summer, paddlers launch from Meyers Beach and work a mile northeast along the cliffs; hikers get clifftop overlooks from the Lakeshore Trail about two miles in. In cold winters, spray and seeping groundwater sheath the same chambers in curtains of ice, and when the lake freezes solid enough the park opens a walk across the ice from Meyers Beach to the ice caves \u2014 an event rare enough that each opening draws pilgrims from across the Midwest.\n\nThe caves sit in Mawikwe Bay, an important place to the Ojibwe of nearby Red Cliff; Mawikwe is often translated as 'weeping woman.' The lake demands respect here in any season: swells that look gentle offshore detonate inside the chambers, and the ice road only exists when the superintendent formally declares it open.",
+   "visitTips": "Launch kayaks from Meyers Beach (fee station and stairway at the end of Meyers Beach Road, about 18 miles west of Bayfield); the first caves are roughly a mile northeast. Only enter caves in near-flat conditions \u2014 check the marine forecast, wear a PFD, and don't paddle alone; guided tours run from Bayfield and Cornucopia. Hikers can view the caves from clifftop overlooks about 2 miles along the Lakeshore/Mainland Ice Caves Trail. In winter, call the park's ice line (715-779-3398 ext. 3) before attempting the ice-cave walk.",
+   "funFacts": [
+    "The caves are cut into the Devils Island Formation, a roughly 300-foot-thick, billion-year-old sandstone whose thin layers erode into arches, pillars, and vaulted rooms",
+    "The frozen lake surface is closed in winter unless the park superintendent declares the ice caves open \u2014 some winters they never open at all",
+    "The same rock formation resurfaces at Swallow Point and Devils Island"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/learn/nature/caves.htm",
+    "https://www.nps.gov/apis/learn/nature/geologicformations.htm",
+    "https://www.apostleislands.org/apostle-islands-meyers-beach/",
+    "https://wisconsin.hometownlocator.com/maps/feature-map,ftc,1,fid,1574755,n,mawikwe%20bay.cfm"
+   ]
+  },
+  {
+   "id": "swallow-point-sea-caves",
+   "name": "Swallow Point Sea Caves",
+   "kind": "sea_cave",
+   "island": "Sand Island",
+   "lat": 46.9942,
+   "lon": -90.928,
+   "tagline": "Mottled sandstone grottoes on Sand Island's wild northeast shore",
+   "story": "Around the headland north of Justice Bay, Sand Island's northeast shore breaks into the Swallow Point sea caves \u2014 the westernmost island exposure of the same Devils Island Formation sandstone that forms the mainland and Devils Island caves. The Sand Island caves are the smallest of the park's three cave areas, but they make up for scale with color: iron staining mottles the reddish-brown rock in patterns unique to this shoreline, and low arches and pockets invite slow, close exploration by kayak.\n\nSwallow Point rewards travelers who arrive two ways. Paddlers crossing from Little Sand Bay face about two miles of open water \u2014 a serious crossing where even a south wind can build whitecaps \u2014 before tracing the cliffs between East Bay and the 1881 brownstone lighthouse on the island's north tip. Campers and day hikers on Sand Island can simply walk the trail toward the lighthouse and look back at the caves from the beach at Justice Bay, one of the prettiest low-effort cave views in the park.",
+   "visitTips": "Kayakers usually launch at Little Sand Bay (13 miles north of Bayfield); the crossing is about 2 miles of open water \u2014 pick a calm forecast and treat it seriously. From the Sand Island dock/campground area, hike toward the lighthouse and view the caves from Justice Bay's beach. Enter caves only in calm seas; swells rebound off the shallow rock shelves here.",
+   "funFacts": [
+    "The Sand Island caves are the smallest of the park's three sea-cave exposures but show a mottled coloring found nowhere else in the archipelago",
+    "The caves can be admired from shore at Justice Bay, roughly the midpoint of the trail to the Sand Island Lighthouse",
+    "Sand Island was excluded from the 2004 Gaylord Nelson Wilderness, partly because of its historic farming-and-fishing community sites"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/learn/nature/caves.htm",
+    "https://www.nps.gov/places/sand-island.htm",
+    "https://bayfieldkayak.com/apostle-islands-sea-caves-map/"
+   ]
+  },
+  {
+   "id": "devils-island-sea-caves",
+   "name": "Devils Island Sea Caves",
+   "kind": "sea_cave",
+   "island": "Devils Island",
+   "lat": 47.0803,
+   "lon": -90.7287,
+   "tagline": "The lake's grandest caves, booming beneath the northernmost lighthouse in Wisconsin",
+   "story": "At the far northern edge of the archipelago \u2014 nothing between here and Canada but open Lake Superior \u2014 Devils Island's north shore is riddled with the most spectacular sea caves on the lake. The island is the type locality of the Devils Island Formation sandstone, and centuries of northerly gales have carved its low cliffs into delicate arches, vaulted chambers, and honeycombed passageways that tunnel far back under the bedrock. When a swell is running, waves surge into the chambers and explode in plumes of spray with a boom that carries across the water \u2014 a sound often credited for the island's Ojibwe associations with a spirit place and its English name.\n\nDirectly above the caves stands the Devils Island Light Station, the last of the Apostles' lights, first lit in 1891; keepers here reportedly could feel the concussion of storm waves detonating in the caves beneath their station.\n\nOn a flat-calm day, kayakers can thread the deepest recesses, drifting beneath rock ceilings with the lighthouse overhead \u2014 many paddlers' single favorite moment in the park. In any swell, the caves become a no-go zone best admired from a cruise boat standing offshore.",
+   "visitTips": "About 20 miles from Bayfield \u2014 an expedition-grade paddle; most kayakers stage from Rocky or South Twin islands and cross only in settled weather. Enter the caves only in near-zero swell. The Apostle Islands Cruise Service runs seasonal boat tours past the caves and lighthouse. A dock and one campsite sit at the island's south end, with a 1-mile trail to the light station; tours of the station are offered in summer when volunteers are on site.",
+   "funFacts": [
+    "Devils Island is the northernmost point in Wisconsin, and its caves are carved into the very sandstone formation that geologists named for the island",
+    "Large waves entering the caves produce thunderous, cannon-like booms \u2014 calm-day kayakers instead hear water echoing softly through the honeycombed chambers",
+    "The 1891 light above the caves marked the last new light station established in the Apostle Islands"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/devils-island.htm",
+    "https://www.nps.gov/apis/learn/nature/caves.htm",
+    "https://friendsoftheapostleislands.org/2022/07/20/devils-island/"
+   ]
+  },
+  {
+   "id": "julian-bay-singing-sands",
+   "name": "Julian Bay Singing Sands & Stockton Tombolo",
+   "kind": "natural",
+   "island": "Stockton Island",
+   "lat": 46.9275,
+   "lon": -90.5403,
+   "tagline": "A beach that squeaks underfoot on a 6,000-year-old land bridge",
+   "story": "Julian Bay's long crescent of beach on Stockton Island's eastern shore does something few beaches anywhere can: it sings. The clean, well-sorted quartz grains are so uniform that they squeak and chirp underfoot \u2014 drag a heel or shuffle through the dry sand above the waterline and the beach whistles back. It is the signature stop on what many consider the finest beach walk in the Apostles.\n\nThe beach is the eastern face of a rarer wonder: Wisconsin's only tombolo, a sand bridge roughly 6,000 years in the making that welded the once-separate Presque Isle to the rest of Stockton Island. Behind the beach ridge lies a mosaic packed into a small compass \u2014 lagoon, quaking bog, low dunes, pine savanna \u2014 with the outermost dune ridges near Presque Isle dating back 2,000 to 3,000 years. The Tombolo Trail and a boardwalk loop let you cross the whole sequence from Julian Bay to Presque Isle Bay.\n\nAnchor in Julian Bay in settled easterly-free weather, or tie up at the Presque Isle dock on the west side and walk over \u2014 either way, budget time to simply scuff along the sand and make it sing.",
+   "visitTips": "Boaters can anchor off Julian Bay in stable weather, or use the NPS dock at Presque Isle Bay on the sheltered west side and hike the short boardwalk across to Julian Bay. The 3-mile Tombolo Trail explores the dune ridges and bog; stay on boardwalks in wetland sections. The excursion boat and water taxis also serve Stockton in season.",
+   "funFacts": [
+    "The tombolo is the only landform of its kind in Wisconsin, joining former Presque Isle island to Stockton with a 6,000-year-old sand bridge",
+    "The singing comes from uniform, rounded quartz grains shearing against each other \u2014 it works best in dry sand on warm days",
+    "The tombolo complex holds bogs, dunes, lagoons, savannas, and pines, plus the park's largest campground at Presque Isle Bay"
+   ],
+   "sources": [
+    "https://friendsoftheapostleislands.org/2022/07/22/stockton-island/",
+    "https://www.nps.gov/apis/learn/nature/sandscapes.htm",
+    "https://www.nps.gov/places/stockton-island-apis.htm",
+    "https://www.waterwayguide.com/anchorage/2-2729/julian-bay-presque-isle-bay"
+   ]
+  },
+  {
+   "id": "outer-island-sandspit",
+   "name": "Outer Island Sandspit",
+   "kind": "natural",
+   "island": "Outer Island",
+   "lat": 46.9891,
+   "lon": -90.4719,
+   "tagline": "A mile and a half of wild sand trailing off the archipelago's outermost island",
+   "story": "Off the southern tip of Outer Island, the archipelago's most exposed island tapers into a magnificent sandspit \u2014 about a mile and a half of open sand, beach, and low dunes reaching into Lake Superior. Currents wrapping around the island's flanks meet in its lee and drop their cargo of sand eroded from clay bluffs up-shore, building one of the finest examples of a sandspit in the entire park and a highlight of the state's Apostle Islands Sandscapes natural-area designation.\n\nThe spit is a living landform, reshaped by every gale, and its plants are specialists in instability: beach grass, beach pea, wormwood, and mats of creeping juniper stitch the dunes together. It is also a landfall for migrating birds funneling along the islands \u2014 and a lonely, glorious campsite location, with the 7.5-mile Sandspit Trail linking the south-end campsites to the 1874 lighthouse at the island's north tip.\n\nFor boaters, the spit is the classic staging point for weather windows at the park's outer edge; for paddlers it is a hard-won reward at the end of some of the most committing crossings in the Apostles.",
+   "visitTips": "Anchor in the lee of the spit according to wind direction; holding is sand. Campsites sit near the spit at the island's south end (permits required). Respect any roped-off or posted plover nesting areas in early summer, camp only at designated sites, and avoid trampling dune vegetation. The Sandspit Trail runs 7.5 miles north to the Outer Island Light.",
+   "funFacts": [
+    "The spit is about 1.5 miles long \u2014 one of only two true sandspits in the park (Cat Island has the other)",
+    "Beach pea, a nitrogen-fixer, helps fertilize the nutrient-poor sand so later dune plants can take hold",
+    "Endangered piping plovers have nested in the park only on Long Island and at Outer Island's protected beaches \u2014 heed any posted closures on the spit"
+   ],
+   "sources": [
+    "https://dnr.wisconsin.gov/topic/statenaturalareas/ApostleIslandsSandscapes",
+    "https://www.nps.gov/apis/learn/nature/sandscapes.htm",
+    "https://home.nps.gov/places/outer-island.htm"
+   ]
+  },
+  {
+   "id": "outer-island-old-growth-forest",
+   "name": "Outer Island Old-Growth Forest",
+   "kind": "natural",
+   "island": "Outer Island",
+   "lat": 47.071,
+   "lon": -90.423,
+   "tagline": "A cathedral of ancient hemlock the loggers \u2014 and the deer \u2014 never touched",
+   "story": "On Outer Island's northern tip, near the 1874 lighthouse, stands one of the best surviving pieces of old-growth northern hardwood-hemlock forest in the upper Great Lakes: a 202-acre remnant of towering hemlock, white pine, yellow birch, and cedar, threaded with clay-bank seeps and ephemeral ponds. While nearly every island in the Apostles was cut over in the logging era, this far corner of the farthest island escaped, and walking beneath it feels like stepping back before the axe \u2014 sunlight falling through the canopy in shafts, the understory open and hushed.\n\nWhat makes the stand scientifically precious is an absence: deer. Without browsing pressure, hemlock and Canada yew regenerate here as they rarely can on the mainland, making Outer Island a reference forest \u2014 a baseline for what the Northwoods looked like and how it renews itself. The area is protected within the Apostle Islands Maritime Forests State Natural Area and the Gaylord Nelson Wilderness.",
+   "visitTips": "Reach the north end via the lighthouse dock area (landing is weather-dependent and exposed) or hike the 7.5-mile Sandspit Trail from the south-end campsites. Travel is primitive wilderness hiking \u2014 no facilities beyond the light station area. Leave no trace; the seeps and ephemeral ponds are fragile.",
+   "funFacts": [
+    "The 202-acre stand is considered one of the best old-growth hemlock-hardwood examples left in the upper Great Lakes",
+    "Because Outer Island lacks deer, browse-sensitive species like Canada yew and hemlock seedlings thrive here \u2014 a rarity across the region",
+    "The forest shares the island's north tip with the tallest brick lighthouse in the Apostles (1874)"
+   ],
+   "sources": [
+    "https://dnr.wisconsin.gov/topic/statenaturalareas/ApostleIslandsMaritimeForests",
+    "https://home.nps.gov/places/outer-island.htm"
+   ]
+  },
+  {
+   "id": "raspberry-island-sandspit",
+   "name": "Raspberry Island Sandspit",
+   "kind": "natural",
+   "island": "Raspberry Island",
+   "lat": 46.9687,
+   "lon": -90.7975,
+   "tagline": "A protected sand point and favorite anchorage below the showplace lighthouse",
+   "story": "Off Raspberry Island's southwest corner, a neat cuspate sandspit hooks into the West Channel \u2014 one of a family of wedge-shaped sand forelands the currents have built on the lee corners of the Apostles. The spit shelters a popular small-boat anchorage, and its beach and low dunes carry the classic pioneer plant community of the islands: beach grass and nitrogen-fixing beach pea binding bare sand into ridges that shrubs and pines can later claim.\n\nThe island above it has an unusual ecological backstory. Because Raspberry was a U.S. Lighthouse Service reservation, it was never commercially logged, and today parts of it fall within the Apostle Islands Yew Forest State Natural Area \u2014 protecting Canada yew thickets that deer have wiped out across most of the mainland Northwoods. To keep the fragile spit vegetation intact, the park bars camping on the sandspit and lighthouse grounds; boats anchor off the spit while day visitors climb the stairs to tour the restored 1906 lighthouse, long billed as the showplace of the Apostle Islands.",
+   "visitTips": "Powerboats and sailboats commonly anchor overnight off the sandspit; a small first-come dock below the lighthouse serves day visitors. Camping is prohibited on the sandspit and lighthouse grounds \u2014 primitive camping only elsewhere on the island. NPS rangers lead summer lighthouse tours; the spit's dune plants are fragile, so walk on bare sand and established paths.",
+   "funFacts": [
+    "Raspberry's spit is a textbook cuspate foreland \u2014 the park counts similar sand wedges on ten of its islands",
+    "The island escaped commercial logging entirely because it belonged to the U.S. Lighthouse Service",
+    "Parts of Raspberry are in the Apostle Islands Yew Forest State Natural Area (designated 2010), sheltering Canada yew that deer browsing has erased elsewhere"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/raspberry-island.htm",
+    "https://friendsoftheapostleislands.org/2022/07/22/raspberry-island/",
+    "https://www.nps.gov/apis/learn/nature/sandscapes.htm"
+   ]
+  },
+  {
+   "id": "michigan-island-lagoon-sandspit",
+   "name": "Michigan Island Lagoon & Sandspit",
+   "kind": "natural",
+   "island": "Michigan Island",
+   "lat": 46.8755,
+   "lon": -90.515,
+   "tagline": "A driftwood-strewn spit hiding a secret marshy lagoon",
+   "story": "At Michigan Island's western end, about nine-tenths of a mile from the island's two lighthouses, a long sandspit sweeps into the lake \u2014 sweeping dunes, wave-polished driftwood, and clear water shading from gold to deep blue. Tucked just inland behind the spit lies a quiet, marshy lagoon, one of the sheltered wetlands that form when a growing sand barrier seals off a corner of the lake and lets a still-water world develop behind it: frog song, dragonflies, and waterbirds a stone's throw from open Superior.\n\nThe spit is also the island's landing and camping zone. Boats beach on the sand or anchor off and dinghy in, and a single campsite hides behind the dunes in the trees, reached by a boardwalk from a marker on the beach. From the spit, a trail leads up to the light station \u2014 the odd couple of an 1857 stone lighthouse built here by mistake and the 112-foot steel tower that replaced it in 1929, the tallest light in the Apostles.",
+   "visitTips": "Land small boats directly on the spit's sand or anchor off and dinghy ashore; enter the dunes only at the marked boardwalk. The single campsite (permit required) is set in the trees behind the dunes. Walk quietly to the lagoon edge for herons and waterfowl \u2014 footing is marshy. A trail connects the spit to the lighthouses for a climbable-tower view when staff are present.",
+   "funFacts": [
+    "The lagoon behind the spit is a textbook barrier-built wetland \u2014 sand seals off a bay corner, and a marsh ecosystem develops in the stillness behind it",
+    "Michigan Island's first lighthouse (1857) was built on the wrong island; its 1929 replacement tower is the tallest in the archipelago",
+    "The campsite sits 0.9 mile west of the light station, behind the dunes \u2014 campers must use the site, not the beach"
+   ],
+   "sources": [
+    "https://www.nps.gov/apis/planyourvisit/michigan-campsite.htm",
+    "https://friendsoftheapostleislands.org/2022/07/20/michigan-island/",
+    "https://www.nps.gov/apis/learn/nature/sandscapes.htm"
+   ]
+  },
+  {
+   "id": "big-bay-lagoon-barrier-beach",
+   "name": "Big Bay Lagoon & Barrier Beach",
+   "kind": "natural",
+   "island": "Madeline Island",
+   "lat": 46.8117,
+   "lon": -90.6802,
+   "tagline": "A 1.5-mile sand crescent sealing off a lagoon and a floating sphagnum bog",
+   "story": "On Madeline Island's east shore, Big Bay shows what 15,000 years of patient wave-work can do. When the island emerged from beneath the last glacier, Big Bay was an open, shallow arm of the lake; longshore currents then built a barrier beach across its middle and later a second baymouth bar across its entrance, trapping the water behind. The result today is a mile-and-a-half crescent of sand backed by Big Bay Lagoon and an extensive quaking sphagnum-sedge bog \u2014 a whole northern wetland world hidden a dune's width from Lake Superior surf.\n\nThe 963-acre spit-and-bog complex is protected as the DNR-owned Big Bay Sand Spit and Bog State Natural Area, its barrier beach shared between Big Bay State Park and the town park. Old beach ridges behind the modern strand record earlier stands of the lake, and the bog mat \u2014 carnivorous plants, orchids, and all \u2014 literally trembles underfoot where boardwalks cross it. Note for trip-planners: Madeline Island lies outside Apostle Islands National Lakeshore; this one belongs to the Wisconsin State Park system and the Town of La Pointe.\n\nFor boaters and paddlers, the beach is one of the sweetest swim stops on the lake \u2014 Big Bay's shallows warm faster than almost any water in the Apostles \u2014 and the lagoon rewards a slow kayak or SUP lap along its dark, tannin-stained edges.",
+   "visitTips": "Reach Madeline Island by ferry from Bayfield, then drive about 7 miles to Big Bay State Park (vehicle admission required) or Big Bay Town Park at the lagoon outlet. Kayaks/SUPs can launch into the lagoon from the town-park side; the barrier beach is a 1.5-mile walk-and-swim paradise. Stay on boardwalks over the bog, and expect warmer swimming here than anywhere in the outer islands.",
+   "funFacts": [
+    "Big Bay Lagoon began as an open bay of Lake Superior; two successive sand barriers \u2014 one mid-bay, one across the mouth \u2014 sealed it off after the glaciers left",
+    "The 963-acre Big Bay Sand Spit and Bog is State Natural Area No. 156, with a quaking bog mat that ripples when you walk the boardwalk",
+    "Madeline Island is the one large Apostle outside the national lakeshore \u2014 Big Bay is managed by Big Bay State Park (est. 1963) and the adjacent town park"
+   ],
+   "sources": [
+    "https://dnr.wisconsin.gov/topic/statenaturalareas/BigBaySandSpitBog",
+    "https://dnr.wisconsin.gov/topic/parks/bigbay/geology",
+    "https://dnr.wisconsin.gov/topic/parks/bigbay"
+   ]
+  },
+  {
+   "id": "eagle-island-bird-sanctuary",
+   "name": "Eagle Island Bird Sanctuary (Closed to Landing)",
+   "kind": "natural",
+   "island": "Eagle Island",
+   "lat": 46.9435,
+   "lon": -91.0362,
+   "tagline": "The Apostles' only great blue heron rookery \u2014 admire from offshore",
+   "story": "Tiny Eagle Island \u2014 about 20 acres of rock and trees off the archipelago's western edge, due north of the mainland sea caves \u2014 is a nursery, not a destination. It is the only island in the Apostles where great blue herons nest, and its trees and shores also host colonies of double-crested cormorants and herring gulls. Together with Gull Island at the opposite end of the park, it accounts for the great majority of the lakeshore's breeding herring gulls \u2014 a striking share of the entire Wisconsin Lake Superior shore's population.\n\nBecause colonial waterbirds abandon nests wholesale when disturbed, the island is closed to public entry, with the strictest protections during the nesting season from late spring through early September; it has been part of the Apostle Islands Critical Species State Natural Area since 1992, and researchers visit only for annual bird surveys. For boaters, the reward is the view: pass well offshore on a calm evening and watch herons commute like slow pterodactyls between the island and mainland marshes.",
+   "visitTips": "Landing is prohibited; the island and an offshore buffer are closed during the nesting season (roughly late May through early September) \u2014 check current NPS closures before your trip. View from a boat standing well off; disturbance that flushes birds can doom eggs and chicks to gulls and weather. Best viewing is early morning or evening when herons are commuting.",
+   "funFacts": [
+    "Eagle and Gull islands together hold roughly 88 percent of the lakeshore's breeding herring gulls",
+    "Eagle is the archipelago's only great blue heron rookery",
+    "The island sits almost due north of the Mawikwe Bay sea caves \u2014 an easy offshore detour for cave-bound paddlers, binoculars in hand"
+   ],
+   "sources": [
+    "https://friendsoftheapostleislands.org/2022/08/07/eagle-island/",
+    "https://en.wikipedia.org/wiki/Eagle_Island_(Wisconsin)",
+    "https://dnr.wisconsin.gov/topic/statenaturalareas/ApostleIslandsCriticalSpecies"
+   ]
+  },
+  {
+   "id": "gull-island-bird-sanctuary",
+   "name": "Gull Island Bird Sanctuary (Closed to Landing)",
+   "kind": "natural",
+   "island": "Gull Island",
+   "lat": 46.9069,
+   "lon": -90.4425,
+   "tagline": "Three treeless acres that raise most of the lakeshore's gulls",
+   "story": "Off Michigan Island's northeastern tip lies the smallest of the Apostles: Gull Island, a flat, three-acre shelf of rock barely shrugging above the lake. Its poverty is its power \u2014 with no trees, no cover, and crucially no mammalian predators, it is the most important gullery in the archipelago, packed each summer with nesting herring gulls (and, in some years, ring-billed gulls), while the surrounding shoals double as important fish spawning grounds. A small navigational light marks the island for passing boats.\n\nTogether with Eagle Island 30 miles to the west, this speck supports the bulk of the lakeshore's \u2014 and much of Wisconsin's Lake Superior \u2014 breeding herring gulls. Like Eagle, it is part of the Apostle Islands Critical Species State Natural Area and is closed to visitors so the colony can nest undisturbed. Boaters should give it a respectful berth in season; the reward is the spectacle of a full colony wheeling and crying over a rock you could walk across in a minute.",
+   "visitTips": "Closed to landing year-round to protect nesting colonies; observe from a boat well offshore, especially May through early September. Shoal water surrounds the island \u2014 give it navigational as well as ecological clearance. Binoculars from the Michigan Island sandspit area also give good colony views in flight.",
+   "funFacts": [
+    "At about 3 acres, Gull is the smallest named island in the Apostles \u2014 and pound for pound its most productive bird habitat",
+    "Its shoals are an important spawning site for Lake Superior fish, feeding the very colony above",
+    "The island's lack of mammal predators is exactly why the gulls chose it \u2014 a moat 20 miles wide"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gull_Island_(Wisconsin)",
+    "https://dnr.wisconsin.gov/topic/statenaturalareas/ApostleIslandsCriticalSpecies",
+    "https://www.nps.gov/apis/learn/nature/sandscapes.htm"
+   ]
+  },
+  {
+   "id": "island-black-bears",
+   "name": "Island Black Bears (Oak, Stockton & Sand)",
+   "kind": "natural",
+   "island": "Oak Island (also Stockton & Sand)",
+   "lat": 46.9388,
+   "lon": -90.7268,
+   "tagline": "Blueberry-fed swimmers with some of the densest bear country in Wisconsin",
+   "story": "The Apostles' most surprising residents may be their black bears. Strong swimmers, bears paddle the channels between the mainland and the islands, and three islands \u2014 Oak, Stockton, and Sand \u2014 support their own resident populations. DNA studies using hair snagged on barbed-wire stations revealed four distinct genetic groups (Stockton, Sand, Oak, and mainland ancestry), evidence that island bears aren't just passing through: they're locals, raising cubs on berry flats and beach ridges surrounded by the world's largest lake.\n\nThe numbers are remarkable. Stockton's population grew from a single pair in the 1970s to 31 bears by 1994 \u2014 for years billed as one of the densest black bear populations in North America \u2014 before declining by half by 2010. Meanwhile Oak Island took the crown: about 18 bears at roughly 0.88 bears per square kilometer, the highest density reported in Wisconsin, with Sand Island close behind at 0.85. For campers this is bear country in miniature \u2014 same rules, smaller wilderness: food lockers, clean camps, and no snacks in the tent.",
+   "visitTips": "On Oak, Stockton, and Sand islands, store all food, trash, and scented items in provided bear lockers or hard-sided containers \u2014 never in tents. Cook away from your sleeping area, pack out garbage, and never approach or feed a bear. Paddlers should also stow food overnight when beach-camping on nearby islands: bears swim.",
+   "funFacts": [
+    "Oak Island's bear density (about 0.88 bears/km\u00b2 in 2010) was the highest reported anywhere in Wisconsin, with Sand Island nearly equal",
+    "Stockton went from two bears in the 1970s to 31 by 1994 \u2014 then lost half its population, and 84 percent of its females, by 2010",
+    "Genetic testing shows island bears form distinct populations \u2014 bears born on Stockton or Sand carry no ancestry from other islands"
+   ],
+   "sources": [
+    "https://www.nps.gov/articles/000/black-bears-at-the-apostle-islands.htm",
+    "https://bioone.org/journals/Ursus/volume-26/issue-1/URSUS-D-15-00008.1/American-black-bear-population-abundance-and-genetic-structure-on-an/10.2192/URSUS-D-15-00008.1.short",
+    "https://bioone.org/journals/ursus/volume-16/issue-1/1537-6176(2005)016%5B0085:ABBPSA%5D2.0.CO;2/American-black-bear-population-size-and-genetic-diversity-at-Apostle/10.2192/1537-6176(2005)016%5B0085:ABBPSA%5D2.0.CO;2.short"
+   ]
+  },
+  {
+   "id": "long-island-piping-plover-refuge",
+   "name": "Long Island\u2013Chequamegon Point Piping Plover Refuge",
+   "kind": "natural",
+   "island": "Long Island",
+   "lat": 46.727,
+   "lon": -90.795,
+   "tagline": "Wisconsin's last stronghold of the Great Lakes piping plover",
+   "story": "Long Island isn't really an island \u2014 it's a low barrier spit of pure sand, the only one in the park, arcing between Chequamegon Bay and open Lake Superior with no bedrock underneath. It has flickered between island and peninsula many times as storms cut and currents heal it; since the mid-1970s it has been connected to the mainland near the Bad River delta. The Ojibwe call it Zaagawaamikong-neyaashi, and the adjacent peninsula lands belong to the Bad River Band, whose crews help guard its most precious residents.\n\nThose residents are Great Lakes piping plovers \u2014 small, sand-colored shorebirds so endangered that the entire Great Lakes population once fell to a few dozen pairs. Long Island/Chequamegon Point is the only place in Wisconsin where they have regularly nested since the 1970s, and the NPS acquired the island in 1986 partly to protect them. It is federally designated critical habitat; each summer, biologists cage individual nests with predator exclosures ringed by wide twine perimeters, and stretches of beach close to landings while chicks \u2014 improbable sand-colored puffballs on toothpick legs \u2014 learn to forage the swash line.\n\nTwo lighthouses share the spit with the plovers near its western tip, including the skeletal Chequamegon Point light, moved 100 feet inland in 1987 as the beach eroded beneath it \u2014 a reminder that this whole landform is permanently on the move.",
+   "visitTips": "Portions of the beach close during nesting season (birds arrive late April\u2013early May; closures typically run into August) \u2014 land only outside posted areas, keep dogs off entirely, and give exclosures a wide berth. The spit is shoal-fringed; approach in shallow-draft boats with care. Two campsites exist on the island but check current closures first; the Bad River Band's adjacent lands are not open to public use.",
+   "funFacts": [
+    "Long Island is the park's only barrier spit \u2014 sand all the way down, with no bedrock core \u2014 and has repeatedly switched between island and peninsula",
+    "It is Wisconsin's only regular piping plover nesting site since the 1970s and part of federally designated critical habitat (2001)",
+    "Nests are protected by metal predator exclosures about 12 feet across, ringed by twine perimeters roughly 100 feet wide"
+   ],
+   "sources": [
+    "https://www.nps.gov/places/long-island-an-island-apart-apis.htm",
+    "https://www.federalregister.gov/documents/2001/05/07/01-11205/endangered-and-threatened-wildlife-and-plants-final-determination-of-critical-habitat-for-the-great",
+    "https://forestadaptation.org/piping-plover-recovery-wi",
+    "https://www.badriver-nsn.gov/wp-content/uploads/2025/10/2024-Mashkiiziibii-PIPL-Season-Report.pdf"
+   ]
+  }
+ ]
+}

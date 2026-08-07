@@ -157,6 +157,53 @@ final class ScoringTests: XCTestCase {
         XCTAssertEqual(ranked.map(\.place.id), ["anchorage"], "day-use-only docks must not be recommended for overnight")
     }
 
+    func testRankForStayWindowsWeighWorstNight() {
+        let calendar = ScoreEngine.localCalendar
+        var components = DateComponents()
+        components.year = 2026; components.month = 8; components.day = 6; components.hour = 12
+        let start = calendar.date(from: components)!
+
+        // Six days: calm until the third night, then a hard northerly.
+        let samples = (0..<144).map { offset -> WindSample in
+            let time = start.addingTimeInterval(Double(offset) * 3600)
+            let calm = offset < 55
+            return sample(speed: calm ? 6 : 24, gust: calm ? 8 : 32, direction: 0, time: time)
+        }
+
+        let exposed = makePlace(id: "exposed", shelter: 0.1, fetch: 40)
+        let sheltered = makePlace(id: "sheltered", shelter: 0.95, fetch: 0.5)
+        let outlooks = [
+            "exposed": engine.outlook(for: exposed, hours: samples, calendar: calendar),
+            "sheltered": engine.outlook(for: sheltered, hours: samples, calendar: calendar),
+        ]
+        let firstNight = calendar.startOfDay(for: start)
+
+        // One night (calm): both fine, exposed can even compete.
+        let oneNight = ScoreEngine.rankForStay(
+            places: [exposed, sheltered], outlooks: outlooks,
+            startNight: firstNight, nightCount: 1, calendar: calendar)
+        XCTAssertEqual(oneNight.count, 2)
+        XCTAssertNil(oneNight[0].worstNight)
+
+        // Four nights (storm inside the window): sheltered must win and the
+        // exposed spot's window score must reflect its worst night.
+        let fourNights = ScoreEngine.rankForStay(
+            places: [exposed, sheltered], outlooks: outlooks,
+            startNight: firstNight, nightCount: 4, calendar: calendar)
+        XCTAssertEqual(fourNights.first?.place.id, "sheltered")
+        let exposedOption = fourNights.first { $0.place.id == "exposed" }
+        XCTAssertNotNil(exposedOption)
+        XCTAssertLessThan(exposedOption!.score, 50, "a dangerous night inside the window must sink the stay")
+        XCTAssertEqual(exposedOption!.nights.count, 4)
+        XCTAssertNotNil(exposedOption!.worstNight)
+
+        // A window longer than the forecast excludes everyone rather than half-rating.
+        let tooLong = ScoreEngine.rankForStay(
+            places: [exposed, sheltered], outlooks: outlooks,
+            startNight: firstNight, nightCount: 30, calendar: calendar)
+        XCTAssertTrue(tooLong.isEmpty)
+    }
+
     func testConsecutiveGoodNightsAndRanking() {
         let calendar = ScoreEngine.localCalendar
         var components = DateComponents()

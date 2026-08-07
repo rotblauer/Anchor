@@ -15,6 +15,7 @@ from string import Template
 ROOT = Path(__file__).resolve().parent.parent
 PLACES = json.loads((ROOT / "AnchorCore/Sources/AnchorCore/Resources/places.json").read_text())["places"]
 CONTENT = json.loads((ROOT / "AnchorCore/Sources/AnchorCore/Resources/islands.json").read_text())
+POIS = json.loads((ROOT / "AnchorCore/Sources/AnchorCore/Resources/pois.json").read_text())["pois"]
 OUT = ROOT / "docs/index.html"
 
 TYPE_LABELS = {
@@ -37,9 +38,20 @@ stats = [
     (str(n_anchorages), "anchorages"),
     (str(n_docks), "island &amp; town docks"),
     (str(n_marinas), "marinas"),
+    (str(len(POIS)), "points of interest"),
     (str(len(CONTENT["islands"])), "islands to explore"),
     ("8", "day wind outlook"),
 ]
+
+poi_kinds = {}
+for p in POIS:
+    poi_kinds[p["kind"]] = poi_kinds.get(p["kind"], 0) + 1
+KIND_LABELS = {"lighthouse": "lighthouses", "shipwreck": "shipwrecks", "sea_cave": "sea-cave areas",
+               "historic": "historic sites", "natural": "natural wonders"}
+lore_breakdown = ", ".join(
+    f"{n} {KIND_LABELS.get(k, k)}"
+    for k, n in sorted(poi_kinds.items(), key=lambda kv: -kv[1])
+)
 stats_html = "\n".join(
     f'      <div class="stat"><span class="stat-n">{n}</span><span class="stat-l">{label}</span></div>'
     for n, label in stats
@@ -227,6 +239,7 @@ $DIRECTORY
         <li><strong>Forecasts:</strong> Open-Meteo hourly 10&nbsp;m wind, gusts, and direction, in knots, 8 days out.</li>
         <li><strong>Marine alerts:</strong> Live Small Craft Advisories and Gale Warnings from NOAA/NWS for the five nearshore zones around the islands.</li>
         <li><strong>Places:</strong> Every entry cites its sources in-app. $ADVISORY_COUNT advisory entries flag wildlife closures and day-use-only areas.</li>
+        <li><strong>Lore:</strong> $LORE_BREAKDOWN — every story fact-checked and sourced, browsable on the map and in Explore.</li>
         <li><strong>Times:</strong> Always shown in the islands' local time, wherever your phone thinks it is.</li>
         <li><strong>Offline:</strong> The last forecast is cached, because the outer islands don't do bars.</li>
       </ul>
@@ -250,6 +263,7 @@ OUT.write_text(TEMPLATE.substitute(
     DIRECTORY=directory_html,
     PLACE_COUNT=str(len(PLACES)),
     ADVISORY_COUNT=str(len(advisories)),
+    LORE_BREAKDOWN=lore_breakdown,
     GENERATED=generated,
 ))
 print(f"wrote {OUT} ({OUT.stat().st_size:,} bytes) — {len(PLACES)} places, {len(CONTENT['islands'])} islands")

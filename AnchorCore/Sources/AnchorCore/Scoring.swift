@@ -131,6 +131,25 @@ public struct PlaceOutlook: Sendable {
     }
 }
 
+/// One candidate for an N-night stay starting on a chosen night.
+public struct StayOption: Sendable {
+    public let place: Place
+    public let nights: [NightAssessment]
+    public let score: Double
+    public let band: RatingBand
+    /// The binding worst night of the window; nil for single-night stays.
+    public let worstNight: NightAssessment?
+
+    public init(place: Place, nights: [NightAssessment], score: Double,
+                band: RatingBand, worstNight: NightAssessment?) {
+        self.place = place
+        self.nights = nights
+        self.score = score
+        self.band = band
+        self.worstNight = worstNight
+    }
+}
+
 public struct ScoreEngine: Sendable {
     public var constants: ScoreConstants
     /// Local calendar for the Apostle Islands (America/Chicago).
@@ -304,6 +323,54 @@ public struct ScoreEngine: Sendable {
         }
 
         return reasons
+    }
+
+    /// Ranks places for a stay of `nightCount` consecutive nights starting at
+    /// `startNight`. The whole window is scored together, with the worst night
+    /// binding (0.65 × worst + 0.35 × mean) — one dangerous night sinks a
+    /// stay no matter how pleasant the rest is. Places whose outlook doesn't
+    /// cover every night of the window are excluded rather than half-rated.
+    public static func rankForStay(
+        places: [Place],
+        outlooks: [String: PlaceOutlook],
+        startNight: Date,
+        nightCount: Int,
+        calendar: Calendar = ScoreEngine.localCalendar
+    ) -> [StayOption] {
+        guard nightCount >= 1 else { return [] }
+        var options: [StayOption] = []
+        for place in places where !place.advisory && (place.canAnchor || place.dock?.overnight != false) {
+            guard let outlook = outlooks[place.id],
+                  let startIndex = outlook.nightIndex(of: startNight, calendar: calendar) else { continue }
+
+            var window: [NightAssessment] = []
+            var expected = startNight
+            var index = startIndex
+            while window.count < nightCount, index < outlook.nights.count {
+                let night = outlook.nights[index]
+                guard night.nightOf == expected else { break }
+                window.append(night)
+                expected = calendar.date(byAdding: .day, value: 1, to: expected) ?? expected
+                index += 1
+            }
+            guard window.count == nightCount else { continue }
+
+            let scores = window.map(\.score)
+            let worstScore = scores.min() ?? 0
+            let meanScore = scores.reduce(0, +) / Double(scores.count)
+            let combined = 0.65 * worstScore + 0.35 * meanScore
+            options.append(StayOption(
+                place: place,
+                nights: window,
+                score: combined,
+                band: RatingBand(score: combined),
+                worstNight: nightCount > 1 ? window.min(by: { $0.score < $1.score }) : nil
+            ))
+        }
+        return options.sorted {
+            if $0.score != $1.score { return $0.score > $1.score }
+            return $0.place.name < $1.place.name
+        }
     }
 
     /// Ranks places for a given night: best score first, ties broken by how many

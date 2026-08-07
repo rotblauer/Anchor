@@ -9,6 +9,8 @@ Built for Apostle Islands National Lakeshore (Lake Superior, Wisconsin): 21 isla
 - **Wind-aware planning map** — an hourly wind-field overlay (direction arrows, speed-colored, in knots) across the whole archipelago on satellite imagery, with a time scrubber that plays the forecast forward 8 days.
 - **Ranked "where to stay" picks** — every anchorage, NPS dock, and marina is scored for the selected night by matching the hourly wind/gust forecast against that spot's real geography: a 16-direction shelter profile plus open-water fetch (how far waves can build). Strong wind onto an exposed spot — a lee shore — caps the score outright.
 - **Multi-night outlook** — each place shows a night-by-night strip a week out and a "good for N consecutive nights" badge, so a one-night wonder and a stay-all-week harbor are easy to tell apart.
+- **Trip-length ranking** — pick a stay of 1–7 nights and every place is re-ranked across the *whole* window, worst night weighted heaviest; spots the forecast can't fully cover are excluded rather than half-rated.
+- **The lore layer** — 40 verified points of interest browsable on the map and in Explore: every light station (including the lighthouse built on the wrong island), the documented shipwrecks from *Wisconsin Shipwrecks* (Sevona, Pretoria, Lucerne, Fedora…), brownstone quarries, fish camps, Frog Bay Tribal National Park, sea caves, singing sands, and more — each with an original, fact-checked story and sources.
 - **Real places only** — the place database is compiled from NPS boating guidance, marina listings, and published Lake Superior cruising references, with coordinates and shelter profiles verified against the actual geography. Every entry cites its sources in-app.
 - **Explore the islands** — original write-ups of every island: lighthouses, brownstone quarries, singing sands, sea caves, shipwrecks, and the hermit of Hermit Island.
 - **Marine alerts** — active NWS Small Craft Advisories / Gale Warnings for the surrounding nearshore zones surface as a banner.
@@ -18,11 +20,11 @@ Built for Apostle Islands National Lakeshore (Lake Superior, Wisconsin): 21 isla
 
 ```
 AnchorCore/            Swift package (platform-agnostic, tested with `swift test`)
-  Models, Compass      Place/Island models, 16-sector compass math
-  Scoring              ScoreEngine: hourly + overnight suitability, ranking, streaks
+  Models, Compass, POI Place/Island/POI models, 16-sector compass math
+  Scoring              ScoreEngine: hourly + overnight suitability, night & N-night stay ranking
   OpenMeteoClient      Batched hourly wind forecasts (free API, no key, knots, unixtime)
   MarineAlerts         NWS api.weather.gov active-alerts client
-  Resources/           places.json + islands.json (the curated databases)
+  Resources/           places.json + islands.json + pois.json (the curated databases)
 
 ApostleAnchor/         SwiftUI app (iOS 17+)
   Plan tab             MapKit map, wind-grid annotations, time scrubber, ranked sheet

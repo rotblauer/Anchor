@@ -30,6 +30,10 @@ struct ExploreView: View {
                         )
                     }
 
+                    if !model.pois.isEmpty {
+                        legendsSection
+                    }
+
                     Text("The Islands")
                         .font(.title3.bold())
                         .padding(.top, 4)
@@ -49,6 +53,59 @@ struct ExploreView: View {
             }
             .navigationTitle("Explore")
         }
+    }
+
+    @State private var poiFilter: POIKind?
+
+    private var filteredPois: [PointOfInterest] {
+        let pois = poiFilter.map { kind in model.pois.filter { $0.kind == kind } } ?? model.pois
+        return pois.sorted {
+            if $0.kind != $1.kind { return $0.kind.rawValue < $1.kind.rawValue }
+            return $0.name < $1.name
+        }
+    }
+
+    private var legendsSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Legends & Landmarks")
+                .font(.title3.bold())
+                .padding(.top, 4)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 6) {
+                    filterChip(nil, label: "All", symbol: "mappin.and.ellipse")
+                    ForEach(POIKind.allCases.filter { kind in model.pois.contains { $0.kind == kind } }, id: \.self) { kind in
+                        filterChip(kind, label: kind.label, symbol: kind.symbol)
+                    }
+                }
+            }
+
+            LazyVStack(spacing: 2) {
+                ForEach(filteredPois) { poi in
+                    NavigationLink {
+                        POIDetailView(poi: poi)
+                    } label: {
+                        POIRow(poi: poi)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+    }
+
+    private func filterChip(_ kind: POIKind?, label: String, symbol: String) -> some View {
+        let isSelected = poiFilter == kind
+        return Button {
+            withAnimation(.snappy) { poiFilter = kind }
+        } label: {
+            Label(label, systemImage: symbol)
+                .font(.caption.weight(isSelected ? .bold : .regular))
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(isSelected ? Theme.teal : Color.secondary.opacity(0.12), in: Capsule())
+                .foregroundStyle(isSelected ? .white : .primary)
+        }
+        .buttonStyle(.plain)
     }
 }
 
@@ -175,6 +232,21 @@ struct IslandDetailView: View {
                                     .padding(.top, 3)
                                 Text(fact).font(.callout)
                             }
+                        }
+                    }
+                }
+
+                let localPois = model.pois(onIsland: island.name)
+                if !localPois.isEmpty {
+                    VStack(alignment: .leading, spacing: 8) {
+                        SectionHeader(title: "Landmarks here", icon: "mappin.and.ellipse")
+                        ForEach(localPois) { poi in
+                            NavigationLink {
+                                POIDetailView(poi: poi)
+                            } label: {
+                                POIRow(poi: poi)
+                            }
+                            .buttonStyle(.plain)
                         }
                     }
                 }

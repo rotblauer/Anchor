@@ -36,6 +36,20 @@ final class DatabaseTests: XCTestCase {
         }
     }
 
+    func testPOIDatabaseLoadsAndIsValid() throws {
+        let db = try POIDatabase.loadBundled()
+        XCTAssertGreaterThanOrEqual(db.pois.count, 3)
+        var seenIds = Set<String>()
+        for poi in db.pois {
+            XCTAssertTrue(seenIds.insert(poi.id).inserted, "duplicate POI id \(poi.id)")
+            XCTAssertFalse(poi.story.isEmpty, "\(poi.id) needs a story")
+            XCTAssertFalse(poi.tagline.isEmpty, "\(poi.id) needs a tagline")
+            XCTAssertFalse(poi.sources.isEmpty, "\(poi.id) must cite at least one source")
+            XCTAssertTrue((46.4...47.3).contains(poi.lat), "\(poi.id) latitude \(poi.lat) outside region")
+            XCTAssertTrue((-91.4...(-90.1)).contains(poi.lon), "\(poi.id) longitude \(poi.lon) outside region")
+        }
+    }
+
     func testContentDatabaseLoads() throws {
         let content = try ContentDatabase.loadBundled()
         XCTAssertGreaterThanOrEqual(content.islands.count, 2)

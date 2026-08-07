@@ -13,8 +13,13 @@ struct PlanMapView: View {
         )
     )
     @State private var selectedPlace: Place?
+    @State private var selectedPOI: PointOfInterest?
     @State private var showRecommendations = false
+    // Wind field and lore pins are exclusive layers: SwiftUI's Map silently
+    // stops rendering ALL annotations above ~100 content items, and
+    // grid (42) + places (44) + POIs (40) together blows that budget.
     @State private var showWind = true
+    @State private var showPOIs = false
     @State private var useImagery = true
 
     var body: some View {
@@ -29,6 +34,15 @@ struct PlanMapView: View {
                         }
                         .annotationTitles(.hidden)
                     }
+                }
+            }
+            if showPOIs {
+                ForEach(model.pois) { poi in
+                    Annotation("", coordinate: poi.coordinate, anchor: .center) {
+                        POIMarkerView(poi: poi, selected: selectedPOI?.id == poi.id)
+                            .onTapGesture { selectedPOI = poi }
+                    }
+                    .annotationTitles(.hidden)
                 }
             }
             ForEach(model.places) { place in
@@ -53,6 +67,13 @@ struct PlanMapView: View {
         .sheet(item: $selectedPlace) { place in
             NavigationStack {
                 PlaceDetailView(place: place)
+            }
+            .presentationDetents([.medium, .large])
+            .presentationBackgroundInteraction(.enabled(upThrough: .medium))
+        }
+        .sheet(item: $selectedPOI) { poi in
+            NavigationStack {
+                POIDetailView(poi: poi)
             }
             .presentationDetents([.medium, .large])
             .presentationBackgroundInteraction(.enabled(upThrough: .medium))
@@ -89,9 +110,16 @@ struct PlanMapView: View {
         VStack(spacing: 10) {
             Button {
                 showWind.toggle()
+                if showWind { showPOIs = false }
             } label: {
                 Image(systemName: showWind ? "wind" : "wind.circle")
                     .symbolVariant(showWind ? .none : .slash)
+            }
+            Button {
+                showPOIs.toggle()
+                if showPOIs { showWind = false }
+            } label: {
+                Image(systemName: showPOIs ? "binoculars.fill" : "binoculars")
             }
             Button {
                 useImagery.toggle()
